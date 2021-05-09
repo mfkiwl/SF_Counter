@@ -49,7 +49,7 @@ The FPGA design project can be found in the **FPGA** folder.
 
 The host code that controls the FPGA logic can be found in the **host** folder.
 
-Custom .C file:
+#### Custom C file:
 * main.c
 
 #### Build and Compile
