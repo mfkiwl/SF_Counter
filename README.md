@@ -43,6 +43,12 @@ The FPGA design project can be found in the **FPGA** folder.
 
 ### Build and Compile
 
+1. New project -> select the part number "M2S025-VF256" -> select the "create a microcontroller (MSS) based design", and finish.
+
+2. Double click the MSS component, disable everything else expect for: MMUART_1, SPI_0, SPI_1, GPIO, MSS_OCC, and RESET Cntroller, as the figure below.
+
+![alt text](https://github.com/onioncc/SF_Counter/Figures/1.png)
+
 ### Program the FPGA
 
 ## Host Design
