@@ -47,7 +47,7 @@ The FPGA design project can be found in the **FPGA** folder.
 
 2. Double click the MSS component, disable everything else expect for: MMUART_1, SPI_0, SPI_1, GPIO, MSS_OCC, and RESET Cntroller, as the figure below.
 
-![alt text](https://github.com/onioncc/SF_Counter/Figures/1.png)
+![](https://github.com/onioncc/SF_Counter/blob/main/Figures/1.png)
 
 ### Program the FPGA
 
