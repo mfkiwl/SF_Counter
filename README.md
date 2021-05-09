@@ -22,7 +22,7 @@
 This project implements a reciprocal counter on SmartFusion2 FPGA, counting the periodical signal detected by gas sensors.
 
 
-## Prerequisites
+### Prerequisites
 
 * Libero v12.5 -- for FPGA development
 * SoftConsole v4.0 -- for host development
@@ -33,7 +33,7 @@ This project implements a reciprocal counter on SmartFusion2 FPGA, counting the 
 
 The FPGA design project can be found in the **FPGA** folder.
 
-### Custom HDL files:
+#### Custom HDL files:
 
 * Gate_Set.v
 * Recip_Freq_Counter.v
@@ -41,9 +41,9 @@ The FPGA design project can be found in the **FPGA** folder.
 * Add_Counter.v
 * SPI_slave.v
 
-### Build and Compile
+#### Build and Compile
 
-### Program the FPGA
+#### Program the FPGA
 
 ## Host Design
 
@@ -52,8 +52,8 @@ The host code that controls the FPGA logic can be found in the **host** folder.
 Custom .C file:
 * main.c
 
-### Build and Compile
+#### Build and Compile
 
-### Generate Release Code
+#### Generate Release Code
 
 
