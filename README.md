@@ -33,7 +33,7 @@ This project implements a reciprocal counter on SmartFusion2 FPGA, counting the 
 
 The FPGA design project can be found in the **FPGA** folder.
 
-#### Custom HDL files:
+### Custom HDL files:
 
 * Gate_Set.v
 * Recip_Freq_Counter.v
@@ -41,16 +41,16 @@ The FPGA design project can be found in the **FPGA** folder.
 * Add_Counter.v
 * SPI_slave.v
 
-#### Build and Compile
+### Build and Compile
 
-1. New project -> select the part number "M2S025-VF256" -> select the "create a microcontroller (MSS) based design", and finish.
+1. New project -> select the part number **M2S025-VF256** -> select the **create a microcontroller (MSS) based design**, and finish.
 
 2. Double click the MSS component, disable everything else except for: MMUART_1, SPI_0, SPI_1, GPIO, MSS_CCC, and RESET Controller, as the figure below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/1.png)
 
 
-3. Configure the MMUART_1, GPIO, MSS_CCC, and RESET Controller as the figures below.
+3. Configure the **MMUART_1**, **GPIO**, **MSS_CCC**, and **RESET Controller** as the figures below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/2.png)
 
@@ -95,20 +95,20 @@ FCCC_C1
 Chip Oscillator Configurator
 
 
-7. Synthesis the design, and click the "manage constraints" to configure the I/O pins. The pin configuration is shown in the figure below. Note that the Schmitt Trigger should be enabled for the sampled_signal external pin.
+7. Synthesis the design, and click the **manage constraints** to configure the I/O pins. The pin configuration is shown in the figure below. Note that the Schmitt Trigger should be enabled for the sampled_signal external pin.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/13.png)
 
 I/O configuration
 
 
-8. Click the "Run PROGRAM Action" to run synthesis, Place and Route, and Program. You could also run these steps separately.
+8. Click the **Run PROGRAM Action** to run synthesis, Place and Route, and Program. You could also run these steps separately.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/14.png)
 
 Run PROGRAM Action
 
-9. Once it shows that the FPGA is successfully programmed, click the "Configure Firmware Cores", export a sample project containing the UART component as shown in the figure below.
+9. Once it shows that the FPGA is successfully programmed, click the **Configure Firmware Cores**, export a sample project containing the UART component as shown in the figure below.
 This step is to generate a sample project for host code.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/17.png)
@@ -116,19 +116,19 @@ This step is to generate a sample project for host code.
 Export sample design
 
 
-10. Click the "Export Firmware" and export the firmware to be used in the host program.
+10. Click the **Export Firmware** and export the firmware to be used in the host program.
 
 
 ## Host Design
 
 The host code that controls the FPGA logic can be found in the **host** folder.
 
-#### Custom C file:
+### Custom C file:
 * main.c
 
-#### Build and Compile
+### Build and Compile
 
-1. Open the SoftConsole software, specify a workspace, and click the "import" from the "File" tab. Choose the "Existing Projects into Workspace" as the figure below. This is to import the sample project generated from the Libero in FPGA step 9.
+1. Open the SoftConsole software, specify a workspace, and click the **import** from the **File** tab. Choose the **Existing Projects into Workspace** as the figure below. This is to import the sample project generated from the Libero in FPGA step 9.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/22.png)
 
@@ -137,10 +137,10 @@ The host code that controls the FPGA logic can be found in the **host** folder.
 Import the sample project
 
 
-2. Replace the main.c file using the custom "main.c" in the host foler. Replace the **CMSIS**, **drivers**, **drivers_config**, and **hal** under *./Host/* using the ones from *./FPGA/board_deploy/firmware*.
+2. Replace the main.c file using the custom **main.c** in the host foler. Replace the **CMSIS**, **drivers**, **drivers_config**, and **hal** under *./Host/* using the ones from *./FPGA/board_deploy/firmware*.
 
 
-3. Right click the project, select the "Debug Configuration", and configure the debug mode as the figures below.
+3. Right click the project, select the **Debug Configuration**, and configure the debug mode as the figures below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/18.png)
 
@@ -158,7 +158,7 @@ Import the sample project
 
 
 
-#### Generate Release Code
+### Generate Release Code
 
 The release mode allows the FPGA SoC to automatically run when powered on.
 
