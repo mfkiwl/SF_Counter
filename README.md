@@ -45,9 +45,28 @@ The FPGA design project can be found in the **FPGA** folder.
 
 1. New project -> select the part number "M2S025-VF256" -> select the "create a microcontroller (MSS) based design", and finish.
 
-2. Double click the MSS component, disable everything else expect for: MMUART_1, SPI_0, SPI_1, GPIO, MSS_OCC, and RESET Cntroller, as the figure below.
+2. Double click the MSS component, disable everything else expect for: MMUART_1, SPI_0, SPI_1, GPIO, MSS_CCC, and RESET Cntroller, as the figure below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/1.png)
+
+3. Configure the MMUART_1, GPIO, MSS_CCC, and RESET Controller as the figures below.
+
+![MMUART_1](https://github.com/onioncc/SF_Counter/blob/main/Figures/2.png)
+
+![GPIO](https://github.com/onioncc/SF_Counter/blob/main/Figures/3.png)
+
+![MSS_CCC](https://github.com/onioncc/SF_Counter/blob/main/Figures/4.png)
+
+![MSS_RESET](https://github.com/onioncc/SF_Counter/blob/main/Figures/5.png)
+
+
+4. Add custom HDL files into the project, connect the components as the figure below.
+
+![](https://github.com/onioncc/SF_Counter/blob/main/Figures/8.png)
+
+
+
+
 
 ### Program the FPGA
 
