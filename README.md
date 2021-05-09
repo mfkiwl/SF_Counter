@@ -54,66 +54,41 @@ The FPGA design project can be found in the **FPGA** folder.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/2.png)
 
-MMUART_1
-
-
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/3.png)
-
-GPIO
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/4.png)
 
-MSS_CCC
-
-
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/5.png)
-
-MSS_RESET
-
 
 4. Add custom HDL files into the project, connect the components as the figure below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/8.png)
 
-
 5. Configure the two FCCC components. FCCC_C0 drives the MSS, and FCCC_C1 drives the counter circuit. Configure the FCCC components as the figures below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/11.png)
-
-FCCC_C0
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/9.png)
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/10.png)
 
-FCCC_C1
-
 6. Configure the Chip Oscillator as the figure below.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/12.png)
-
-Chip Oscillator Configurator
-
 
 7. Synthesis the design, and click the **manage constraints** to configure the I/O pins. The pin configuration is shown in the figure below. Note that the Schmitt Trigger should be enabled for the sampled_signal external pin.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/13.png)
 
-I/O configuration
-
-
 8. Click the **Run PROGRAM Action** to run synthesis, Place and Route, and Program. You could also run these steps separately.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/14.png)
 
-Run PROGRAM Action
 
 9. Once it shows that the FPGA is successfully programmed, click the **Configure Firmware Cores**, export a sample project containing the UART component as shown in the figure below.
 This step is to generate a sample project for host code.
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/17.png)
-
-Export sample design
 
 
 10. Click the **Export Firmware** and export the firmware to be used in the host program.
@@ -133,8 +108,6 @@ The host code that controls the FPGA logic can be found in the **host** folder.
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/22.png)
 
 ![](https://github.com/onioncc/SF_Counter/blob/main/Figures/23.png)
-
-Import the sample project
 
 
 2. Replace the main.c file using the custom **main.c** in the host foler. Replace the **CMSIS**, **drivers**, **drivers_config**, and **hal** under *./Host/* using the ones from *./FPGA/board_deploy/firmware*.
