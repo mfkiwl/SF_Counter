@@ -1,0 +1,28 @@
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+File C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:11 2021
+
+###########################################################]

@@ -1,0 +1,90 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Libero\\Projects\\board_deploy\\board_deploy\\synthesis\\synwork\\board_deploy_comp.srs|-top|board_deploy|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-I|C:\\Libero\\Projects\\board_deploy\\board_deploy\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\generic\\smartfusion2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\bin64\\c_ver.exe":1592742881
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\generic\\smartfusion2.v":1592743047
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\vlog\\hypermods.v":1592743076
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\vlog\\umr_capim.v":1592743076
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1592743076
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.5\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1592743076
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\hdl\\Add_Counter.v":1620532802
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.v":1620530418
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\FCCC_C0\\FCCC_C0.v":1620530418
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\FCCC_C1\\FCCC_C1_0\\FCCC_C1_FCCC_C1_0_FCCC.v":1620530383
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\FCCC_C1\\FCCC_C1.v":1620530383
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\hdl\\Gate_Set.v":1620255823
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1607650745
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.v":1619376244
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\OSC_C0\\OSC_C0.v":1619376244
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\hdl\\Recip_Freq_Counter.v":1620531263
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\hdl\\SPI_slave.v":1612041888
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\board_deploy_MSS\\board_deploy_MSS_syn.v":1620533940
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\board_deploy_MSS\\board_deploy_MSS.v":1620533940
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\hdl\\fine_counter.v":1620531605
+#CUR:"C:\\Libero\\Projects\\board_deploy\\board_deploy\\component\\work\\board_deploy\\board_deploy.v":1620531640
+0			"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v" verilog
+1			"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" verilog
+2			"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v" verilog
+3			"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v" verilog
+4			"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v" verilog
+5			"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v" verilog
+6			"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
+7			"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" verilog
+8			"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v" verilog
+9			"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v" verilog
+10			"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v" verilog
+11			"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v" verilog
+12			"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v" verilog
+13			"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v" verilog
+14			"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 1
+3 -1
+4 3
+5 -1
+6 -1
+7 6
+8 7
+9 -1
+10 -1
+11 -1
+12 11
+13 -1
+14 10 9 8 5 13 4 2 12 0
+#Dependency Lists(Users Of)
+0 14
+1 2
+2 14
+3 4
+4 14
+5 14
+6 7
+7 8
+8 14
+9 14
+10 14
+11 12
+12 14
+13 14
+14 -1
+#Design Unit to File Association
+module work board_deploy 14
+module work fine_counter 13
+module work board_deploy_MSS 12
+module work MSS_025 11
+module work SPI_Slave 10
+module work Recip_Freq_Count 9
+module work OSC_C0 8
+module work OSC_C0_OSC_C0_0_OSC 7
+module work XTLOSC_FAB 6
+module work RCOSC_25_50MHZ_FAB 6
+module work RCOSC_1MHZ_FAB 6
+module work XTLOSC 6
+module work RCOSC_25_50MHZ 6
+module work RCOSC_1MHZ 6
+module work Gate_Set 5
+module work FCCC_C1 4
+module work FCCC_C1_FCCC_C1_0_FCCC 3
+module work FCCC_C0 2
+module work FCCC_C0_FCCC_C0_0_FCCC 1
+module work Add_Counters 0

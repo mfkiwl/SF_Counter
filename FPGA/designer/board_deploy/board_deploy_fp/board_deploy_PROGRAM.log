@@ -1,0 +1,44 @@
+Software Version: 12.900.10.16
+Programmer: '09136' : JTAG TCK frequency = 1 MHz
+Driver : 3.0.0 build 1
+programmer '09136' : FlashPro4
+Opened 'C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy_fp\board_deploy.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'M2S025'.
+The 'enable_device' command succeeded.
+PPD file 'C:/Libero/Projects/board_deploy/board_deploy/designer/board_deploy/board_deploy.ppd' has been loaded successfully.
+DESIGN : board_deploy;  CHECKSUM : 70D4;  PDB_VERSION : 1.0
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '09136' : Scan Chain...
+Programmer: '09136' : JTAG TCK frequency = 1 MHz
+programmer '09136' : Check Chain...
+programmer '09136' : Scan and Check Chain PASSED.
+programmer '09136' : device 'M2S025' : Executing action PROGRAM
+Programmer: '09136' : JTAG TCK frequency = 4 MHz
+programmer '09136' : device 'M2S025' : Family: SmartFusion2
+programmer '09136' : device 'M2S025' : Product:      M2S025
+programmer '09136' : device 'M2S025' : Cortex-M3 Enabled (M3_ALLOWED = 1)
+programmer '09136' : device 'M2S025' : EXPORT ISC_ENABLE_RESULT[32] = 007c6744
+programmer '09136' : device 'M2S025' : EXPORT CRCERR[1] = 0
+programmer '09136' : device 'M2S025' : EXPORT EDCERR[1] = 0
+programmer '09136' : device 'M2S025' : Programming FPGA Array and eNVM...
+programmer '09136' : device 'M2S025' : EXPORT Fabric component digest[256] = 4b4138bab1070a6681d353fdd509393c25611abae4276b33e0b734f62ac1eef2
+programmer '09136' : device 'M2S025' : EXPORT eNVM component digest[256] = 9bc4590443de298ec0ff3002e202f98bf1219933a4239314a22d19342e2f335d
+programmer '09136' : device 'M2S025' : ===================================================================================
+programmer '09136' : device 'M2S025' : EXPORT DSN[128] = 5635b475e8d90810caf7add24f836fc3
+programmer '09136' : device 'M2S025' : ===================================================================================
+programmer '09136' : device 'M2S025' : Finished: Sat May  8 23:20:57 2021 (Elapsed time 00:00:42)
+programmer '09136' : device 'M2S025' : Executing action PROGRAM PASSED.
+programmer '09136' : Chain programming PASSED.
+Chain Programming Finished: Sat May  8 23:20:57 2021 (Elapsed time 00:00:42)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy_fp\board_deploy.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

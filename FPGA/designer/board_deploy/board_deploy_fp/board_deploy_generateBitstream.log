@@ -1,0 +1,12 @@
+Software Version: 12.900.10.16
+Opened 'C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy_fp\board_deploy.pro'
+PDB file 'C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy.pdb' has been loaded successfully.
+DESIGN : board_deploy;  CHECKSUM : 70D4;  PDB_VERSION : 1.9
+File/Folder 'C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy.ppd'; file programs Fabric and eNVM.
+Fabric component bitstream digest: 4b4138bab1070a6681d353fdd509393c25611abae4276b33e0b734f62ac1eef2
+eNVM component bitstream digest: 9bc4590443de298ec0ff3002e202f98bf1219933a4239314a22d19342e2f335d
+Finished: Sat May 08 23:20:00 2021 (Elapsed time 00:00:11)
+
+Project saved.
+Project closed.

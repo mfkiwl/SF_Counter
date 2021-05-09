@@ -1,0 +1,1160 @@
+#Build: Synplify Pro (R) Q-2020.03M, Build 175R, Jun  5 2020
+#install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-Q941M45
+
+# Sat May  8 23:19:08 2021
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v" (library work)
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":10:8:10:18|sample_gate is already declared in this scope.
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v" (library work)
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":12:15:12:27|recip_counter is already declared in this scope.
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":14:8:14:18|recip_valid is already declared in this scope.
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v" (library work)
+Verilog syntax check successful!
+File C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v changed - recompiling
+File C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v changed - recompiling
+Selecting top level module board_deploy
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v":22:7:22:18|Synthesizing module Add_Counters in library work.
+Running optimization stage 1 on Add_Counters .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":268:7:268:11|Synthesizing module INBUF in library work.
+Running optimization stage 1 on INBUF .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":280:7:280:13|Synthesizing module TRIBUFF in library work.
+Running optimization stage 1 on TRIBUFF .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v":5:7:5:13|Synthesizing module MSS_025 in library work.
+Running optimization stage 1 on MSS_025 .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":286:7:286:11|Synthesizing module BIBUF in library work.
+Running optimization stage 1 on BIBUF .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v":9:7:9:22|Synthesizing module board_deploy_MSS in library work.
+Running optimization stage 1 on board_deploy_MSS .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC in library work.
+Running optimization stage 1 on VCC .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND in library work.
+Running optimization stage 1 on GND .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+Running optimization stage 1 on CLKINT .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":729:7:729:9|Synthesizing module CCC in library work.
+Running optimization stage 1 on CCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C0_FCCC_C0_0_FCCC in library work.
+Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
+Running optimization stage 1 on FCCC_C0 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C1_FCCC_C1_0_FCCC in library work.
+Running optimization stage 1 on FCCC_C1_FCCC_C1_0_FCCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v":9:7:9:13|Synthesizing module FCCC_C1 in library work.
+Running optimization stage 1 on FCCC_C1 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":21:7:21:18|Synthesizing module fine_counter in library work.
+@W: CS142 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":21:65:21:74|Range of port fine_count in port declaration and body are different.
+Running optimization stage 1 on fine_counter .......
+@A: CL291 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Register rising_error with asynchronous load is being synthesized in compatability mode. A synthesis/simulation mismatch is possible.
+@W: CL113 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Feedback mux created for signal falling_error[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL250 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|All reachable assignments to falling_error[31:0] assign 0, register removed by optimization
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Pruning register bits 31 to 3 of rising_error[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":2:7:2:14|Synthesizing module Gate_Set in library work.
+@W: CG879 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":13:8:13:13|Treating non-constant declarative assignment to variable signal as a regular assign based on type - value could be overwritten in later writes. To ignore the dynamic initial value, please use the macro SYN_COMPATIBLE
+Running optimization stage 1 on Gate_Set .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":63:7:63:16|Synthesizing module XTLOSC_FAB in library work.
+Running optimization stage 1 on XTLOSC_FAB .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":23:7:23:12|Synthesizing module XTLOSC in library work.
+Running optimization stage 1 on XTLOSC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":5:7:5:25|Synthesizing module OSC_C0_OSC_C0_0_OSC in library work.
+Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":15:7:15:24|*Output RCOSC_25_50MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":16:7:16:24|*Output RCOSC_25_50MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":19:7:19:16|*Output XTLOSC_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v":9:7:9:12|Synthesizing module OSC_C0 in library work.
+Running optimization stage 1 on OSC_C0 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":3:7:3:22|Synthesizing module Recip_Freq_Count in library work.
+Running optimization stage 1 on Recip_Freq_Count .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":3:7:3:15|Synthesizing module SPI_Slave in library work.
+@W: CG133 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":19:13:19:19|Object counter is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on SPI_Slave .......
+@A: CL291 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":32:2:32:7|Register SPI_MISO_Bit with asynchronous load is being synthesized in compatability mode. A synthesis/simulation mismatch is possible.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
+Running optimization stage 1 on SYSRESET .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v":9:7:9:18|Synthesizing module board_deploy in library work.
+Running optimization stage 1 on board_deploy .......
+Running optimization stage 2 on board_deploy .......
+Running optimization stage 2 on SYSRESET .......
+Running optimization stage 2 on SPI_Slave .......
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":6:20:6:24|Input reset is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":7:20:7:22|Input clk is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":15:14:15:21|Input SPI_MOSI is unused.
+Running optimization stage 2 on Recip_Freq_Count .......
+Running optimization stage 2 on OSC_C0 .......
+Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
+Running optimization stage 2 on XTLOSC .......
+Running optimization stage 2 on XTLOSC_FAB .......
+Running optimization stage 2 on Gate_Set .......
+Running optimization stage 2 on fine_counter .......
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[4]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[5]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[6]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[7]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[8]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[9]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[10]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[11]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[12]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[13]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[14]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[15]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[16]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[17]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[18]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[19]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[20]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[21]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[22]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[23]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[24]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[25]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[26]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[27]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[28]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[29]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[30]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[31]. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on FCCC_C1 .......
+Running optimization stage 2 on FCCC_C1_FCCC_C1_0_FCCC .......
+Running optimization stage 2 on FCCC_C0 .......
+Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
+Running optimization stage 2 on CCC .......
+Running optimization stage 2 on CLKINT .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on board_deploy_MSS .......
+Running optimization stage 2 on BIBUF .......
+Running optimization stage 2 on MSS_025 .......
+Running optimization stage 2 on TRIBUFF .......
+Running optimization stage 2 on INBUF .......
+Running optimization stage 2 on Add_Counters .......
+@W: CL246 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v":24:17:24:27|Input port bits 31 to 29 of recip_count[31:0] are unused. Assign logic for all port bits or change the input port size.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 93MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:09 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+File C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:10 2021
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:10 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+File C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:11 2021
+
+###########################################################]
+Premap Report
+
+# Sat May  8 23:19:11 2021
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version map202003act, Build 065R, Built Jun 11 2020 10:26:41, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+Reading constraint file: C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\synthesis.fdc
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy_scck.rpt 
+See clock summary report "C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 129MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 131MB)
+
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance recip_valid (in view: work.Recip_Freq_Count(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=31 on top level netlist board_deploy 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 164MB peak: 164MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       Gate_Set|sample_gate_inferred_clock               100.0 MHz     10.000        inferred     Inferred_clkgroup_2     71   
+                                                                                                                                  
+0 -       FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_3     36   
+                                                                                                                                  
+0 -       Gate_Set|signal_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_5     33   
+                                                                                                                                  
+0 -       board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     32   
+                                                                                                                                  
+0 -       board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     7    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                                                 Clock Pin                                      Non-clock Pin                                Non-clock Pin                               
+Clock                                             Load      Pin                                                                    Seq Example                                    Seq Example                                  Comb Example                                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                                                      -                                              -                                            -                                           
+                                                                                                                                                                                                                                                                           
+Gate_Set|sample_gate_inferred_clock               71        Gate_Set_0.sample_gate.Q[0](dffre)                                     Recip_Freq_Count_0.recip_counter[31:0].C       Recip_Freq_Count_0.counter_local[31:0].R     Recip_Freq_Count_0.un1_sample_gate.I[0](inv)
+                                                                                                                                                                                                                                                                           
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     36        FCCC_C1_0.FCCC_C1_0.CCC_INST.GL0(CCC)                                  Recip_Freq_Count_0.counter_local[31:0].C       fine_counter_0.rising_error[3].D[0]          fine_counter_0.un1_rising_error33.I[0](inv) 
+                                                                                                                                                                                                                                                                           
+Gate_Set|signal_inferred_clock                    33        Gate_Set_0.signal.OUT(and)                                             Gate_Set_0.sample_gate.C                       -                                            -                                           
+                                                                                                                                                                                                                                                                           
+board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     32        board_deploy_MSS_0.MSS_ADLIB_INST.SPI1_SS0_MGPIO13A_H2F_A(MSS_025)     SPI_Slave_0.Data[31:0].C                       -                                            SPI_Slave_0.Data_index11.I[0](inv)          
+                                                                                                                                                                                                                                                                           
+board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     7         board_deploy_MSS_0.MSS_ADLIB_INST.SPI1_CLK_OUT(MSS_025)                SPI_Slave_0.Data_index[4:0].C                  -                                            -                                           
+                                                                                                                                                                                                                                                                           
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     1         FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                                  board_deploy_MSS_0.MSS_ADLIB_INST.CLK_BASE     -                                            FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
+===========================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\spi_slave.v":25:2:25:7|Found inferred clock board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock which controls 32 sequential elements including SPI_Slave_0.Data[31:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss.v":226:0:226:13|Found inferred clock board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock which controls 7 sequential elements including board_deploy_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Found inferred clock Gate_Set|sample_gate_inferred_clock which controls 71 sequential elements including fine_counter_0.rising_error_1[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Found inferred clock FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock which controls 36 sequential elements including fine_counter_0.rising_error_1[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss.v":226:0:226:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 1 sequential elements including board_deploy_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\gate_set.v":15:4:15:9|Found inferred clock Gate_Set|signal_inferred_clock which controls 33 sequential elements including Gate_Set_0.counter[31:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 81MB peak: 167MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat May  8 23:19:11 2021
+
+###########################################################]
+Map & Optimize Report
+
+# Sat May  8 23:19:12 2021
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version map202003act, Build 065R, Built Jun 11 2020 10:26:41, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 128MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 128MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 160MB peak: 160MB)
+
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+@N: MO231 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Found counter in view:work.board_deploy(verilog) instance Recip_Freq_Count_0.counter_local[31:0] 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[29] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Boundary register Recip_Freq_Count_0.recip_counter[29] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[30] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Boundary register Recip_Freq_Count_0.recip_counter[30] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[31] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Boundary register Recip_Freq_Count_0.recip_counter[31] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: MO231 :"c:\libero\projects\board_deploy\board_deploy\hdl\spi_slave.v":32:2:32:7|Found counter in view:work.SPI_Slave(verilog) instance Data_index[4:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 168MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 168MB)
+
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[31] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Boundary register Recip_Freq_Count_0.counter_local[31] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[30] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Boundary register Recip_Freq_Count_0.counter_local[30] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[29] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Boundary register Recip_Freq_Count_0.counter_local[29] (in view: work.board_deploy(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     4.79ns		 159 /       136
+@N: FP130 |Promoting Net Gate_Set_0_sample_gate on CLKINT  I_93 
+@N: FP130 |Promoting Net SYSRESET_0_POWER_ON_RESET_N_arst on CLKINT  I_94 
+@N: FP130 |Promoting Net Gate_Set_0.signal on CLKINT  I_95 
+@N: FP130 |Promoting Net board_deploy_MSS_0_SPI_1_SS0_M2F on CLKINT  I_96 
+@N: FP130 |Promoting Net board_deploy_MSS_0_SPI_1_CLK_M2F on CLKINT  I_97 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+10 gated/generated clock tree(s) driving 146 clock pin(s) of sequential element(s)
+0 instances converted, 146 sequential instances remain driven by gated/generated clocks
+
+===================================================================================== Gated/Generated Clocks =====================================================================================
+Clock Tree ID     Driving Element                         Drive Element Type     Fanout     Sample Instance                            Explanation                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       SPI_Slave_0.un1_SPI_CS_n_1              CFG2                   1          SPI_Slave_0.un1_SPI_CS_n_2_rs              No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0002       Gate_Set_0.sample_gate                  SLE                    39         fine_counter_0.rising_error_1[2]           No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0003       board_deploy_MSS_0.MSS_ADLIB_INST       MSS_025                32         SPI_Slave_0.Data[4]                        No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0004       FCCC_C1_0.FCCC_C1_0.CCC_INST            CCC                    29         Recip_Freq_Count_0.counter_local[28]       No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0005       board_deploy_MSS_0.MSS_ADLIB_INST       MSS_025                8          board_deploy_MSS_0.MSS_ADLIB_INST          No gated clock conversion method for cell cell:work.MSS_025
+@K:CKID0006       FCCC_C0_0.FCCC_C0_0.CCC_INST            CCC                    1          board_deploy_MSS_0.MSS_ADLIB_INST          No gated clock conversion method for cell cell:work.MSS_025
+@K:CKID0007       Gate_Set_0.signal                       CFG2                   33         Gate_Set_0.counter[0]                      No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0008       fine_counter_0.un1_rising_error41       CFG2                   1          fine_counter_0.un1_rising_error41_3_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0009       fine_counter_0.un1_rising_error41_1     CFG2                   1          fine_counter_0.un1_rising_error41_4_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0010       fine_counter_0.un1_rising_error41_2     CFG2                   1          fine_counter_0.un1_rising_error41_5_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+==================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 169MB)
+
+Writing Analyst data base C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 169MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 169MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 170MB)
+
+@W: MT246 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":26:47:26:54|Blackbox XTLOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c1\fccc_c1_0\fccc_c1_fccc_c1_0_fccc.v":29:36:29:43|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock with period 10.00ns. Please declare a user-defined clock on net board_deploy_MSS_0.SPI_1_SS0_M2F.
+@W: MT420 |Found inferred clock board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock with period 10.00ns. Please declare a user-defined clock on net board_deploy_MSS_0.SPI_1_CLK_M2F.
+@W: MT420 |Found inferred clock Gate_Set|sample_gate_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Gate_Set_0.sample_gate.
+@W: MT420 |Found inferred clock FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C1_0.FCCC_C1_0.GL0_net.
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
+@W: MT420 |Found inferred clock Gate_Set|signal_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Gate_Set_0.signal_0.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sat May  8 23:19:13 2021
+#
+
+
+Top view:               board_deploy
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 6.076
+
+                                                  Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_4
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     100.0 MHz     482.8 MHz     10.000        2.071         7.929     inferred     Inferred_clkgroup_3
+Gate_Set|sample_gate_inferred_clock               100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_2
+Gate_Set|signal_inferred_clock                    100.0 MHz     306.3 MHz     10.000        3.265         6.735     inferred     Inferred_clkgroup_5
+board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     100.0 MHz     288.9 MHz     10.000        3.462         6.538     inferred     Inferred_clkgroup_1
+board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_0
+System                                            100.0 MHz     254.8 MHz     10.000        3.924         6.076     system       system_clkgroup    
+====================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                         System                                         |  10.000      6.076  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                         board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock  |  No paths    -      |  No paths    -      |  10.000      8.957  |  No paths    -    
+System                                         Gate_Set|sample_gate_inferred_clock            |  10.000      6.522  |  No paths    -      |  10.000      6.522  |  No paths    -    
+board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock  board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock  board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock  |  10.000      6.538  |  No paths    -      |  No paths    -      |  No paths    -    
+Gate_Set|sample_gate_inferred_clock            board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock  |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock  Gate_Set|sample_gate_inferred_clock            |  No paths    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock  FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock  |  10.000      7.929  |  No paths    -      |  No paths    -      |  No paths    -    
+Gate_Set|signal_inferred_clock                 FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+Gate_Set|signal_inferred_clock                 Gate_Set|signal_inferred_clock                 |  10.000      6.735  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                                Arrival          
+Instance                                Reference                                         Type     Pin     Net                  Time        Slack
+                                        Clock                                                                                                    
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Recip_Freq_Count_0.counter_local[0]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[0]     0.108       7.929
+Recip_Freq_Count_0.counter_local[1]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[1]     0.108       8.194
+Recip_Freq_Count_0.counter_local[2]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[2]     0.108       8.210
+Recip_Freq_Count_0.counter_local[3]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[3]     0.108       8.226
+Recip_Freq_Count_0.counter_local[4]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[4]     0.108       8.242
+Recip_Freq_Count_0.counter_local[5]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[5]     0.108       8.259
+Recip_Freq_Count_0.counter_local[6]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[6]     0.108       8.275
+Recip_Freq_Count_0.counter_local[7]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[7]     0.108       8.291
+Recip_Freq_Count_0.counter_local[8]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[8]     0.108       8.308
+Recip_Freq_Count_0.counter_local[9]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      Q       counter_local[9]     0.108       8.324
+=================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                                                   Required          
+Instance                                 Reference                                         Type     Pin     Net                     Time         Slack
+                                         Clock                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Recip_Freq_Count_0.counter_local[28]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[28]     9.745        7.929
+Recip_Freq_Count_0.counter_local[27]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[27]     9.745        7.945
+Recip_Freq_Count_0.counter_local[26]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[26]     9.745        7.961
+Recip_Freq_Count_0.counter_local[25]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[25]     9.745        7.978
+Recip_Freq_Count_0.counter_local[24]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[24]     9.745        7.994
+Recip_Freq_Count_0.counter_local[23]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[23]     9.745        8.010
+Recip_Freq_Count_0.counter_local[22]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[22]     9.745        8.027
+Recip_Freq_Count_0.counter_local[21]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[21]     9.745        8.043
+Recip_Freq_Count_0.counter_local[20]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[20]     9.745        8.059
+Recip_Freq_Count_0.counter_local[19]     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     SLE      D       counter_local_s[19]     9.745        8.075
+======================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      1.816
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 7.929
+
+    Number of logic level(s):                29
+    Starting point:                          Recip_Freq_Count_0.counter_local[0] / Q
+    Ending point:                            Recip_Freq_Count_0.counter_local[28] / D
+    The start point is clocked by            FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+    The end   point is clocked by            FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                         Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+Recip_Freq_Count_0.counter_local[0]          SLE      Q        Out     0.108     0.108 f     -         
+counter_local[0]                             Net      -        -       0.745     -           3         
+Recip_Freq_Count_0.counter_local_s_91        ARI1     B        In      -         0.854 f     -         
+Recip_Freq_Count_0.counter_local_s_91        ARI1     FCO      Out     0.201     1.054 f     -         
+counter_local_s_91_FCO                       Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[1]      ARI1     FCI      In      -         1.054 f     -         
+Recip_Freq_Count_0.counter_local_cry[1]      ARI1     FCO      Out     0.016     1.071 f     -         
+counter_local_cry[1]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[2]      ARI1     FCI      In      -         1.071 f     -         
+Recip_Freq_Count_0.counter_local_cry[2]      ARI1     FCO      Out     0.016     1.087 f     -         
+counter_local_cry[2]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[3]      ARI1     FCI      In      -         1.087 f     -         
+Recip_Freq_Count_0.counter_local_cry[3]      ARI1     FCO      Out     0.016     1.103 f     -         
+counter_local_cry[3]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[4]      ARI1     FCI      In      -         1.103 f     -         
+Recip_Freq_Count_0.counter_local_cry[4]      ARI1     FCO      Out     0.016     1.119 f     -         
+counter_local_cry[4]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[5]      ARI1     FCI      In      -         1.119 f     -         
+Recip_Freq_Count_0.counter_local_cry[5]      ARI1     FCO      Out     0.016     1.136 f     -         
+counter_local_cry[5]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[6]      ARI1     FCI      In      -         1.136 f     -         
+Recip_Freq_Count_0.counter_local_cry[6]      ARI1     FCO      Out     0.016     1.152 f     -         
+counter_local_cry[6]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[7]      ARI1     FCI      In      -         1.152 f     -         
+Recip_Freq_Count_0.counter_local_cry[7]      ARI1     FCO      Out     0.016     1.168 f     -         
+counter_local_cry[7]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[8]      ARI1     FCI      In      -         1.168 f     -         
+Recip_Freq_Count_0.counter_local_cry[8]      ARI1     FCO      Out     0.016     1.185 f     -         
+counter_local_cry[8]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[9]      ARI1     FCI      In      -         1.185 f     -         
+Recip_Freq_Count_0.counter_local_cry[9]      ARI1     FCO      Out     0.016     1.201 f     -         
+counter_local_cry[9]                         Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[10]     ARI1     FCI      In      -         1.201 f     -         
+Recip_Freq_Count_0.counter_local_cry[10]     ARI1     FCO      Out     0.016     1.217 f     -         
+counter_local_cry[10]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[11]     ARI1     FCI      In      -         1.217 f     -         
+Recip_Freq_Count_0.counter_local_cry[11]     ARI1     FCO      Out     0.016     1.234 f     -         
+counter_local_cry[11]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[12]     ARI1     FCI      In      -         1.234 f     -         
+Recip_Freq_Count_0.counter_local_cry[12]     ARI1     FCO      Out     0.016     1.250 f     -         
+counter_local_cry[12]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[13]     ARI1     FCI      In      -         1.250 f     -         
+Recip_Freq_Count_0.counter_local_cry[13]     ARI1     FCO      Out     0.016     1.266 f     -         
+counter_local_cry[13]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[14]     ARI1     FCI      In      -         1.266 f     -         
+Recip_Freq_Count_0.counter_local_cry[14]     ARI1     FCO      Out     0.016     1.282 f     -         
+counter_local_cry[14]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[15]     ARI1     FCI      In      -         1.282 f     -         
+Recip_Freq_Count_0.counter_local_cry[15]     ARI1     FCO      Out     0.016     1.299 f     -         
+counter_local_cry[15]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[16]     ARI1     FCI      In      -         1.299 f     -         
+Recip_Freq_Count_0.counter_local_cry[16]     ARI1     FCO      Out     0.016     1.315 f     -         
+counter_local_cry[16]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[17]     ARI1     FCI      In      -         1.315 f     -         
+Recip_Freq_Count_0.counter_local_cry[17]     ARI1     FCO      Out     0.016     1.331 f     -         
+counter_local_cry[17]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[18]     ARI1     FCI      In      -         1.331 f     -         
+Recip_Freq_Count_0.counter_local_cry[18]     ARI1     FCO      Out     0.016     1.348 f     -         
+counter_local_cry[18]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[19]     ARI1     FCI      In      -         1.348 f     -         
+Recip_Freq_Count_0.counter_local_cry[19]     ARI1     FCO      Out     0.016     1.364 f     -         
+counter_local_cry[19]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[20]     ARI1     FCI      In      -         1.364 f     -         
+Recip_Freq_Count_0.counter_local_cry[20]     ARI1     FCO      Out     0.016     1.380 f     -         
+counter_local_cry[20]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[21]     ARI1     FCI      In      -         1.380 f     -         
+Recip_Freq_Count_0.counter_local_cry[21]     ARI1     FCO      Out     0.016     1.397 f     -         
+counter_local_cry[21]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[22]     ARI1     FCI      In      -         1.397 f     -         
+Recip_Freq_Count_0.counter_local_cry[22]     ARI1     FCO      Out     0.016     1.413 f     -         
+counter_local_cry[22]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[23]     ARI1     FCI      In      -         1.413 f     -         
+Recip_Freq_Count_0.counter_local_cry[23]     ARI1     FCO      Out     0.016     1.429 f     -         
+counter_local_cry[23]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[24]     ARI1     FCI      In      -         1.429 f     -         
+Recip_Freq_Count_0.counter_local_cry[24]     ARI1     FCO      Out     0.016     1.446 f     -         
+counter_local_cry[24]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[25]     ARI1     FCI      In      -         1.446 f     -         
+Recip_Freq_Count_0.counter_local_cry[25]     ARI1     FCO      Out     0.016     1.462 f     -         
+counter_local_cry[25]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[26]     ARI1     FCI      In      -         1.462 f     -         
+Recip_Freq_Count_0.counter_local_cry[26]     ARI1     FCO      Out     0.016     1.478 f     -         
+counter_local_cry[26]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_cry[27]     ARI1     FCI      In      -         1.478 f     -         
+Recip_Freq_Count_0.counter_local_cry[27]     ARI1     FCO      Out     0.016     1.494 f     -         
+counter_local_cry[27]                        Net      -        -       0.000     -           1         
+Recip_Freq_Count_0.counter_local_s[28]       ARI1     FCI      In      -         1.494 f     -         
+Recip_Freq_Count_0.counter_local_s[28]       ARI1     S        Out     0.073     1.567 r     -         
+counter_local_s[28]                          Net      -        -       0.248     -           1         
+Recip_Freq_Count_0.counter_local[28]         SLE      D        In      -         1.816 r     -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 2.071 is 1.077(52.0%) logic and 0.994(48.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: Gate_Set|signal_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                            Arrival          
+Instance                   Reference                          Type     Pin     Net             Time        Slack
+                           Clock                                                                                
+----------------------------------------------------------------------------------------------------------------
+Gate_Set_0.counter[0]      Gate_Set|signal_inferred_clock     SLE      Q       counter[0]      0.108       6.735
+Gate_Set_0.counter[5]      Gate_Set|signal_inferred_clock     SLE      Q       counter[5]      0.087       6.887
+Gate_Set_0.counter[14]     Gate_Set|signal_inferred_clock     SLE      Q       counter[14]     0.087       6.949
+Gate_Set_0.counter[6]      Gate_Set|signal_inferred_clock     SLE      Q       counter[6]      0.108       6.986
+Gate_Set_0.counter[20]     Gate_Set|signal_inferred_clock     SLE      Q       counter[20]     0.108       7.021
+Gate_Set_0.counter[4]      Gate_Set|signal_inferred_clock     SLE      Q       counter[4]      0.108       7.029
+Gate_Set_0.counter[15]     Gate_Set|signal_inferred_clock     SLE      Q       counter[15]     0.108       7.029
+Gate_Set_0.counter[17]     Gate_Set|signal_inferred_clock     SLE      Q       counter[17]     0.108       7.047
+Gate_Set_0.counter[24]     Gate_Set|signal_inferred_clock     SLE      Q       counter[24]     0.108       7.060
+Gate_Set_0.counter[1]      Gate_Set|signal_inferred_clock     SLE      Q       counter[1]      0.108       7.061
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                                                     Required          
+Instance                   Reference                          Type     Pin     Net                      Time         Slack
+                           Clock                                                                                          
+--------------------------------------------------------------------------------------------------------------------------
+Gate_Set_0.sample_gate     Gate_Set|signal_inferred_clock     SLE      D       sample_gate_1            9.745        6.735
+Gate_Set_0.counter[5]      Gate_Set|signal_inferred_clock     SLE      D       counter_3[5]             9.745        6.738
+Gate_Set_0.counter[7]      Gate_Set|signal_inferred_clock     SLE      D       counter_3[7]             9.745        6.738
+Gate_Set_0.counter[9]      Gate_Set|signal_inferred_clock     SLE      D       counter_3[9]             9.745        6.738
+Gate_Set_0.counter[10]     Gate_Set|signal_inferred_clock     SLE      D       counter_3[10]            9.745        6.738
+Gate_Set_0.counter[15]     Gate_Set|signal_inferred_clock     SLE      D       counter_3[15]            9.745        6.738
+Gate_Set_0.counter[16]     Gate_Set|signal_inferred_clock     SLE      D       counter_3[16]            9.745        6.738
+Gate_Set_0.counter[31]     Gate_Set|signal_inferred_clock     SLE      D       un5_counter_s_31_S       9.745        7.880
+Gate_Set_0.counter[30]     Gate_Set|signal_inferred_clock     SLE      D       un5_counter_cry_30_S     9.745        7.896
+Gate_Set_0.counter[29]     Gate_Set|signal_inferred_clock     SLE      D       un5_counter_cry_29_S     9.745        7.912
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.010
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 6.735
+
+    Number of logic level(s):                3
+    Starting point:                          Gate_Set_0.counter[0] / Q
+    Ending point:                            Gate_Set_0.sample_gate / D
+    The start point is clocked by            Gate_Set|signal_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+    The end   point is clocked by            Gate_Set|signal_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                           Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+Gate_Set_0.counter[0]          SLE      Q        Out     0.108     0.108 f     -         
+counter[0]                     Net      -        -       0.745     -           3         
+Gate_Set_0.sample_gate5_16     CFG4     D        In      -         0.854 f     -         
+Gate_Set_0.sample_gate5_16     CFG4     Y        Out     0.288     1.141 f     -         
+sample_gate5_16                Net      -        -       0.248     -           1         
+Gate_Set_0.sample_gate5_28     CFG4     C        In      -         1.390 f     -         
+Gate_Set_0.sample_gate5_28     CFG4     Y        Out     0.210     1.599 f     -         
+sample_gate5_28                Net      -        -       0.936     -           7         
+Gate_Set_0.sample_gate_1       CFG3     C        In      -         2.536 f     -         
+Gate_Set_0.sample_gate_1       CFG3     Y        Out     0.226     2.761 r     -         
+sample_gate_1                  Net      -        -       0.248     -           1         
+Gate_Set_0.sample_gate         SLE      D        In      -         3.010 r     -         
+=========================================================================================
+Total path delay (propagation time + setup) of 3.265 is 1.087(33.3%) logic and 2.179(66.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                                                                  Arrival          
+Instance                           Reference                                         Type     Pin     Net                    Time        Slack
+                                   Clock                                                                                                      
+----------------------------------------------------------------------------------------------------------------------------------------------
+SPI_Slave_0.Data_index[3]          board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       Data_index[3]          0.108       6.538
+SPI_Slave_0.Data_index[4]          board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       Data_index[4]          0.108       6.746
+SPI_Slave_0.SPI_MISO_Bit           board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       SPI_MISO_Bitrs         0.108       7.054
+SPI_Slave_0.un1_SPI_CS_n_1_set     board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       un1_SPI_CS_n_1_set     0.108       7.177
+SPI_Slave_0.Data_index[1]          board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       Data_index[1]          0.108       7.323
+SPI_Slave_0.Data_index[2]          board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       Data_index[2]          0.108       7.464
+SPI_Slave_0.Data_index[0]          board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE      Q       Data_index[0]          0.108       7.813
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                                                               Required          
+Instance                              Reference                                         Type        Pin                  Net                 Time         Slack
+                                      Clock                                                                                                                    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+SPI_Slave_0.SPI_MISO_Bit              board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    SPI_MISO_Bit_3      9.745        6.538
+board_deploy_MSS_0.MSS_ADLIB_INST     board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     MSS_025     SPI1_SDI_F2H_SCP     SPI_MISO_Bit        8.738        7.054
+SPI_Slave_0.Data_index[4]             board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    N_8_i               9.745        7.813
+SPI_Slave_0.Data_index[3]             board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    N_7_i               9.745        7.900
+SPI_Slave_0.Data_index[2]             board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    N_6_i               9.745        8.226
+SPI_Slave_0.Data_index[1]             board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    N_5_i               9.745        8.287
+SPI_Slave_0.Data_index[0]             board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     SLE         D                    Data_index_c0_i     9.745        8.352
+===============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.206
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 6.538
+
+    Number of logic level(s):                5
+    Starting point:                          SPI_Slave_0.Data_index[3] / Q
+    Ending point:                            SPI_Slave_0.SPI_MISO_Bit / D
+    The start point is clocked by            board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+    The end   point is clocked by            board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                        Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+SPI_Slave_0.Data_index[3]                   SLE      Q        Out     0.108     0.108 f     -         
+Data_index[3]                               Net      -        -       1.161     -           18        
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_15     ARI1     B        In      -         1.270 f     -         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_15     ARI1     Y        Out     0.165     1.434 r     -         
+SPI_MISO_Bit_3_31_1_y0_6                    Net      -        -       0.248     -           1         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_16     ARI1     A        In      -         1.683 r     -         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_16     ARI1     Y        Out     0.100     1.783 r     -         
+SPI_MISO_Bit_3_31_1_y5_0                    Net      -        -       0.248     -           1         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_19     ARI1     B        In      -         2.031 r     -         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_19     ARI1     Y        Out     0.165     2.196 r     -         
+SPI_MISO_Bit_3_31_1_y0_8                    Net      -        -       0.248     -           1         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_20     ARI1     A        In      -         2.444 r     -         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_20     ARI1     Y        Out     0.100     2.545 r     -         
+SPI_MISO_Bit_3_31_1_0_y21                   Net      -        -       0.248     -           1         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_22     ARI1     B        In      -         2.793 r     -         
+SPI_Slave_0.SPI_MISO_Bit_3_31_1_wmux_22     ARI1     Y        Out     0.165     2.958 r     -         
+SPI_MISO_Bit_3                              Net      -        -       0.248     -           1         
+SPI_Slave_0.SPI_MISO_Bit                    SLE      D        In      -         3.206 r     -         
+======================================================================================================
+Total path delay (propagation time + setup) of 3.462 is 1.058(30.6%) logic and 2.404(69.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                           Starting                                                        Arrival          
+Instance                                   Reference     Type       Pin        Net                         Time        Slack
+                                           Clock                                                                            
+----------------------------------------------------------------------------------------------------------------------------
+OSC_C0_0.OSC_C0_0.I_XTLOSC                 System        XTLOSC     CLKOUT     N_XTLOSC_CLKOUT             0.000       6.076
+FCCC_C1_0.FCCC_C1_0.CCC_INST               System        CCC        GL3        GL3_net                     0.000       6.522
+FCCC_C1_0.FCCC_C1_0.CCC_INST               System        CCC        GL1        GL1_net                     0.000       6.663
+FCCC_C1_0.FCCC_C1_0.CCC_INST               System        CCC        GL2        GL2_net                     0.000       6.724
+FCCC_C1_0.FCCC_C1_0.CCC_INST               System        CCC        GL0        GL0_net_i                   0.000       7.643
+fine_counter_0.un1_rising_error41_3_rs     System        SLE        Q          un1_rising_error41_3_rs     0.087       8.957
+fine_counter_0.un1_rising_error41_4_rs     System        SLE        Q          un1_rising_error41_4_rs     0.087       8.957
+fine_counter_0.un1_rising_error41_5_rs     System        SLE        Q          un1_rising_error41_5_rs     0.087       8.957
+============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                     Starting                                                         Required          
+Instance                             Reference     Type     Pin      Net                              Time         Slack
+                                     Clock                                                                              
+------------------------------------------------------------------------------------------------------------------------
+FCCC_C1_0.FCCC_C1_0.CCC_INST         System        CCC      CLK0     OSC_C0_0_XTLOSC_O2F              10.000       6.076
+FCCC_C0_0.FCCC_C0_0.CCC_INST         System        CCC      CLK0     OSC_C0_0_XTLOSC_O2F              10.000       6.076
+fine_counter_0.rising_error[0]       System        SLE      D        N_6_i                            9.745        6.522
+fine_counter_0.rising_error_1[0]     System        SLE      D        N_6_i                            9.745        6.522
+fine_counter_0.rising_error[3]       System        SLE      D        un1_rising_error36_1             9.745        6.770
+fine_counter_0.rising_error[1]       System        SLE      D        rising_error_4[1]                9.745        6.871
+fine_counter_0.rising_error_1[1]     System        SLE      D        rising_error_2[1]                9.745        6.871
+SPI_Slave_0.Data[0]                  System        SLE      D        fine_counter_0_fine_count[0]     9.745        8.957
+SPI_Slave_0.Data[1]                  System        SLE      D        fine_counter_0_fine_count[1]     9.745        8.957
+SPI_Slave_0.Data[2]                  System        SLE      D        fine_counter_0_fine_count[2]     9.745        8.957
+========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      3.924
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     6.076
+
+    Number of logic level(s):                2
+    Starting point:                          OSC_C0_0.OSC_C0_0.I_XTLOSC / CLKOUT
+    Ending point:                            FCCC_C1_0.FCCC_C1_0.CCC_INST / CLK0
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                           Pin        Pin               Arrival     No. of    
+Name                                      Type           Name       Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+OSC_C0_0.OSC_C0_0.I_XTLOSC                XTLOSC         CLKOUT     Out     0.000     0.000 r     -         
+N_XTLOSC_CLKOUT                           Net            -          -       1.117     -           1         
+OSC_C0_0.OSC_C0_0.I_XTLOSC_FAB            XTLOSC_FAB     A          In      -         1.117 r     -         
+OSC_C0_0.OSC_C0_0.I_XTLOSC_FAB            XTLOSC_FAB     CLKOUT     Out     0.180     1.297 r     -         
+N_XTLOSC_CLKINT                           Net            -          -       1.117     -           1         
+OSC_C0_0.OSC_C0_0.I_XTLOSC_FAB_CLKINT     CLKINT         A          In      -         2.414 r     -         
+OSC_C0_0.OSC_C0_0.I_XTLOSC_FAB_CLKINT     CLKINT         Y          Out     0.387     2.801 r     -         
+OSC_C0_0_XTLOSC_O2F                       Net            -          -       1.123     -           2         
+FCCC_C1_0.FCCC_C1_0.CCC_INST              CCC            CLK0       In      -         3.924 r     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 3.924 is 0.567(14.5%) logic and 3.357(85.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 170MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 170MB)
+
+---------------------------------------
+Resource Usage Report for board_deploy 
+
+Mapping to part: m2s025vf400std
+Cell usage:
+CCC             2 uses
+CLKINT          11 uses
+MSS_025         1 use
+SYSRESET        1 use
+XTLOSC          1 use
+XTLOSC_FAB      1 use
+CFG1           10 uses
+CFG2           12 uses
+CFG3           14 uses
+CFG4           16 uses
+
+Carry cells:
+ARI1            90 uses - used for arithmetic functions
+ARI1            24 uses - used for Wide-Mux implementation
+Total ARI1      114 uses
+
+
+Sequential Cells: 
+SLE            144 uses
+
+DSP Blocks:    0 of 34 (0%)
+
+I/O ports: 10
+I/O primitives: 8
+BIBUF          2 uses
+INBUF          3 uses
+OUTBUF         1 use
+TRIBUFF        2 uses
+
+
+Global Clock Buffers: 11
+
+Total LUTs:    166
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  144 + 0 + 0 + 0 = 144;
+Total number of LUTs after P&R:  166 + 0 + 0 + 0 = 166;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 61MB peak: 170MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat May  8 23:19:13 2021
+
+###########################################################]

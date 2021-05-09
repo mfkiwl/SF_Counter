@@ -1,0 +1,32 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v":22:7:22:18|Synthesizing module Add_Counters in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":268:7:268:11|Synthesizing module INBUF in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":280:7:280:13|Synthesizing module TRIBUFF in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v":5:7:5:13|Synthesizing module MSS_025 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":286:7:286:11|Synthesizing module BIBUF in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v":9:7:9:22|Synthesizing module board_deploy_MSS in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":729:7:729:9|Synthesizing module CCC in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C0_FCCC_C0_0_FCCC in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C1_FCCC_C1_0_FCCC in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v":9:7:9:13|Synthesizing module FCCC_C1 in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":21:7:21:18|Synthesizing module fine_counter in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":2:7:2:14|Synthesizing module Gate_Set in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":63:7:63:16|Synthesizing module XTLOSC_FAB in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":23:7:23:12|Synthesizing module XTLOSC in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":5:7:5:25|Synthesizing module OSC_C0_OSC_C0_0_OSC in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v":9:7:9:12|Synthesizing module OSC_C0 in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":3:7:3:22|Synthesizing module Recip_Freq_Count in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":3:7:3:15|Synthesizing module SPI_Slave in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v":9:7:9:18|Synthesizing module board_deploy in library work.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":6:20:6:24|Input reset is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":7:20:7:22|Input clk is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":15:14:15:21|Input SPI_MOSI is unused.
+@N|Running in 64-bit mode
+

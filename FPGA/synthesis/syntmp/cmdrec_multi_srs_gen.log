@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  board_deploy  -multisrs  C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.srs  -osyn  C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_mult.srs  -log  C:\Libero\Projects\board_deploy\board_deploy\synthesis\synlog\board_deploy_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.5\SynplifyPro\bin64\syn_nfilter.exe -link -top board_deploy -multisrs ..\synwork\board_deploy_comp.srs -osyn ..\synwork\board_deploy_mult.srs -log ..\synlog\board_deploy_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\board_deploy_comp.srs|io:i|time:1620533949|size:62365|exec:0|csum:89E712B70CAAF66D6F5A150DC2FA60A6
+file:..\synwork\board_deploy_mult.srs|io:o|time:1620533951|size:5854|exec:0|csum:
+file:..\synlog\board_deploy_multi_srs_gen.srr|io:o|time:1620533951|size:1164|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.5\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1592742899|size:8875008|exec:1|csum:5D649773CE06DBF315FAA656C31B87F1

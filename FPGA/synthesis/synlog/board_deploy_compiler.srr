@@ -1,0 +1,267 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v" (library work)
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":10:8:10:18|sample_gate is already declared in this scope.
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v" (library work)
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":12:15:12:27|recip_counter is already declared in this scope.
+@W: CG921 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":14:8:14:18|recip_valid is already declared in this scope.
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v" (library work)
+@I::"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v" (library work)
+Verilog syntax check successful!
+File C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v changed - recompiling
+File C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v changed - recompiling
+Selecting top level module board_deploy
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v":22:7:22:18|Synthesizing module Add_Counters in library work.
+Running optimization stage 1 on Add_Counters .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":268:7:268:11|Synthesizing module INBUF in library work.
+Running optimization stage 1 on INBUF .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":280:7:280:13|Synthesizing module TRIBUFF in library work.
+Running optimization stage 1 on TRIBUFF .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS_syn.v":5:7:5:13|Synthesizing module MSS_025 in library work.
+Running optimization stage 1 on MSS_025 .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":286:7:286:11|Synthesizing module BIBUF in library work.
+Running optimization stage 1 on BIBUF .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy_MSS\board_deploy_MSS.v":9:7:9:22|Synthesizing module board_deploy_MSS in library work.
+Running optimization stage 1 on board_deploy_MSS .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC in library work.
+Running optimization stage 1 on VCC .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND in library work.
+Running optimization stage 1 on GND .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+Running optimization stage 1 on CLKINT .......
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":729:7:729:9|Synthesizing module CCC in library work.
+Running optimization stage 1 on CCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C0_FCCC_C0_0_FCCC in library work.
+Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C0\FCCC_C0.v":9:7:9:13|Synthesizing module FCCC_C0 in library work.
+Running optimization stage 1 on FCCC_C0 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v":5:7:5:28|Synthesizing module FCCC_C1_FCCC_C1_0_FCCC in library work.
+Running optimization stage 1 on FCCC_C1_FCCC_C1_0_FCCC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\FCCC_C1\FCCC_C1.v":9:7:9:13|Synthesizing module FCCC_C1 in library work.
+Running optimization stage 1 on FCCC_C1 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":21:7:21:18|Synthesizing module fine_counter in library work.
+@W: CS142 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":21:65:21:74|Range of port fine_count in port declaration and body are different.
+Running optimization stage 1 on fine_counter .......
+@A: CL291 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Register rising_error with asynchronous load is being synthesized in compatability mode. A synthesis/simulation mismatch is possible.
+@W: CL113 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Feedback mux created for signal falling_error[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL250 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|All reachable assignments to falling_error[31:0] assign 0, register removed by optimization
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Optimizing register bit rising_error[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Pruning register bits 31 to 3 of rising_error[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":2:7:2:14|Synthesizing module Gate_Set in library work.
+@W: CG879 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Gate_Set.v":13:8:13:13|Treating non-constant declarative assignment to variable signal as a regular assign based on type - value could be overwritten in later writes. To ignore the dynamic initial value, please use the macro SYN_COMPATIBLE
+Running optimization stage 1 on Gate_Set .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":63:7:63:16|Synthesizing module XTLOSC_FAB in library work.
+Running optimization stage 1 on XTLOSC_FAB .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":23:7:23:12|Synthesizing module XTLOSC in library work.
+Running optimization stage 1 on XTLOSC .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":5:7:5:25|Synthesizing module OSC_C0_OSC_C0_0_OSC in library work.
+Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":15:7:15:24|*Output RCOSC_25_50MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":16:7:16:24|*Output RCOSC_25_50MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v":19:7:19:16|*Output XTLOSC_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\OSC_C0\OSC_C0.v":9:7:9:12|Synthesizing module OSC_C0 in library work.
+Running optimization stage 1 on OSC_C0 .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Recip_Freq_Counter.v":3:7:3:22|Synthesizing module Recip_Freq_Count in library work.
+Running optimization stage 1 on Recip_Freq_Count .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":3:7:3:15|Synthesizing module SPI_Slave in library work.
+@W: CG133 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":19:13:19:19|Object counter is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on SPI_Slave .......
+@A: CL291 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":32:2:32:7|Register SPI_MISO_Bit with asynchronous load is being synthesized in compatability mode. A synthesis/simulation mismatch is possible.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\lib\generic\smartfusion2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
+Running optimization stage 1 on SYSRESET .......
+@N: CG364 :"C:\Libero\Projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v":9:7:9:18|Synthesizing module board_deploy in library work.
+Running optimization stage 1 on board_deploy .......
+Running optimization stage 2 on board_deploy .......
+Running optimization stage 2 on SYSRESET .......
+Running optimization stage 2 on SPI_Slave .......
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":6:20:6:24|Input reset is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":7:20:7:22|Input clk is unused.
+@N: CL159 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\SPI_slave.v":15:14:15:21|Input SPI_MOSI is unused.
+Running optimization stage 2 on Recip_Freq_Count .......
+Running optimization stage 2 on OSC_C0 .......
+Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
+Running optimization stage 2 on XTLOSC .......
+Running optimization stage 2 on XTLOSC_FAB .......
+Running optimization stage 2 on Gate_Set .......
+Running optimization stage 2 on fine_counter .......
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[4]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[5]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[6]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[7]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[8]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[9]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[10]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[11]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[12]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[13]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[14]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[15]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[16]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[17]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[18]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[19]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[20]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[21]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[22]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[23]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[24]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[25]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[26]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[27]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[28]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[29]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[30]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":55:4:55:9|Pruning unused register rising_error[31]. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on FCCC_C1 .......
+Running optimization stage 2 on FCCC_C1_FCCC_C1_0_FCCC .......
+Running optimization stage 2 on FCCC_C0 .......
+Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
+Running optimization stage 2 on CCC .......
+Running optimization stage 2 on CLKINT .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on board_deploy_MSS .......
+Running optimization stage 2 on BIBUF .......
+Running optimization stage 2 on MSS_025 .......
+Running optimization stage 2 on TRIBUFF .......
+Running optimization stage 2 on INBUF .......
+Running optimization stage 2 on Add_Counters .......
+@W: CL246 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\Add_Counter.v":24:17:24:27|Input port bits 31 to 29 of recip_count[31:0] are unused. Assign logic for all port bits or change the input port size.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 93MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:09 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp202003syn, Build 175R, Built Jun  5 2020 09:18:53, @
+
+@N|Running in 64-bit mode
+File C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:10 2021
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May  8 23:19:10 2021
+
+###########################################################]

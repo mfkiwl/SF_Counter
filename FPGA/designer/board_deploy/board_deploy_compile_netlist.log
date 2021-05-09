@@ -1,0 +1,36 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       11 
+      Globals that cannot be demoted:      5 
+      Globals considered for demotion:     6 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    29     0      6      'FCCC_C1_0/FCCC_C1_0/GL0_INST' 
+    1      0      0      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    0      0      6      'FCCC_C1_0/FCCC_C1_0/GL3_INST' 
+    0      0      5      'FCCC_C1_0/FCCC_C1_0/GL1_INST' 
+    0      0      5      'FCCC_C1_0/FCCC_C1_0/GL2_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    39     0      1      'Gate_Set_0/sample_gate_inferred_clock_RNI47AD' 
+    33     0      0      'Gate_Set_0/signal_inferred_clock_RNI0SS7' 
+    32     0      2      'board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC' 
+    8      0      0      'board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31' 
+    2      0      0      'OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB_CLKINT' 
+    0      37     0      'SYSRESET_0_RNIHNV1' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'Gate_Set_0/sample_gate_inferred_clock_RNI47AD'. 
+      Disconnected 2 data pins from global 'board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

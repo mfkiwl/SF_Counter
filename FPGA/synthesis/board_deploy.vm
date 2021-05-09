@@ -1,0 +1,5393 @@
+//
+// Written by Synplify Pro 
+// Product Version "Q-2020.03M"
+// Program "Synplify Pro", Mapper "map202003act, Build 065R"
+// Sat May  8 23:19:13 2021
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\generic\smartfusion2.v "
+// file 1 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\vlog\hypermods.v "
+// file 2 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\vlog\umr_capim.v "
+// file 3 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\vlog\scemi_objects.v "
+// file 4 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\vlog\scemi_pipes.svh "
+// file 5 "\c:\libero\projects\board_deploy\board_deploy\hdl\add_counter.v "
+// file 6 "\c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.v "
+// file 7 "\c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c0\fccc_c0.v "
+// file 8 "\c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c1\fccc_c1_0\fccc_c1_fccc_c1_0_fccc.v "
+// file 9 "\c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c1\fccc_c1.v "
+// file 10 "\c:\libero\projects\board_deploy\board_deploy\hdl\gate_set.v "
+// file 11 "\c:\libero\projects\board_deploy\board_deploy\component\actel\sgcore\osc\2.0.101\osc_comps.v "
+// file 12 "\c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v "
+// file 13 "\c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0.v "
+// file 14 "\c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v "
+// file 15 "\c:\libero\projects\board_deploy\board_deploy\hdl\spi_slave.v "
+// file 16 "\c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss_syn.v "
+// file 17 "\c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss.v "
+// file 18 "\c:\libero\projects\board_deploy\board_deploy\hdl\fine_counter.v "
+// file 19 "\c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy\board_deploy.v "
+// file 20 "\c:\microsemi\libero_soc_v12.5\synplifypro\lib\nlconst.dat "
+// file 21 "\c:\libero\projects\board_deploy\board_deploy\designer\board_deploy\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module Add_Counters (
+  Recip_Freq_Count_0_recip_counter,
+  Add_Counters_0_final_count,
+  fine_counter_0_fine_count_0,
+  final_count_cry_0_Y
+)
+;
+input [28:0] Recip_Freq_Count_0_recip_counter ;
+output [31:4] Add_Counters_0_final_count ;
+input fine_counter_0_fine_count_0 ;
+output final_count_cry_0_Y ;
+wire fine_counter_0_fine_count_0 ;
+wire final_count_cry_0_Y ;
+wire final_count_cry_0_Z ;
+wire final_count_cry_0_S ;
+wire GND ;
+wire final_count_cry_1_Z ;
+wire final_count_cry_1_Y ;
+wire final_count_cry_2_Z ;
+wire final_count_cry_2_Y ;
+wire final_count_cry_3_Z ;
+wire final_count_cry_3_Y ;
+wire final_count_cry_4_Z ;
+wire final_count_cry_4_Y ;
+wire final_count_cry_5_Z ;
+wire final_count_cry_5_Y ;
+wire final_count_cry_6_Z ;
+wire final_count_cry_6_Y ;
+wire final_count_cry_7_Z ;
+wire final_count_cry_7_Y ;
+wire final_count_cry_8_Z ;
+wire final_count_cry_8_Y ;
+wire final_count_cry_9_Z ;
+wire final_count_cry_9_Y ;
+wire final_count_cry_10_Z ;
+wire final_count_cry_10_Y ;
+wire final_count_cry_11_Z ;
+wire final_count_cry_11_Y ;
+wire final_count_cry_12_Z ;
+wire final_count_cry_12_Y ;
+wire final_count_cry_13_Z ;
+wire final_count_cry_13_Y ;
+wire final_count_cry_14_Z ;
+wire final_count_cry_14_Y ;
+wire final_count_cry_15_Z ;
+wire final_count_cry_15_Y ;
+wire final_count_cry_16_Z ;
+wire final_count_cry_16_Y ;
+wire final_count_cry_17_Z ;
+wire final_count_cry_17_Y ;
+wire final_count_cry_18_Z ;
+wire final_count_cry_18_Y ;
+wire final_count_cry_19_Z ;
+wire final_count_cry_19_Y ;
+wire final_count_cry_20_Z ;
+wire final_count_cry_20_Y ;
+wire final_count_cry_21_Z ;
+wire final_count_cry_21_Y ;
+wire final_count_cry_22_Z ;
+wire final_count_cry_22_Y ;
+wire final_count_cry_23_Z ;
+wire final_count_cry_23_Y ;
+wire final_count_cry_24_Z ;
+wire final_count_cry_24_Y ;
+wire final_count_cry_25_Z ;
+wire final_count_cry_25_Y ;
+wire final_count_cry_26_Z ;
+wire final_count_cry_26_Y ;
+wire final_count_s_28_FCO ;
+wire final_count_s_28_Y ;
+wire VCC ;
+wire final_count_cry_27_Z ;
+wire final_count_cry_27_Y ;
+// @5:30
+  ARI1 final_count_cry_0 (
+	.FCO(final_count_cry_0_Z),
+	.S(final_count_cry_0_S),
+	.Y(final_count_cry_0_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[0]),
+	.FCI(GND)
+);
+defparam final_count_cry_0.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_1 (
+	.FCO(final_count_cry_1_Z),
+	.S(Add_Counters_0_final_count[4]),
+	.Y(final_count_cry_1_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[1]),
+	.FCI(final_count_cry_0_Z)
+);
+defparam final_count_cry_1.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_2 (
+	.FCO(final_count_cry_2_Z),
+	.S(Add_Counters_0_final_count[5]),
+	.Y(final_count_cry_2_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[2]),
+	.FCI(final_count_cry_1_Z)
+);
+defparam final_count_cry_2.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_3 (
+	.FCO(final_count_cry_3_Z),
+	.S(Add_Counters_0_final_count[6]),
+	.Y(final_count_cry_3_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[3]),
+	.FCI(final_count_cry_2_Z)
+);
+defparam final_count_cry_3.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_4 (
+	.FCO(final_count_cry_4_Z),
+	.S(Add_Counters_0_final_count[7]),
+	.Y(final_count_cry_4_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[4]),
+	.FCI(final_count_cry_3_Z)
+);
+defparam final_count_cry_4.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_5 (
+	.FCO(final_count_cry_5_Z),
+	.S(Add_Counters_0_final_count[8]),
+	.Y(final_count_cry_5_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[5]),
+	.FCI(final_count_cry_4_Z)
+);
+defparam final_count_cry_5.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_6 (
+	.FCO(final_count_cry_6_Z),
+	.S(Add_Counters_0_final_count[9]),
+	.Y(final_count_cry_6_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[6]),
+	.FCI(final_count_cry_5_Z)
+);
+defparam final_count_cry_6.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_7 (
+	.FCO(final_count_cry_7_Z),
+	.S(Add_Counters_0_final_count[10]),
+	.Y(final_count_cry_7_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[7]),
+	.FCI(final_count_cry_6_Z)
+);
+defparam final_count_cry_7.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_8 (
+	.FCO(final_count_cry_8_Z),
+	.S(Add_Counters_0_final_count[11]),
+	.Y(final_count_cry_8_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[8]),
+	.FCI(final_count_cry_7_Z)
+);
+defparam final_count_cry_8.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_9 (
+	.FCO(final_count_cry_9_Z),
+	.S(Add_Counters_0_final_count[12]),
+	.Y(final_count_cry_9_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[9]),
+	.FCI(final_count_cry_8_Z)
+);
+defparam final_count_cry_9.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_10 (
+	.FCO(final_count_cry_10_Z),
+	.S(Add_Counters_0_final_count[13]),
+	.Y(final_count_cry_10_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[10]),
+	.FCI(final_count_cry_9_Z)
+);
+defparam final_count_cry_10.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_11 (
+	.FCO(final_count_cry_11_Z),
+	.S(Add_Counters_0_final_count[14]),
+	.Y(final_count_cry_11_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[11]),
+	.FCI(final_count_cry_10_Z)
+);
+defparam final_count_cry_11.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_12 (
+	.FCO(final_count_cry_12_Z),
+	.S(Add_Counters_0_final_count[15]),
+	.Y(final_count_cry_12_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[12]),
+	.FCI(final_count_cry_11_Z)
+);
+defparam final_count_cry_12.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_13 (
+	.FCO(final_count_cry_13_Z),
+	.S(Add_Counters_0_final_count[16]),
+	.Y(final_count_cry_13_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[13]),
+	.FCI(final_count_cry_12_Z)
+);
+defparam final_count_cry_13.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_14 (
+	.FCO(final_count_cry_14_Z),
+	.S(Add_Counters_0_final_count[17]),
+	.Y(final_count_cry_14_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[14]),
+	.FCI(final_count_cry_13_Z)
+);
+defparam final_count_cry_14.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_15 (
+	.FCO(final_count_cry_15_Z),
+	.S(Add_Counters_0_final_count[18]),
+	.Y(final_count_cry_15_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[15]),
+	.FCI(final_count_cry_14_Z)
+);
+defparam final_count_cry_15.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_16 (
+	.FCO(final_count_cry_16_Z),
+	.S(Add_Counters_0_final_count[19]),
+	.Y(final_count_cry_16_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[16]),
+	.FCI(final_count_cry_15_Z)
+);
+defparam final_count_cry_16.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_17 (
+	.FCO(final_count_cry_17_Z),
+	.S(Add_Counters_0_final_count[20]),
+	.Y(final_count_cry_17_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[17]),
+	.FCI(final_count_cry_16_Z)
+);
+defparam final_count_cry_17.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_18 (
+	.FCO(final_count_cry_18_Z),
+	.S(Add_Counters_0_final_count[21]),
+	.Y(final_count_cry_18_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[18]),
+	.FCI(final_count_cry_17_Z)
+);
+defparam final_count_cry_18.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_19 (
+	.FCO(final_count_cry_19_Z),
+	.S(Add_Counters_0_final_count[22]),
+	.Y(final_count_cry_19_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[19]),
+	.FCI(final_count_cry_18_Z)
+);
+defparam final_count_cry_19.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_20 (
+	.FCO(final_count_cry_20_Z),
+	.S(Add_Counters_0_final_count[23]),
+	.Y(final_count_cry_20_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[20]),
+	.FCI(final_count_cry_19_Z)
+);
+defparam final_count_cry_20.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_21 (
+	.FCO(final_count_cry_21_Z),
+	.S(Add_Counters_0_final_count[24]),
+	.Y(final_count_cry_21_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[21]),
+	.FCI(final_count_cry_20_Z)
+);
+defparam final_count_cry_21.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_22 (
+	.FCO(final_count_cry_22_Z),
+	.S(Add_Counters_0_final_count[25]),
+	.Y(final_count_cry_22_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[22]),
+	.FCI(final_count_cry_21_Z)
+);
+defparam final_count_cry_22.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_23 (
+	.FCO(final_count_cry_23_Z),
+	.S(Add_Counters_0_final_count[26]),
+	.Y(final_count_cry_23_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[23]),
+	.FCI(final_count_cry_22_Z)
+);
+defparam final_count_cry_23.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_24 (
+	.FCO(final_count_cry_24_Z),
+	.S(Add_Counters_0_final_count[27]),
+	.Y(final_count_cry_24_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[24]),
+	.FCI(final_count_cry_23_Z)
+);
+defparam final_count_cry_24.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_25 (
+	.FCO(final_count_cry_25_Z),
+	.S(Add_Counters_0_final_count[28]),
+	.Y(final_count_cry_25_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[25]),
+	.FCI(final_count_cry_24_Z)
+);
+defparam final_count_cry_25.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_cry_26 (
+	.FCO(final_count_cry_26_Z),
+	.S(Add_Counters_0_final_count[29]),
+	.Y(final_count_cry_26_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[26]),
+	.FCI(final_count_cry_25_Z)
+);
+defparam final_count_cry_26.INIT=20'h555AA;
+// @5:30
+  ARI1 final_count_s_28 (
+	.FCO(final_count_s_28_FCO),
+	.S(Add_Counters_0_final_count[31]),
+	.Y(final_count_s_28_Y),
+	.B(Recip_Freq_Count_0_recip_counter[28]),
+	.C(fine_counter_0_fine_count_0),
+	.D(GND),
+	.A(VCC),
+	.FCI(final_count_cry_27_Z)
+);
+defparam final_count_s_28.INIT=20'h46600;
+// @5:30
+  ARI1 final_count_cry_27 (
+	.FCO(final_count_cry_27_Z),
+	.S(Add_Counters_0_final_count[30]),
+	.Y(final_count_cry_27_Y),
+	.B(fine_counter_0_fine_count_0),
+	.C(GND),
+	.D(GND),
+	.A(Recip_Freq_Count_0_recip_counter[27]),
+	.FCI(final_count_cry_26_Z)
+);
+defparam final_count_cry_27.INIT=20'h555AA;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* Add_Counters */
+
+module FCCC_C0_FCCC_C0_0_FCCC (
+  OSC_C0_0_XTLOSC_O2F,
+  FCCC_C0_0_GL0
+)
+;
+input OSC_C0_0_XTLOSC_O2F ;
+output FCCC_C0_0_GL0 ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire FCCC_C0_0_GL0 ;
+wire [7:0] PRDATA;
+wire GL0_net ;
+wire Y0 ;
+wire Y1 ;
+wire Y2 ;
+wire Y3 ;
+wire LOCK ;
+wire BUSY ;
+wire VCC ;
+wire GND ;
+wire GL1 ;
+wire GL2 ;
+wire GL3 ;
+// @6:18
+  CLKINT GL0_INST (
+	.Y(FCCC_C0_0_GL0),
+	.A(GL0_net)
+);
+//@7:57
+// @6:20
+  CCC CCC_INST (
+	.Y0(Y0),
+	.Y1(Y1),
+	.Y2(Y2),
+	.Y3(Y3),
+	.PRDATA(PRDATA[7:0]),
+	.LOCK(LOCK),
+	.BUSY(BUSY),
+	.CLK0(OSC_C0_0_XTLOSC_O2F),
+	.CLK1(VCC),
+	.CLK2(VCC),
+	.CLK3(VCC),
+	.NGMUX0_SEL(GND),
+	.NGMUX1_SEL(GND),
+	.NGMUX2_SEL(GND),
+	.NGMUX3_SEL(GND),
+	.NGMUX0_HOLD_N(VCC),
+	.NGMUX1_HOLD_N(VCC),
+	.NGMUX2_HOLD_N(VCC),
+	.NGMUX3_HOLD_N(VCC),
+	.NGMUX0_ARST_N(VCC),
+	.NGMUX1_ARST_N(VCC),
+	.NGMUX2_ARST_N(VCC),
+	.NGMUX3_ARST_N(VCC),
+	.PLL_BYPASS_N(VCC),
+	.PLL_ARST_N(VCC),
+	.PLL_POWERDOWN_N(VCC),
+	.GPD0_ARST_N(VCC),
+	.GPD1_ARST_N(VCC),
+	.GPD2_ARST_N(VCC),
+	.GPD3_ARST_N(VCC),
+	.PRESET_N(GND),
+	.PCLK(VCC),
+	.PSEL(VCC),
+	.PENABLE(VCC),
+	.PWRITE(VCC),
+	.PADDR({VCC, VCC, VCC, VCC, VCC, VCC}),
+	.PWDATA({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.CLK0_PAD(GND),
+	.CLK1_PAD(GND),
+	.CLK2_PAD(GND),
+	.CLK3_PAD(GND),
+	.GL0(GL0_net),
+	.GL1(GL1),
+	.GL2(GL2),
+	.GL3(GL3),
+	.RCOSC_25_50MHZ(GND),
+	.RCOSC_1MHZ(GND),
+	.XTLOSC(GND)
+);
+defparam CCC_INST.INIT=212'h00000078A8000045574000718C6318C2318C1DF00404041000101;
+defparam CCC_INST.VCOFREQUENCY=640.0;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* FCCC_C0_FCCC_C0_0_FCCC */
+
+module FCCC_C0 (
+  FCCC_C0_0_GL0,
+  OSC_C0_0_XTLOSC_O2F
+)
+;
+output FCCC_C0_0_GL0 ;
+input OSC_C0_0_XTLOSC_O2F ;
+wire FCCC_C0_0_GL0 ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire GND ;
+wire VCC ;
+// @7:57
+  FCCC_C0_FCCC_C0_0_FCCC FCCC_C0_0 (
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F),
+	.FCCC_C0_0_GL0(FCCC_C0_0_GL0)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* FCCC_C0 */
+
+module FCCC_C1_FCCC_C1_0_FCCC (
+  OSC_C0_0_XTLOSC_O2F,
+  FCCC_C1_0_GL3,
+  FCCC_C1_0_GL1,
+  FCCC_C1_0_GL2,
+  FCCC_C1_0_GL0
+)
+;
+input OSC_C0_0_XTLOSC_O2F ;
+output FCCC_C1_0_GL3 ;
+output FCCC_C1_0_GL1 ;
+output FCCC_C1_0_GL2 ;
+output FCCC_C1_0_GL0 ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire FCCC_C1_0_GL3 ;
+wire FCCC_C1_0_GL1 ;
+wire FCCC_C1_0_GL2 ;
+wire FCCC_C1_0_GL0 ;
+wire [7:0] PRDATA_0;
+wire GL0_net ;
+wire GL2_net ;
+wire GL1_net ;
+wire GL3_net ;
+wire Y0_0 ;
+wire Y1_0 ;
+wire Y2_0 ;
+wire Y3_0 ;
+wire LOCK ;
+wire BUSY_0 ;
+wire VCC ;
+wire GND ;
+// @8:27
+  CLKINT GL0_INST (
+	.Y(FCCC_C1_0_GL0),
+	.A(GL0_net)
+);
+// @8:26
+  CLKINT GL2_INST (
+	.Y(FCCC_C1_0_GL2),
+	.A(GL2_net)
+);
+// @8:23
+  CLKINT GL1_INST (
+	.Y(FCCC_C1_0_GL1),
+	.A(GL1_net)
+);
+// @8:22
+  CLKINT GL3_INST (
+	.Y(FCCC_C1_0_GL3),
+	.A(GL3_net)
+);
+//@9:75
+// @8:29
+  CCC CCC_INST (
+	.Y0(Y0_0),
+	.Y1(Y1_0),
+	.Y2(Y2_0),
+	.Y3(Y3_0),
+	.PRDATA(PRDATA_0[7:0]),
+	.LOCK(LOCK),
+	.BUSY(BUSY_0),
+	.CLK0(OSC_C0_0_XTLOSC_O2F),
+	.CLK1(VCC),
+	.CLK2(VCC),
+	.CLK3(VCC),
+	.NGMUX0_SEL(GND),
+	.NGMUX1_SEL(GND),
+	.NGMUX2_SEL(GND),
+	.NGMUX3_SEL(GND),
+	.NGMUX0_HOLD_N(VCC),
+	.NGMUX1_HOLD_N(VCC),
+	.NGMUX2_HOLD_N(VCC),
+	.NGMUX3_HOLD_N(VCC),
+	.NGMUX0_ARST_N(VCC),
+	.NGMUX1_ARST_N(VCC),
+	.NGMUX2_ARST_N(VCC),
+	.NGMUX3_ARST_N(VCC),
+	.PLL_BYPASS_N(VCC),
+	.PLL_ARST_N(VCC),
+	.PLL_POWERDOWN_N(VCC),
+	.GPD0_ARST_N(VCC),
+	.GPD1_ARST_N(VCC),
+	.GPD2_ARST_N(VCC),
+	.GPD3_ARST_N(VCC),
+	.PRESET_N(GND),
+	.PCLK(VCC),
+	.PSEL(VCC),
+	.PENABLE(VCC),
+	.PWRITE(VCC),
+	.PADDR({VCC, VCC, VCC, VCC, VCC, VCC}),
+	.PWDATA({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.CLK0_PAD(GND),
+	.CLK1_PAD(GND),
+	.CLK2_PAD(GND),
+	.CLK3_PAD(GND),
+	.GL0(GL0_net),
+	.GL1(GL1_net),
+	.GL2(GL2_net),
+	.GL3(GL3_net),
+	.RCOSC_25_50MHZ(GND),
+	.RCOSC_1MHZ(GND),
+	.XTLOSC(GND)
+);
+defparam CCC_INST.INIT=212'h0000007FA8000045174000304C1706C1F18C61F00404040400401;
+defparam CCC_INST.VCOFREQUENCY=800.0;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* FCCC_C1_FCCC_C1_0_FCCC */
+
+module FCCC_C1 (
+  FCCC_C1_0_GL0,
+  FCCC_C1_0_GL2,
+  FCCC_C1_0_GL1,
+  FCCC_C1_0_GL3,
+  OSC_C0_0_XTLOSC_O2F
+)
+;
+output FCCC_C1_0_GL0 ;
+output FCCC_C1_0_GL2 ;
+output FCCC_C1_0_GL1 ;
+output FCCC_C1_0_GL3 ;
+input OSC_C0_0_XTLOSC_O2F ;
+wire FCCC_C1_0_GL0 ;
+wire FCCC_C1_0_GL2 ;
+wire FCCC_C1_0_GL1 ;
+wire FCCC_C1_0_GL3 ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire GND ;
+wire VCC ;
+// @9:75
+  FCCC_C1_FCCC_C1_0_FCCC FCCC_C1_0 (
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F),
+	.FCCC_C1_0_GL3(FCCC_C1_0_GL3),
+	.FCCC_C1_0_GL1(FCCC_C1_0_GL1),
+	.FCCC_C1_0_GL2(FCCC_C1_0_GL2),
+	.FCCC_C1_0_GL0(FCCC_C1_0_GL0)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* FCCC_C1 */
+
+module fine_counter (
+  fine_counter_0_fine_count,
+  FCCC_C1_0_GL1,
+  FCCC_C1_0_GL3,
+  FCCC_C1_0_GL2,
+  FCCC_C1_0_GL0,
+  SYSRESET_0_POWER_ON_RESET_N,
+  Gate_Set_0_sample_gate_i,
+  Gate_Set_0_sample_gate,
+  SYSRESET_0_POWER_ON_RESET_N_arst
+)
+;
+output [3:0] fine_counter_0_fine_count ;
+input FCCC_C1_0_GL1 ;
+input FCCC_C1_0_GL3 ;
+input FCCC_C1_0_GL2 ;
+input FCCC_C1_0_GL0 ;
+input SYSRESET_0_POWER_ON_RESET_N ;
+input Gate_Set_0_sample_gate_i ;
+input Gate_Set_0_sample_gate ;
+input SYSRESET_0_POWER_ON_RESET_N_arst ;
+wire FCCC_C1_0_GL1 ;
+wire FCCC_C1_0_GL3 ;
+wire FCCC_C1_0_GL2 ;
+wire FCCC_C1_0_GL0 ;
+wire SYSRESET_0_POWER_ON_RESET_N ;
+wire Gate_Set_0_sample_gate_i ;
+wire Gate_Set_0_sample_gate ;
+wire SYSRESET_0_POWER_ON_RESET_N_arst ;
+wire [2:0] rising_error_1_Z;
+wire [1:1] rising_error_2;
+wire [2:0] fine_counter_0_fine_countrs;
+wire [1:1] rising_error_4;
+wire un1_rising_error41_2_Z ;
+wire un1_rising_error41_2_i ;
+wire un1_rising_error41_1_Z ;
+wire un1_rising_error41_1_i ;
+wire un1_rising_error41_Z ;
+wire un1_rising_error41_i ;
+wire VCC ;
+wire N_6_i_Z ;
+wire GND ;
+wire un1_rising_error33_1_Z ;
+wire un1_rising_error36_1_Z ;
+wire un1_rising_error41_set_Z ;
+wire un1_rising_error41_3_rs_Z ;
+wire un1_rising_error41_3_i ;
+wire un1_rising_error41_1_set_Z ;
+wire un1_rising_error41_4_rs_Z ;
+wire un1_rising_error41_4_i ;
+wire un1_rising_error41_2_set_Z ;
+wire un1_rising_error41_5_rs_Z ;
+wire un1_rising_error41_5_i ;
+wire N_6_i_0 ;
+  CFG1 un1_rising_error41_2_set_RNO (
+	.A(un1_rising_error41_2_Z),
+	.Y(un1_rising_error41_2_i)
+);
+defparam un1_rising_error41_2_set_RNO.INIT=2'h1;
+  CFG1 un1_rising_error41_1_set_RNO (
+	.A(un1_rising_error41_1_Z),
+	.Y(un1_rising_error41_1_i)
+);
+defparam un1_rising_error41_1_set_RNO.INIT=2'h1;
+  CFG1 un1_rising_error41_set_RNO (
+	.A(un1_rising_error41_Z),
+	.Y(un1_rising_error41_i)
+);
+defparam un1_rising_error41_set_RNO.INIT=2'h1;
+// @18:36
+  SLE \rising_error_1[0]  (
+	.Q(rising_error_1_Z[0]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(Gate_Set_0_sample_gate),
+	.D(N_6_i_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:36
+  SLE \rising_error_1[1]  (
+	.Q(rising_error_1_Z[1]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(Gate_Set_0_sample_gate),
+	.D(rising_error_2[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:36
+  SLE \rising_error_1[2]  (
+	.Q(rising_error_1_Z[2]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(Gate_Set_0_sample_gate),
+	.D(un1_rising_error33_1_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:55
+  SLE \rising_error[3]  (
+	.Q(fine_counter_0_fine_count[3]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(un1_rising_error36_1_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  CFG3 \rising_error_RNIISPH[0]  (
+	.A(fine_counter_0_fine_countrs[0]),
+	.B(un1_rising_error41_set_Z),
+	.C(un1_rising_error41_3_rs_Z),
+	.Y(fine_counter_0_fine_count[0])
+);
+defparam \rising_error_RNIISPH[0] .INIT=8'hEA;
+// @18:55
+  SLE \rising_error[0]  (
+	.Q(fine_counter_0_fine_countrs[0]),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_3_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(N_6_i_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_set (
+	.Q(un1_rising_error41_set_Z),
+	.ADn(GND),
+	.ALn(un1_rising_error41_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(GND),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_3_rs (
+	.Q(un1_rising_error41_3_rs_Z),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_3_i),
+	.CLK(un1_rising_error41_Z),
+	.D(VCC),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+  CFG3 \rising_error_RNI4QHB[1]  (
+	.A(fine_counter_0_fine_countrs[1]),
+	.B(un1_rising_error41_1_set_Z),
+	.C(un1_rising_error41_4_rs_Z),
+	.Y(fine_counter_0_fine_count[1])
+);
+defparam \rising_error_RNI4QHB[1] .INIT=8'hEA;
+// @18:55
+  SLE \rising_error[1]  (
+	.Q(fine_counter_0_fine_countrs[1]),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_4_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(rising_error_4[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_1_set (
+	.Q(un1_rising_error41_1_set_Z),
+	.ADn(GND),
+	.ALn(un1_rising_error41_1_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(GND),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_4_rs (
+	.Q(un1_rising_error41_4_rs_Z),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_4_i),
+	.CLK(un1_rising_error41_1_Z),
+	.D(VCC),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+  CFG3 \rising_error_RNI72RG[2]  (
+	.A(fine_counter_0_fine_countrs[2]),
+	.B(un1_rising_error41_2_set_Z),
+	.C(un1_rising_error41_5_rs_Z),
+	.Y(fine_counter_0_fine_count[2])
+);
+defparam \rising_error_RNI72RG[2] .INIT=8'hEA;
+// @18:55
+  SLE \rising_error[2]  (
+	.Q(fine_counter_0_fine_countrs[2]),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_5_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(N_6_i_0),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_2_set (
+	.Q(un1_rising_error41_2_set_Z),
+	.ADn(GND),
+	.ALn(un1_rising_error41_2_i),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(GND),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_rising_error41_5_rs (
+	.Q(un1_rising_error41_5_rs_Z),
+	.ADn(VCC),
+	.ALn(un1_rising_error41_5_i),
+	.CLK(un1_rising_error41_2_Z),
+	.D(VCC),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:56
+  CFG2 un1_rising_error41_5 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[2]),
+	.Y(un1_rising_error41_5_i)
+);
+defparam un1_rising_error41_5.INIT=4'hE;
+// @18:56
+  CFG2 un1_rising_error41_4 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[1]),
+	.Y(un1_rising_error41_4_i)
+);
+defparam un1_rising_error41_4.INIT=4'hE;
+// @18:56
+  CFG2 un1_rising_error41_3 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[0]),
+	.Y(un1_rising_error41_3_i)
+);
+defparam un1_rising_error41_3.INIT=4'hE;
+// @18:56
+  CFG2 un1_rising_error41_2 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[2]),
+	.Y(un1_rising_error41_2_Z)
+);
+defparam un1_rising_error41_2.INIT=4'h4;
+// @18:56
+  CFG2 un1_rising_error41_1 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[1]),
+	.Y(un1_rising_error41_1_Z)
+);
+defparam un1_rising_error41_1.INIT=4'h4;
+// @18:56
+  CFG2 un1_rising_error41 (
+	.A(SYSRESET_0_POWER_ON_RESET_N),
+	.B(rising_error_1_Z[0]),
+	.Y(un1_rising_error41_Z)
+);
+defparam un1_rising_error41.INIT=4'h4;
+// @18:60
+  CFG3 \rising_error_4_2_1_.m3  (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL2),
+	.C(FCCC_C1_0_GL3),
+	.Y(rising_error_4[1])
+);
+defparam \rising_error_4_2_1_.m3 .INIT=8'h42;
+// @18:42
+  CFG4 N_6_i (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL2),
+	.C(FCCC_C1_0_GL1),
+	.D(FCCC_C1_0_GL3),
+	.Y(N_6_i_Z)
+);
+defparam N_6_i.INIT=16'h4182;
+// @18:41
+  CFG3 \rising_error_2_0[1]  (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL1),
+	.C(FCCC_C1_0_GL3),
+	.Y(rising_error_2[1])
+);
+defparam \rising_error_2_0[1] .INIT=8'h18;
+// @18:55
+  CFG4 \rising_error_4_2_1_.N_6_i  (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL2),
+	.C(FCCC_C1_0_GL1),
+	.D(FCCC_C1_0_GL3),
+	.Y(N_6_i_0)
+);
+defparam \rising_error_4_2_1_.N_6_i .INIT=16'h80A2;
+// @18:42
+  CFG4 un1_rising_error33_1 (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL2),
+	.C(FCCC_C1_0_GL1),
+	.D(FCCC_C1_0_GL3),
+	.Y(un1_rising_error33_1_Z)
+);
+defparam un1_rising_error33_1.INIT=16'hC500;
+// @18:42
+  CFG4 un1_rising_error36_1 (
+	.A(FCCC_C1_0_GL0),
+	.B(FCCC_C1_0_GL2),
+	.C(FCCC_C1_0_GL1),
+	.D(FCCC_C1_0_GL3),
+	.Y(un1_rising_error36_1_Z)
+);
+defparam un1_rising_error36_1.INIT=16'hC5A2;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* fine_counter */
+
+module Gate_Set (
+  sampled_signal_c,
+  board_deploy_MSS_0_GPIO_0_M2F,
+  SYSRESET_0_POWER_ON_RESET_N_arst,
+  Gate_Set_0_sample_gate_i,
+  Gate_Set_0_sample_gate
+)
+;
+input sampled_signal_c ;
+input board_deploy_MSS_0_GPIO_0_M2F ;
+input SYSRESET_0_POWER_ON_RESET_N_arst ;
+output Gate_Set_0_sample_gate_i ;
+output Gate_Set_0_sample_gate ;
+wire sampled_signal_c ;
+wire board_deploy_MSS_0_GPIO_0_M2F ;
+wire SYSRESET_0_POWER_ON_RESET_N_arst ;
+wire Gate_Set_0_sample_gate_i ;
+wire Gate_Set_0_sample_gate ;
+wire [31:0] counter_Z;
+wire [0:0] counter_i;
+wire [16:5] counter_3_Z;
+wire signal_Z ;
+wire signal_0 ;
+wire sample_gate_Z ;
+wire VCC ;
+wire un5_counter_cry_25_S ;
+wire GND ;
+wire un5_counter_cry_26_S ;
+wire un5_counter_cry_27_S ;
+wire un5_counter_cry_28_S ;
+wire un5_counter_cry_29_S ;
+wire un5_counter_cry_30_S ;
+wire un5_counter_s_31_S ;
+wire un5_counter_cry_11_S ;
+wire un5_counter_cry_12_S ;
+wire un5_counter_cry_13_S ;
+wire un5_counter_cry_14_S ;
+wire un5_counter_cry_17_S ;
+wire un5_counter_cry_18_S ;
+wire un5_counter_cry_19_S ;
+wire un5_counter_cry_20_S ;
+wire un5_counter_cry_21_S ;
+wire un5_counter_cry_22_S ;
+wire un5_counter_cry_23_S ;
+wire un5_counter_cry_24_S ;
+wire sample_gate_1_Z ;
+wire un5_counter_cry_1_S ;
+wire un5_counter_cry_2_S ;
+wire un5_counter_cry_3_S ;
+wire un5_counter_cry_4_S ;
+wire un5_counter_cry_6_S ;
+wire un5_counter_cry_8_S ;
+wire un5_counter_s_1_92_FCO ;
+wire un5_counter_s_1_92_S ;
+wire un5_counter_s_1_92_Y ;
+wire un5_counter_cry_1_Z ;
+wire un5_counter_cry_1_Y ;
+wire un5_counter_cry_2_Z ;
+wire un5_counter_cry_2_Y ;
+wire un5_counter_cry_3_Z ;
+wire un5_counter_cry_3_Y ;
+wire un5_counter_cry_4_Z ;
+wire un5_counter_cry_4_Y ;
+wire un5_counter_cry_5_Z ;
+wire un5_counter_cry_5_S ;
+wire un5_counter_cry_5_Y ;
+wire un5_counter_cry_6_Z ;
+wire un5_counter_cry_6_Y ;
+wire un5_counter_cry_7_Z ;
+wire un5_counter_cry_7_S ;
+wire un5_counter_cry_7_Y ;
+wire un5_counter_cry_8_Z ;
+wire un5_counter_cry_8_Y ;
+wire un5_counter_cry_9_Z ;
+wire un5_counter_cry_9_S ;
+wire un5_counter_cry_9_Y ;
+wire un5_counter_cry_10_Z ;
+wire un5_counter_cry_10_S ;
+wire un5_counter_cry_10_Y ;
+wire un5_counter_cry_11_Z ;
+wire un5_counter_cry_11_Y ;
+wire un5_counter_cry_12_Z ;
+wire un5_counter_cry_12_Y ;
+wire un5_counter_cry_13_Z ;
+wire un5_counter_cry_13_Y ;
+wire un5_counter_cry_14_Z ;
+wire un5_counter_cry_14_Y ;
+wire un5_counter_cry_15_Z ;
+wire un5_counter_cry_15_S ;
+wire un5_counter_cry_15_Y ;
+wire un5_counter_cry_16_Z ;
+wire un5_counter_cry_16_S ;
+wire un5_counter_cry_16_Y ;
+wire un5_counter_cry_17_Z ;
+wire un5_counter_cry_17_Y ;
+wire un5_counter_cry_18_Z ;
+wire un5_counter_cry_18_Y ;
+wire un5_counter_cry_19_Z ;
+wire un5_counter_cry_19_Y ;
+wire un5_counter_cry_20_Z ;
+wire un5_counter_cry_20_Y ;
+wire un5_counter_cry_21_Z ;
+wire un5_counter_cry_21_Y ;
+wire un5_counter_cry_22_Z ;
+wire un5_counter_cry_22_Y ;
+wire un5_counter_cry_23_Z ;
+wire un5_counter_cry_23_Y ;
+wire un5_counter_cry_24_Z ;
+wire un5_counter_cry_24_Y ;
+wire un5_counter_cry_25_Z ;
+wire un5_counter_cry_25_Y ;
+wire un5_counter_cry_26_Z ;
+wire un5_counter_cry_26_Y ;
+wire un5_counter_cry_27_Z ;
+wire un5_counter_cry_27_Y ;
+wire un5_counter_cry_28_Z ;
+wire un5_counter_cry_28_Y ;
+wire un5_counter_cry_29_Z ;
+wire un5_counter_cry_29_Y ;
+wire un5_counter_s_31_FCO ;
+wire un5_counter_s_31_Y ;
+wire un5_counter_cry_30_Z ;
+wire un5_counter_cry_30_Y ;
+wire sample_gate5_23_Z ;
+wire sample_gate5_22_Z ;
+wire sample_gate5_21_Z ;
+wire sample_gate5_20_Z ;
+wire sample_gate5_19_Z ;
+wire sample_gate5_18_Z ;
+wire sample_gate5_17_Z ;
+wire sample_gate5_16_Z ;
+wire sample_gate5_29_Z ;
+wire sample_gate5_28_Z ;
+  CLKINT signal_inferred_clock_RNI0SS7 (
+	.Y(signal_Z),
+	.A(signal_0)
+);
+  CLKINT sample_gate_inferred_clock_RNI47AD (
+	.Y(Gate_Set_0_sample_gate),
+	.A(sample_gate_Z)
+);
+  CFG1 sample_gate_inferred_clock_RNI47AD_0 (
+	.A(Gate_Set_0_sample_gate),
+	.Y(Gate_Set_0_sample_gate_i)
+);
+defparam sample_gate_inferred_clock_RNI47AD_0.INIT=2'h1;
+  CFG1 \counter_RNO[0]  (
+	.A(counter_Z[0]),
+	.Y(counter_i[0])
+);
+defparam \counter_RNO[0] .INIT=2'h1;
+// @10:15
+  SLE \counter[25]  (
+	.Q(counter_Z[25]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_25_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[26]  (
+	.Q(counter_Z[26]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_26_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[27]  (
+	.Q(counter_Z[27]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_27_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[28]  (
+	.Q(counter_Z[28]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_28_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[29]  (
+	.Q(counter_Z[29]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_29_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[30]  (
+	.Q(counter_Z[30]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_30_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[31]  (
+	.Q(counter_Z[31]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_s_31_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[10]  (
+	.Q(counter_Z[10]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[11]  (
+	.Q(counter_Z[11]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_11_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[12]  (
+	.Q(counter_Z[12]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_12_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[13]  (
+	.Q(counter_Z[13]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_13_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[14]  (
+	.Q(counter_Z[14]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_14_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[15]  (
+	.Q(counter_Z[15]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[16]  (
+	.Q(counter_Z[16]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[16]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[17]  (
+	.Q(counter_Z[17]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_17_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[18]  (
+	.Q(counter_Z[18]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_18_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[19]  (
+	.Q(counter_Z[19]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_19_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[20]  (
+	.Q(counter_Z[20]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_20_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[21]  (
+	.Q(counter_Z[21]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_21_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[22]  (
+	.Q(counter_Z[22]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_22_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[23]  (
+	.Q(counter_Z[23]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_23_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[24]  (
+	.Q(counter_Z[24]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_24_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE sample_gate (
+	.Q(sample_gate_Z),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(sample_gate_1_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[0]  (
+	.Q(counter_Z[0]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_i[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[1]  (
+	.Q(counter_Z[1]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_1_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[2]  (
+	.Q(counter_Z[2]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_2_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[3]  (
+	.Q(counter_Z[3]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_3_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[4]  (
+	.Q(counter_Z[4]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_4_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[5]  (
+	.Q(counter_Z[5]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[6]  (
+	.Q(counter_Z[6]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_6_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[7]  (
+	.Q(counter_Z[7]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[8]  (
+	.Q(counter_Z[8]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(un5_counter_cry_8_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:15
+  SLE \counter[9]  (
+	.Q(counter_Z[9]),
+	.ADn(VCC),
+	.ALn(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.CLK(signal_Z),
+	.D(counter_3_Z[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:25
+  ARI1 un5_counter_s_1_92 (
+	.FCO(un5_counter_s_1_92_FCO),
+	.S(un5_counter_s_1_92_S),
+	.Y(un5_counter_s_1_92_Y),
+	.B(counter_Z[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam un5_counter_s_1_92.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_1 (
+	.FCO(un5_counter_cry_1_Z),
+	.S(un5_counter_cry_1_S),
+	.Y(un5_counter_cry_1_Y),
+	.B(counter_Z[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_s_1_92_FCO)
+);
+defparam un5_counter_cry_1.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_2 (
+	.FCO(un5_counter_cry_2_Z),
+	.S(un5_counter_cry_2_S),
+	.Y(un5_counter_cry_2_Y),
+	.B(counter_Z[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_1_Z)
+);
+defparam un5_counter_cry_2.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_3 (
+	.FCO(un5_counter_cry_3_Z),
+	.S(un5_counter_cry_3_S),
+	.Y(un5_counter_cry_3_Y),
+	.B(counter_Z[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_2_Z)
+);
+defparam un5_counter_cry_3.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_4 (
+	.FCO(un5_counter_cry_4_Z),
+	.S(un5_counter_cry_4_S),
+	.Y(un5_counter_cry_4_Y),
+	.B(counter_Z[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_3_Z)
+);
+defparam un5_counter_cry_4.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_5 (
+	.FCO(un5_counter_cry_5_Z),
+	.S(un5_counter_cry_5_S),
+	.Y(un5_counter_cry_5_Y),
+	.B(counter_Z[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_4_Z)
+);
+defparam un5_counter_cry_5.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_6 (
+	.FCO(un5_counter_cry_6_Z),
+	.S(un5_counter_cry_6_S),
+	.Y(un5_counter_cry_6_Y),
+	.B(counter_Z[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_5_Z)
+);
+defparam un5_counter_cry_6.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_7 (
+	.FCO(un5_counter_cry_7_Z),
+	.S(un5_counter_cry_7_S),
+	.Y(un5_counter_cry_7_Y),
+	.B(counter_Z[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_6_Z)
+);
+defparam un5_counter_cry_7.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_8 (
+	.FCO(un5_counter_cry_8_Z),
+	.S(un5_counter_cry_8_S),
+	.Y(un5_counter_cry_8_Y),
+	.B(counter_Z[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_7_Z)
+);
+defparam un5_counter_cry_8.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_9 (
+	.FCO(un5_counter_cry_9_Z),
+	.S(un5_counter_cry_9_S),
+	.Y(un5_counter_cry_9_Y),
+	.B(counter_Z[9]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_8_Z)
+);
+defparam un5_counter_cry_9.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_10 (
+	.FCO(un5_counter_cry_10_Z),
+	.S(un5_counter_cry_10_S),
+	.Y(un5_counter_cry_10_Y),
+	.B(counter_Z[10]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_9_Z)
+);
+defparam un5_counter_cry_10.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_11 (
+	.FCO(un5_counter_cry_11_Z),
+	.S(un5_counter_cry_11_S),
+	.Y(un5_counter_cry_11_Y),
+	.B(counter_Z[11]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_10_Z)
+);
+defparam un5_counter_cry_11.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_12 (
+	.FCO(un5_counter_cry_12_Z),
+	.S(un5_counter_cry_12_S),
+	.Y(un5_counter_cry_12_Y),
+	.B(counter_Z[12]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_11_Z)
+);
+defparam un5_counter_cry_12.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_13 (
+	.FCO(un5_counter_cry_13_Z),
+	.S(un5_counter_cry_13_S),
+	.Y(un5_counter_cry_13_Y),
+	.B(counter_Z[13]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_12_Z)
+);
+defparam un5_counter_cry_13.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_14 (
+	.FCO(un5_counter_cry_14_Z),
+	.S(un5_counter_cry_14_S),
+	.Y(un5_counter_cry_14_Y),
+	.B(counter_Z[14]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_13_Z)
+);
+defparam un5_counter_cry_14.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_15 (
+	.FCO(un5_counter_cry_15_Z),
+	.S(un5_counter_cry_15_S),
+	.Y(un5_counter_cry_15_Y),
+	.B(counter_Z[15]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_14_Z)
+);
+defparam un5_counter_cry_15.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_16 (
+	.FCO(un5_counter_cry_16_Z),
+	.S(un5_counter_cry_16_S),
+	.Y(un5_counter_cry_16_Y),
+	.B(counter_Z[16]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_15_Z)
+);
+defparam un5_counter_cry_16.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_17 (
+	.FCO(un5_counter_cry_17_Z),
+	.S(un5_counter_cry_17_S),
+	.Y(un5_counter_cry_17_Y),
+	.B(counter_Z[17]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_16_Z)
+);
+defparam un5_counter_cry_17.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_18 (
+	.FCO(un5_counter_cry_18_Z),
+	.S(un5_counter_cry_18_S),
+	.Y(un5_counter_cry_18_Y),
+	.B(counter_Z[18]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_17_Z)
+);
+defparam un5_counter_cry_18.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_19 (
+	.FCO(un5_counter_cry_19_Z),
+	.S(un5_counter_cry_19_S),
+	.Y(un5_counter_cry_19_Y),
+	.B(counter_Z[19]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_18_Z)
+);
+defparam un5_counter_cry_19.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_20 (
+	.FCO(un5_counter_cry_20_Z),
+	.S(un5_counter_cry_20_S),
+	.Y(un5_counter_cry_20_Y),
+	.B(counter_Z[20]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_19_Z)
+);
+defparam un5_counter_cry_20.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_21 (
+	.FCO(un5_counter_cry_21_Z),
+	.S(un5_counter_cry_21_S),
+	.Y(un5_counter_cry_21_Y),
+	.B(counter_Z[21]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_20_Z)
+);
+defparam un5_counter_cry_21.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_22 (
+	.FCO(un5_counter_cry_22_Z),
+	.S(un5_counter_cry_22_S),
+	.Y(un5_counter_cry_22_Y),
+	.B(counter_Z[22]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_21_Z)
+);
+defparam un5_counter_cry_22.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_23 (
+	.FCO(un5_counter_cry_23_Z),
+	.S(un5_counter_cry_23_S),
+	.Y(un5_counter_cry_23_Y),
+	.B(counter_Z[23]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_22_Z)
+);
+defparam un5_counter_cry_23.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_24 (
+	.FCO(un5_counter_cry_24_Z),
+	.S(un5_counter_cry_24_S),
+	.Y(un5_counter_cry_24_Y),
+	.B(counter_Z[24]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_23_Z)
+);
+defparam un5_counter_cry_24.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_25 (
+	.FCO(un5_counter_cry_25_Z),
+	.S(un5_counter_cry_25_S),
+	.Y(un5_counter_cry_25_Y),
+	.B(counter_Z[25]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_24_Z)
+);
+defparam un5_counter_cry_25.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_26 (
+	.FCO(un5_counter_cry_26_Z),
+	.S(un5_counter_cry_26_S),
+	.Y(un5_counter_cry_26_Y),
+	.B(counter_Z[26]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_25_Z)
+);
+defparam un5_counter_cry_26.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_27 (
+	.FCO(un5_counter_cry_27_Z),
+	.S(un5_counter_cry_27_S),
+	.Y(un5_counter_cry_27_Y),
+	.B(counter_Z[27]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_26_Z)
+);
+defparam un5_counter_cry_27.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_28 (
+	.FCO(un5_counter_cry_28_Z),
+	.S(un5_counter_cry_28_S),
+	.Y(un5_counter_cry_28_Y),
+	.B(counter_Z[28]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_27_Z)
+);
+defparam un5_counter_cry_28.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_29 (
+	.FCO(un5_counter_cry_29_Z),
+	.S(un5_counter_cry_29_S),
+	.Y(un5_counter_cry_29_Y),
+	.B(counter_Z[29]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_28_Z)
+);
+defparam un5_counter_cry_29.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_s_31 (
+	.FCO(un5_counter_s_31_FCO),
+	.S(un5_counter_s_31_S),
+	.Y(un5_counter_s_31_Y),
+	.B(counter_Z[31]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_30_Z)
+);
+defparam un5_counter_s_31.INIT=20'h4AA00;
+// @10:25
+  ARI1 un5_counter_cry_30 (
+	.FCO(un5_counter_cry_30_Z),
+	.S(un5_counter_cry_30_S),
+	.Y(un5_counter_cry_30_Y),
+	.B(counter_Z[30]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_counter_cry_29_Z)
+);
+defparam un5_counter_cry_30.INIT=20'h4AA00;
+// @10:13
+  CFG2 signal (
+	.A(board_deploy_MSS_0_GPIO_0_M2F),
+	.B(sampled_signal_c),
+	.Y(signal_0)
+);
+defparam signal.INIT=4'h8;
+// @10:20
+  CFG4 sample_gate5_23 (
+	.A(counter_Z[31]),
+	.B(counter_Z[30]),
+	.C(counter_Z[29]),
+	.D(counter_Z[28]),
+	.Y(sample_gate5_23_Z)
+);
+defparam sample_gate5_23.INIT=16'h0001;
+// @10:20
+  CFG4 sample_gate5_22 (
+	.A(counter_Z[27]),
+	.B(counter_Z[26]),
+	.C(counter_Z[25]),
+	.D(counter_Z[24]),
+	.Y(sample_gate5_22_Z)
+);
+defparam sample_gate5_22.INIT=16'h0001;
+// @10:20
+  CFG4 sample_gate5_21 (
+	.A(counter_Z[23]),
+	.B(counter_Z[22]),
+	.C(counter_Z[21]),
+	.D(counter_Z[20]),
+	.Y(sample_gate5_21_Z)
+);
+defparam sample_gate5_21.INIT=16'h0001;
+// @10:20
+  CFG4 sample_gate5_20 (
+	.A(counter_Z[19]),
+	.B(counter_Z[18]),
+	.C(counter_Z[17]),
+	.D(counter_Z[14]),
+	.Y(sample_gate5_20_Z)
+);
+defparam sample_gate5_20.INIT=16'h0001;
+// @10:20
+  CFG4 sample_gate5_19 (
+	.A(counter_Z[13]),
+	.B(counter_Z[12]),
+	.C(counter_Z[11]),
+	.D(counter_Z[8]),
+	.Y(sample_gate5_19_Z)
+);
+defparam sample_gate5_19.INIT=16'h0001;
+// @10:20
+  CFG4 sample_gate5_18 (
+	.A(counter_Z[16]),
+	.B(counter_Z[15]),
+	.C(counter_Z[6]),
+	.D(counter_Z[5]),
+	.Y(sample_gate5_18_Z)
+);
+defparam sample_gate5_18.INIT=16'h0008;
+// @10:20
+  CFG4 sample_gate5_17 (
+	.A(counter_Z[10]),
+	.B(counter_Z[9]),
+	.C(counter_Z[7]),
+	.D(counter_Z[4]),
+	.Y(sample_gate5_17_Z)
+);
+defparam sample_gate5_17.INIT=16'h8000;
+// @10:20
+  CFG4 sample_gate5_16 (
+	.A(counter_Z[3]),
+	.B(counter_Z[2]),
+	.C(counter_Z[1]),
+	.D(counter_Z[0]),
+	.Y(sample_gate5_16_Z)
+);
+defparam sample_gate5_16.INIT=16'h8000;
+// @10:20
+  CFG4 sample_gate5_29 (
+	.A(sample_gate5_23_Z),
+	.B(sample_gate5_22_Z),
+	.C(sample_gate5_21_Z),
+	.D(sample_gate5_20_Z),
+	.Y(sample_gate5_29_Z)
+);
+defparam sample_gate5_29.INIT=16'h8000;
+// @10:20
+  CFG4 sample_gate5_28 (
+	.A(sample_gate5_19_Z),
+	.B(sample_gate5_17_Z),
+	.C(sample_gate5_16_Z),
+	.D(sample_gate5_18_Z),
+	.Y(sample_gate5_28_Z)
+);
+defparam sample_gate5_28.INIT=16'h8000;
+// @10:15
+  CFG3 sample_gate_1 (
+	.A(sample_gate_Z),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(sample_gate_1_Z)
+);
+defparam sample_gate_1.INIT=8'h6A;
+// @10:16
+  CFG3 \counter_3[16]  (
+	.A(un5_counter_cry_16_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[16])
+);
+defparam \counter_3[16] .INIT=8'h2A;
+// @10:16
+  CFG3 \counter_3[15]  (
+	.A(un5_counter_cry_15_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[15])
+);
+defparam \counter_3[15] .INIT=8'h2A;
+// @10:16
+  CFG3 \counter_3[10]  (
+	.A(un5_counter_cry_10_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[10])
+);
+defparam \counter_3[10] .INIT=8'h2A;
+// @10:16
+  CFG3 \counter_3[9]  (
+	.A(un5_counter_cry_9_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[9])
+);
+defparam \counter_3[9] .INIT=8'h2A;
+// @10:16
+  CFG3 \counter_3[7]  (
+	.A(un5_counter_cry_7_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[7])
+);
+defparam \counter_3[7] .INIT=8'h2A;
+// @10:16
+  CFG3 \counter_3[5]  (
+	.A(un5_counter_cry_5_S),
+	.B(sample_gate5_29_Z),
+	.C(sample_gate5_28_Z),
+	.Y(counter_3_Z[5])
+);
+defparam \counter_3[5] .INIT=8'h2A;
+//@19:165
+//@19:165
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* Gate_Set */
+
+module OSC_C0_OSC_C0_0_OSC (
+  XTL,
+  OSC_C0_0_XTLOSC_O2F
+)
+;
+input XTL ;
+output OSC_C0_0_XTLOSC_O2F ;
+wire XTL ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire N_XTLOSC_CLKINT ;
+wire N_XTLOSC_CLKOUT ;
+wire GND ;
+wire VCC ;
+// @12:28
+  CLKINT I_XTLOSC_FAB_CLKINT (
+	.Y(OSC_C0_0_XTLOSC_O2F),
+	.A(N_XTLOSC_CLKINT)
+);
+// @12:26
+  XTLOSC I_XTLOSC (
+	.CLKOUT(N_XTLOSC_CLKOUT),
+	.XTL(XTL)
+);
+defparam I_XTLOSC.MODE=2'h3;
+defparam I_XTLOSC.FREQUENCY=20.0;
+// @12:24
+  XTLOSC_FAB I_XTLOSC_FAB (
+	.CLKOUT(N_XTLOSC_CLKINT),
+	.A(N_XTLOSC_CLKOUT)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* OSC_C0_OSC_C0_0_OSC */
+
+module OSC_C0 (
+  OSC_C0_0_XTLOSC_O2F,
+  XTL
+)
+;
+output OSC_C0_0_XTLOSC_O2F ;
+input XTL ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire XTL ;
+wire GND ;
+wire VCC ;
+// @13:39
+  OSC_C0_OSC_C0_0_OSC OSC_C0_0 (
+	.XTL(XTL),
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* OSC_C0 */
+
+module Recip_Freq_Count (
+  Recip_Freq_Count_0_recip_counter,
+  SYSRESET_0_POWER_ON_RESET_N,
+  Gate_Set_0_sample_gate,
+  FCCC_C1_0_GL0,
+  Gate_Set_0_sample_gate_i
+)
+;
+output [28:0] Recip_Freq_Count_0_recip_counter ;
+input SYSRESET_0_POWER_ON_RESET_N ;
+input Gate_Set_0_sample_gate ;
+input FCCC_C1_0_GL0 ;
+input Gate_Set_0_sample_gate_i ;
+wire SYSRESET_0_POWER_ON_RESET_N ;
+wire Gate_Set_0_sample_gate ;
+wire FCCC_C1_0_GL0 ;
+wire Gate_Set_0_sample_gate_i ;
+wire [28:0] counter_local_Z;
+wire [27:0] counter_local_s;
+wire [28:28] counter_local_s_Z;
+wire [27:1] counter_local_cry_Z;
+wire [27:1] counter_local_cry_Y;
+wire [28:28] counter_local_s_FCO;
+wire [28:28] counter_local_s_Y;
+wire VCC ;
+wire GND ;
+wire counter_local7_i ;
+wire counter_local_s_91_FCO ;
+wire counter_local_s_91_S ;
+wire counter_local_s_91_Y ;
+wire N_103 ;
+wire N_102 ;
+wire N_101 ;
+wire N_4 ;
+wire N_3 ;
+wire N_2 ;
+wire N_1 ;
+  CFG1 \counter_local_RNO[0]  (
+	.A(counter_local_Z[0]),
+	.Y(counter_local_s[0])
+);
+defparam \counter_local_RNO[0] .INIT=2'h1;
+// @14:27
+  SLE \recip_counter[19]  (
+	.Q(Recip_Freq_Count_0_recip_counter[19]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[19]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[20]  (
+	.Q(Recip_Freq_Count_0_recip_counter[20]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[20]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[21]  (
+	.Q(Recip_Freq_Count_0_recip_counter[21]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[21]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[22]  (
+	.Q(Recip_Freq_Count_0_recip_counter[22]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[22]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[23]  (
+	.Q(Recip_Freq_Count_0_recip_counter[23]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[23]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[24]  (
+	.Q(Recip_Freq_Count_0_recip_counter[24]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[24]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[25]  (
+	.Q(Recip_Freq_Count_0_recip_counter[25]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[25]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[26]  (
+	.Q(Recip_Freq_Count_0_recip_counter[26]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[26]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[27]  (
+	.Q(Recip_Freq_Count_0_recip_counter[27]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[27]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[28]  (
+	.Q(Recip_Freq_Count_0_recip_counter[28]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[28]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[4]  (
+	.Q(Recip_Freq_Count_0_recip_counter[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[5]  (
+	.Q(Recip_Freq_Count_0_recip_counter[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[6]  (
+	.Q(Recip_Freq_Count_0_recip_counter[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[7]  (
+	.Q(Recip_Freq_Count_0_recip_counter[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[8]  (
+	.Q(Recip_Freq_Count_0_recip_counter[8]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[9]  (
+	.Q(Recip_Freq_Count_0_recip_counter[9]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[10]  (
+	.Q(Recip_Freq_Count_0_recip_counter[10]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[11]  (
+	.Q(Recip_Freq_Count_0_recip_counter[11]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[12]  (
+	.Q(Recip_Freq_Count_0_recip_counter[12]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[13]  (
+	.Q(Recip_Freq_Count_0_recip_counter[13]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[14]  (
+	.Q(Recip_Freq_Count_0_recip_counter[14]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[14]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[15]  (
+	.Q(Recip_Freq_Count_0_recip_counter[15]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[16]  (
+	.Q(Recip_Freq_Count_0_recip_counter[16]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[16]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[17]  (
+	.Q(Recip_Freq_Count_0_recip_counter[17]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[17]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[18]  (
+	.Q(Recip_Freq_Count_0_recip_counter[18]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[18]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[0]  (
+	.Q(Recip_Freq_Count_0_recip_counter[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[1]  (
+	.Q(Recip_Freq_Count_0_recip_counter[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[2]  (
+	.Q(Recip_Freq_Count_0_recip_counter[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:27
+  SLE \recip_counter[3]  (
+	.Q(Recip_Freq_Count_0_recip_counter[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(Gate_Set_0_sample_gate_i),
+	.D(counter_local_Z[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:16
+  SLE \counter_local[0]  (
+	.Q(counter_local_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[1]  (
+	.Q(counter_local_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[2]  (
+	.Q(counter_local_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[3]  (
+	.Q(counter_local_Z[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[4]  (
+	.Q(counter_local_Z[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[5]  (
+	.Q(counter_local_Z[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[6]  (
+	.Q(counter_local_Z[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[7]  (
+	.Q(counter_local_Z[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[8]  (
+	.Q(counter_local_Z[8]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[9]  (
+	.Q(counter_local_Z[9]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[10]  (
+	.Q(counter_local_Z[10]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[11]  (
+	.Q(counter_local_Z[11]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[12]  (
+	.Q(counter_local_Z[12]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[13]  (
+	.Q(counter_local_Z[13]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[14]  (
+	.Q(counter_local_Z[14]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[14]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[15]  (
+	.Q(counter_local_Z[15]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[16]  (
+	.Q(counter_local_Z[16]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[16]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[17]  (
+	.Q(counter_local_Z[17]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[17]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[18]  (
+	.Q(counter_local_Z[18]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[18]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[19]  (
+	.Q(counter_local_Z[19]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[19]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[20]  (
+	.Q(counter_local_Z[20]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[20]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[21]  (
+	.Q(counter_local_Z[21]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[21]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[22]  (
+	.Q(counter_local_Z[22]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[22]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[23]  (
+	.Q(counter_local_Z[23]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[23]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[24]  (
+	.Q(counter_local_Z[24]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[24]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[25]  (
+	.Q(counter_local_Z[25]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[25]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[26]  (
+	.Q(counter_local_Z[26]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[26]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[27]  (
+	.Q(counter_local_Z[27]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s[27]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  SLE \counter_local[28]  (
+	.Q(counter_local_Z[28]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(FCCC_C1_0_GL0),
+	.D(counter_local_s_Z[28]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(counter_local7_i)
+);
+// @14:16
+  ARI1 counter_local_s_91 (
+	.FCO(counter_local_s_91_FCO),
+	.S(counter_local_s_91_S),
+	.Y(counter_local_s_91_Y),
+	.B(counter_local_Z[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam counter_local_s_91.INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[1]  (
+	.FCO(counter_local_cry_Z[1]),
+	.S(counter_local_s[1]),
+	.Y(counter_local_cry_Y[1]),
+	.B(counter_local_Z[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_s_91_FCO)
+);
+defparam \counter_local_cry[1] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[2]  (
+	.FCO(counter_local_cry_Z[2]),
+	.S(counter_local_s[2]),
+	.Y(counter_local_cry_Y[2]),
+	.B(counter_local_Z[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[1])
+);
+defparam \counter_local_cry[2] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[3]  (
+	.FCO(counter_local_cry_Z[3]),
+	.S(counter_local_s[3]),
+	.Y(counter_local_cry_Y[3]),
+	.B(counter_local_Z[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[2])
+);
+defparam \counter_local_cry[3] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[4]  (
+	.FCO(counter_local_cry_Z[4]),
+	.S(counter_local_s[4]),
+	.Y(counter_local_cry_Y[4]),
+	.B(counter_local_Z[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[3])
+);
+defparam \counter_local_cry[4] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[5]  (
+	.FCO(counter_local_cry_Z[5]),
+	.S(counter_local_s[5]),
+	.Y(counter_local_cry_Y[5]),
+	.B(counter_local_Z[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[4])
+);
+defparam \counter_local_cry[5] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[6]  (
+	.FCO(counter_local_cry_Z[6]),
+	.S(counter_local_s[6]),
+	.Y(counter_local_cry_Y[6]),
+	.B(counter_local_Z[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[5])
+);
+defparam \counter_local_cry[6] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[7]  (
+	.FCO(counter_local_cry_Z[7]),
+	.S(counter_local_s[7]),
+	.Y(counter_local_cry_Y[7]),
+	.B(counter_local_Z[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[6])
+);
+defparam \counter_local_cry[7] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[8]  (
+	.FCO(counter_local_cry_Z[8]),
+	.S(counter_local_s[8]),
+	.Y(counter_local_cry_Y[8]),
+	.B(counter_local_Z[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[7])
+);
+defparam \counter_local_cry[8] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[9]  (
+	.FCO(counter_local_cry_Z[9]),
+	.S(counter_local_s[9]),
+	.Y(counter_local_cry_Y[9]),
+	.B(counter_local_Z[9]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[8])
+);
+defparam \counter_local_cry[9] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[10]  (
+	.FCO(counter_local_cry_Z[10]),
+	.S(counter_local_s[10]),
+	.Y(counter_local_cry_Y[10]),
+	.B(counter_local_Z[10]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[9])
+);
+defparam \counter_local_cry[10] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[11]  (
+	.FCO(counter_local_cry_Z[11]),
+	.S(counter_local_s[11]),
+	.Y(counter_local_cry_Y[11]),
+	.B(counter_local_Z[11]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[10])
+);
+defparam \counter_local_cry[11] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[12]  (
+	.FCO(counter_local_cry_Z[12]),
+	.S(counter_local_s[12]),
+	.Y(counter_local_cry_Y[12]),
+	.B(counter_local_Z[12]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[11])
+);
+defparam \counter_local_cry[12] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[13]  (
+	.FCO(counter_local_cry_Z[13]),
+	.S(counter_local_s[13]),
+	.Y(counter_local_cry_Y[13]),
+	.B(counter_local_Z[13]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[12])
+);
+defparam \counter_local_cry[13] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[14]  (
+	.FCO(counter_local_cry_Z[14]),
+	.S(counter_local_s[14]),
+	.Y(counter_local_cry_Y[14]),
+	.B(counter_local_Z[14]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[13])
+);
+defparam \counter_local_cry[14] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[15]  (
+	.FCO(counter_local_cry_Z[15]),
+	.S(counter_local_s[15]),
+	.Y(counter_local_cry_Y[15]),
+	.B(counter_local_Z[15]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[14])
+);
+defparam \counter_local_cry[15] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[16]  (
+	.FCO(counter_local_cry_Z[16]),
+	.S(counter_local_s[16]),
+	.Y(counter_local_cry_Y[16]),
+	.B(counter_local_Z[16]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[15])
+);
+defparam \counter_local_cry[16] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[17]  (
+	.FCO(counter_local_cry_Z[17]),
+	.S(counter_local_s[17]),
+	.Y(counter_local_cry_Y[17]),
+	.B(counter_local_Z[17]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[16])
+);
+defparam \counter_local_cry[17] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[18]  (
+	.FCO(counter_local_cry_Z[18]),
+	.S(counter_local_s[18]),
+	.Y(counter_local_cry_Y[18]),
+	.B(counter_local_Z[18]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[17])
+);
+defparam \counter_local_cry[18] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[19]  (
+	.FCO(counter_local_cry_Z[19]),
+	.S(counter_local_s[19]),
+	.Y(counter_local_cry_Y[19]),
+	.B(counter_local_Z[19]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[18])
+);
+defparam \counter_local_cry[19] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[20]  (
+	.FCO(counter_local_cry_Z[20]),
+	.S(counter_local_s[20]),
+	.Y(counter_local_cry_Y[20]),
+	.B(counter_local_Z[20]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[19])
+);
+defparam \counter_local_cry[20] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[21]  (
+	.FCO(counter_local_cry_Z[21]),
+	.S(counter_local_s[21]),
+	.Y(counter_local_cry_Y[21]),
+	.B(counter_local_Z[21]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[20])
+);
+defparam \counter_local_cry[21] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[22]  (
+	.FCO(counter_local_cry_Z[22]),
+	.S(counter_local_s[22]),
+	.Y(counter_local_cry_Y[22]),
+	.B(counter_local_Z[22]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[21])
+);
+defparam \counter_local_cry[22] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[23]  (
+	.FCO(counter_local_cry_Z[23]),
+	.S(counter_local_s[23]),
+	.Y(counter_local_cry_Y[23]),
+	.B(counter_local_Z[23]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[22])
+);
+defparam \counter_local_cry[23] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[24]  (
+	.FCO(counter_local_cry_Z[24]),
+	.S(counter_local_s[24]),
+	.Y(counter_local_cry_Y[24]),
+	.B(counter_local_Z[24]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[23])
+);
+defparam \counter_local_cry[24] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[25]  (
+	.FCO(counter_local_cry_Z[25]),
+	.S(counter_local_s[25]),
+	.Y(counter_local_cry_Y[25]),
+	.B(counter_local_Z[25]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[24])
+);
+defparam \counter_local_cry[25] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[26]  (
+	.FCO(counter_local_cry_Z[26]),
+	.S(counter_local_s[26]),
+	.Y(counter_local_cry_Y[26]),
+	.B(counter_local_Z[26]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[25])
+);
+defparam \counter_local_cry[26] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_s[28]  (
+	.FCO(counter_local_s_FCO[28]),
+	.S(counter_local_s_Z[28]),
+	.Y(counter_local_s_Y[28]),
+	.B(counter_local_Z[28]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[27])
+);
+defparam \counter_local_s[28] .INIT=20'h4AA00;
+// @14:16
+  ARI1 \counter_local_cry[27]  (
+	.FCO(counter_local_cry_Z[27]),
+	.S(counter_local_s[27]),
+	.Y(counter_local_cry_Y[27]),
+	.B(counter_local_Z[27]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(counter_local_cry_Z[26])
+);
+defparam \counter_local_cry[27] .INIT=20'h4AA00;
+// @14:17
+  CFG2 counter_local7 (
+	.A(Gate_Set_0_sample_gate),
+	.B(SYSRESET_0_POWER_ON_RESET_N),
+	.Y(counter_local7_i)
+);
+defparam counter_local7.INIT=4'h8;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* Recip_Freq_Count */
+
+module SPI_Slave (
+  Add_Counters_0_final_count,
+  fine_counter_0_fine_count,
+  board_deploy_MSS_0_SPI_1_SS0_M2F,
+  final_count_cry_0_Y,
+  SPI_MISO_Bit_1z,
+  board_deploy_MSS_0_SPI_1_SS0_M2F_i,
+  board_deploy_MSS_0_SPI_1_CLK_M2F,
+  SPI_1_SS0_M2F_arst_i
+)
+;
+input [31:4] Add_Counters_0_final_count ;
+input [2:0] fine_counter_0_fine_count ;
+input board_deploy_MSS_0_SPI_1_SS0_M2F ;
+input final_count_cry_0_Y ;
+output SPI_MISO_Bit_1z ;
+input board_deploy_MSS_0_SPI_1_SS0_M2F_i ;
+input board_deploy_MSS_0_SPI_1_CLK_M2F ;
+input SPI_1_SS0_M2F_arst_i ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F ;
+wire final_count_cry_0_Y ;
+wire SPI_MISO_Bit_1z ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F_i ;
+wire board_deploy_MSS_0_SPI_1_CLK_M2F ;
+wire SPI_1_SS0_M2F_arst_i ;
+wire [4:0] Data_index_Z;
+wire [31:0] Data_Z;
+wire Data_index_c0_i ;
+wire un1_SPI_CS_n_1_Z ;
+wire un1_SPI_CS_n_1_i ;
+wire GND ;
+wire N_7_i ;
+wire VCC ;
+wire N_8_i ;
+wire N_5_i ;
+wire N_6_i ;
+wire un1_SPI_CS_n_1_set_Z ;
+wire un1_SPI_CS_n_2_rs_Z ;
+wire SPI_MISO_Bitrs ;
+wire un1_SPI_CS_n_2_i ;
+wire SPI_MISO_Bit_3 ;
+wire SPI_MISO_Bit_3_31_1_co1_10 ;
+wire SPI_MISO_Bit_3_31_1_wmux_22_S ;
+wire SPI_MISO_Bit_3_31_1_0_y21 ;
+wire SPI_MISO_Bit_3_31_1_0_y9 ;
+wire SPI_MISO_Bit_3_31_1_co0_10 ;
+wire SPI_MISO_Bit_3_31_1_wmux_21_S ;
+wire SPI_MISO_Bit_3_31_1_wmux_21_Y ;
+wire SPI_MISO_Bit_3_31_1_co1_9 ;
+wire SPI_MISO_Bit_3_31_1_wmux_20_S ;
+wire SPI_MISO_Bit_3_31_1_y3_0 ;
+wire SPI_MISO_Bit_3_31_1_y1_0 ;
+wire SPI_MISO_Bit_3_31_1_y0_8 ;
+wire SPI_MISO_Bit_3_31_1_co0_9 ;
+wire SPI_MISO_Bit_3_31_1_wmux_19_S ;
+wire SPI_MISO_Bit_3_31_1_y5_0 ;
+wire SPI_MISO_Bit_3_31_1_y7_0 ;
+wire SPI_MISO_Bit_3_31_1_co1_8 ;
+wire SPI_MISO_Bit_3_31_1_wmux_18_S ;
+wire SPI_MISO_Bit_3_31_1_y0_7 ;
+wire SPI_MISO_Bit_3_31_1_co0_8 ;
+wire SPI_MISO_Bit_3_31_1_wmux_17_S ;
+wire SPI_MISO_Bit_3_31_1_co1_7 ;
+wire SPI_MISO_Bit_3_31_1_wmux_16_S ;
+wire SPI_MISO_Bit_3_31_1_y0_6 ;
+wire SPI_MISO_Bit_3_31_1_co0_7 ;
+wire SPI_MISO_Bit_3_31_1_wmux_15_S ;
+wire SPI_MISO_Bit_3_31_1_co1_6 ;
+wire SPI_MISO_Bit_3_31_1_wmux_14_S ;
+wire SPI_MISO_Bit_3_31_1_y0_5 ;
+wire SPI_MISO_Bit_3_31_1_co0_6 ;
+wire SPI_MISO_Bit_3_31_1_wmux_13_S ;
+wire SPI_MISO_Bit_3_31_1_co1_5 ;
+wire SPI_MISO_Bit_3_31_1_wmux_12_S ;
+wire SPI_MISO_Bit_3_31_1_y0_4 ;
+wire SPI_MISO_Bit_3_31_1_co0_5 ;
+wire SPI_MISO_Bit_3_31_1_wmux_11_S ;
+wire SPI_MISO_Bit_3_31_1_co1_4 ;
+wire SPI_MISO_Bit_3_31_1_wmux_10_S ;
+wire SPI_MISO_Bit_3_31_1_wmux_10_Y ;
+wire SPI_MISO_Bit_3_31_1_co0_4 ;
+wire SPI_MISO_Bit_3_31_1_wmux_9_S ;
+wire SPI_MISO_Bit_3_31_1_wmux_9_Y ;
+wire SPI_MISO_Bit_3_31_1_co1_3 ;
+wire SPI_MISO_Bit_3_31_1_wmux_8_S ;
+wire SPI_MISO_Bit_3_31_1_0_y3 ;
+wire SPI_MISO_Bit_3_31_1_0_y1 ;
+wire SPI_MISO_Bit_3_31_1_y0_3 ;
+wire SPI_MISO_Bit_3_31_1_co0_3 ;
+wire SPI_MISO_Bit_3_31_1_wmux_7_S ;
+wire SPI_MISO_Bit_3_31_1_0_y5 ;
+wire SPI_MISO_Bit_3_31_1_0_y7 ;
+wire SPI_MISO_Bit_3_31_1_co1_2 ;
+wire SPI_MISO_Bit_3_31_1_wmux_6_S ;
+wire SPI_MISO_Bit_3_31_1_y0_2 ;
+wire SPI_MISO_Bit_3_31_1_co0_2 ;
+wire SPI_MISO_Bit_3_31_1_wmux_5_S ;
+wire SPI_MISO_Bit_3_31_1_co1_1 ;
+wire SPI_MISO_Bit_3_31_1_wmux_4_S ;
+wire SPI_MISO_Bit_3_31_1_y0_1 ;
+wire SPI_MISO_Bit_3_31_1_co0_1 ;
+wire SPI_MISO_Bit_3_31_1_wmux_3_S ;
+wire SPI_MISO_Bit_3_31_1_co1_0 ;
+wire SPI_MISO_Bit_3_31_1_wmux_2_S ;
+wire SPI_MISO_Bit_3_31_1_y0_0 ;
+wire SPI_MISO_Bit_3_31_1_co0_0 ;
+wire SPI_MISO_Bit_3_31_1_wmux_1_S ;
+wire SPI_MISO_Bit_3_31_1_0_co1 ;
+wire SPI_MISO_Bit_3_31_1_wmux_0_S ;
+wire SPI_MISO_Bit_3_31_1_0_y0 ;
+wire SPI_MISO_Bit_3_31_1_0_co0 ;
+wire SPI_MISO_Bit_3_31_1_0_wmux_S ;
+wire Data_index_c1_Z ;
+  CFG1 \Data_index_RNO[0]  (
+	.A(Data_index_Z[0]),
+	.Y(Data_index_c0_i)
+);
+defparam \Data_index_RNO[0] .INIT=2'h1;
+  CFG1 un1_SPI_CS_n_1_set_RNO (
+	.A(un1_SPI_CS_n_1_Z),
+	.Y(un1_SPI_CS_n_1_i)
+);
+defparam un1_SPI_CS_n_1_set_RNO.INIT=2'h1;
+// @15:32
+  SLE \Data_index[3]  (
+	.Q(Data_index_Z[3]),
+	.ADn(GND),
+	.ALn(SPI_1_SS0_M2F_arst_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(N_7_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:32
+  SLE \Data_index[4]  (
+	.Q(Data_index_Z[4]),
+	.ADn(GND),
+	.ALn(SPI_1_SS0_M2F_arst_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(N_8_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:32
+  SLE \Data_index[0]  (
+	.Q(Data_index_Z[0]),
+	.ADn(GND),
+	.ALn(SPI_1_SS0_M2F_arst_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(Data_index_c0_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:32
+  SLE \Data_index[1]  (
+	.Q(Data_index_Z[1]),
+	.ADn(GND),
+	.ALn(SPI_1_SS0_M2F_arst_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(N_5_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:32
+  SLE \Data_index[2]  (
+	.Q(Data_index_Z[2]),
+	.ADn(GND),
+	.ALn(SPI_1_SS0_M2F_arst_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(N_6_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[20]  (
+	.Q(Data_Z[20]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[20]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[21]  (
+	.Q(Data_Z[21]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[21]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[22]  (
+	.Q(Data_Z[22]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[22]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[23]  (
+	.Q(Data_Z[23]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[23]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[24]  (
+	.Q(Data_Z[24]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[24]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[25]  (
+	.Q(Data_Z[25]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[25]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[26]  (
+	.Q(Data_Z[26]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[26]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[27]  (
+	.Q(Data_Z[27]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[27]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[28]  (
+	.Q(Data_Z[28]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[28]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[29]  (
+	.Q(Data_Z[29]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[29]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[30]  (
+	.Q(Data_Z[30]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[30]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[31]  (
+	.Q(Data_Z[31]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[31]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[5]  (
+	.Q(Data_Z[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[6]  (
+	.Q(Data_Z[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[7]  (
+	.Q(Data_Z[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[8]  (
+	.Q(Data_Z[8]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[9]  (
+	.Q(Data_Z[9]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[10]  (
+	.Q(Data_Z[10]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[11]  (
+	.Q(Data_Z[11]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[12]  (
+	.Q(Data_Z[12]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[13]  (
+	.Q(Data_Z[13]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[14]  (
+	.Q(Data_Z[14]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[14]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[15]  (
+	.Q(Data_Z[15]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[16]  (
+	.Q(Data_Z[16]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[16]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[17]  (
+	.Q(Data_Z[17]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[17]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[18]  (
+	.Q(Data_Z[18]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[18]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[19]  (
+	.Q(Data_Z[19]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[19]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  CFG3 un1_SPI_CS_n_1_set_RNISMV21 (
+	.A(un1_SPI_CS_n_1_set_Z),
+	.B(un1_SPI_CS_n_2_rs_Z),
+	.C(SPI_MISO_Bitrs),
+	.Y(SPI_MISO_Bit_1z)
+);
+defparam un1_SPI_CS_n_1_set_RNISMV21.INIT=8'hF8;
+// @15:32
+  SLE SPI_MISO_Bit (
+	.Q(SPI_MISO_Bitrs),
+	.ADn(VCC),
+	.ALn(un1_SPI_CS_n_2_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(SPI_MISO_Bit_3),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_SPI_CS_n_1_set (
+	.Q(un1_SPI_CS_n_1_set_Z),
+	.ADn(GND),
+	.ALn(un1_SPI_CS_n_1_i),
+	.CLK(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.D(GND),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE un1_SPI_CS_n_2_rs (
+	.Q(un1_SPI_CS_n_2_rs_Z),
+	.ADn(VCC),
+	.ALn(un1_SPI_CS_n_2_i),
+	.CLK(un1_SPI_CS_n_1_Z),
+	.D(VCC),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[0]  (
+	.Q(Data_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(fine_counter_0_fine_count[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[1]  (
+	.Q(Data_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(fine_counter_0_fine_count[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[2]  (
+	.Q(Data_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(fine_counter_0_fine_count[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[3]  (
+	.Q(Data_Z[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(final_count_cry_0_Y),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:25
+  SLE \Data[4]  (
+	.Q(Data_Z[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.D(Add_Counters_0_final_count[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_22 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_10),
+	.S(SPI_MISO_Bit_3_31_1_wmux_22_S),
+	.Y(SPI_MISO_Bit_3),
+	.B(SPI_MISO_Bit_3_31_1_0_y21),
+	.C(Data_index_Z[0]),
+	.D(VCC),
+	.A(SPI_MISO_Bit_3_31_1_0_y9),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_10)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_22.INIT=20'h0B383;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_21 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_10),
+	.S(SPI_MISO_Bit_3_31_1_wmux_21_S),
+	.Y(SPI_MISO_Bit_3_31_1_wmux_21_Y),
+	.B(VCC),
+	.C(Data_index_Z[0]),
+	.D(VCC),
+	.A(VCC),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_9)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_21.INIT=20'h0B383;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_20 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_9),
+	.S(SPI_MISO_Bit_3_31_1_wmux_20_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y21),
+	.B(SPI_MISO_Bit_3_31_1_y3_0),
+	.C(SPI_MISO_Bit_3_31_1_y1_0),
+	.D(Data_index_Z[1]),
+	.A(SPI_MISO_Bit_3_31_1_y0_8),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_9)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_20.INIT=20'h0FA0C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_19 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_9),
+	.S(SPI_MISO_Bit_3_31_1_wmux_19_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_8),
+	.B(SPI_MISO_Bit_3_31_1_y5_0),
+	.C(Data_index_Z[2]),
+	.D(Data_index_Z[1]),
+	.A(SPI_MISO_Bit_3_31_1_y7_0),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_8)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_19.INIT=20'h0EC2C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_18 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_8),
+	.S(SPI_MISO_Bit_3_31_1_wmux_18_S),
+	.Y(SPI_MISO_Bit_3_31_1_y7_0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[15]),
+	.D(Data_Z[31]),
+	.A(SPI_MISO_Bit_3_31_1_y0_7),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_8)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_18.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_17 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_8),
+	.S(SPI_MISO_Bit_3_31_1_wmux_17_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_7),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[7]),
+	.D(Data_Z[23]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_7)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_17.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_16 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_7),
+	.S(SPI_MISO_Bit_3_31_1_wmux_16_S),
+	.Y(SPI_MISO_Bit_3_31_1_y5_0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[11]),
+	.D(Data_Z[27]),
+	.A(SPI_MISO_Bit_3_31_1_y0_6),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_7)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_16.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_15 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_7),
+	.S(SPI_MISO_Bit_3_31_1_wmux_15_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_6),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[3]),
+	.D(Data_Z[19]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_6)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_15.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_14 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_6),
+	.S(SPI_MISO_Bit_3_31_1_wmux_14_S),
+	.Y(SPI_MISO_Bit_3_31_1_y3_0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[13]),
+	.D(Data_Z[29]),
+	.A(SPI_MISO_Bit_3_31_1_y0_5),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_6)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_14.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_13 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_6),
+	.S(SPI_MISO_Bit_3_31_1_wmux_13_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_5),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[5]),
+	.D(Data_Z[21]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_5)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_13.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_12 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_5),
+	.S(SPI_MISO_Bit_3_31_1_wmux_12_S),
+	.Y(SPI_MISO_Bit_3_31_1_y1_0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[9]),
+	.D(Data_Z[25]),
+	.A(SPI_MISO_Bit_3_31_1_y0_4),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_5)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_12.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_11 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_5),
+	.S(SPI_MISO_Bit_3_31_1_wmux_11_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_4),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[1]),
+	.D(Data_Z[17]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_4)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_11.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_10 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_4),
+	.S(SPI_MISO_Bit_3_31_1_wmux_10_S),
+	.Y(SPI_MISO_Bit_3_31_1_wmux_10_Y),
+	.B(VCC),
+	.C(Data_index_Z[2]),
+	.D(VCC),
+	.A(VCC),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_4)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_10.INIT=20'h0EC2C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_9 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_4),
+	.S(SPI_MISO_Bit_3_31_1_wmux_9_S),
+	.Y(SPI_MISO_Bit_3_31_1_wmux_9_Y),
+	.B(VCC),
+	.C(Data_index_Z[2]),
+	.D(VCC),
+	.A(VCC),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_3)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_9.INIT=20'h0EC2C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_8 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_3),
+	.S(SPI_MISO_Bit_3_31_1_wmux_8_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y9),
+	.B(SPI_MISO_Bit_3_31_1_0_y3),
+	.C(SPI_MISO_Bit_3_31_1_0_y1),
+	.D(Data_index_Z[1]),
+	.A(SPI_MISO_Bit_3_31_1_y0_3),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_3)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_8.INIT=20'h0FA0C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_7 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_3),
+	.S(SPI_MISO_Bit_3_31_1_wmux_7_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_3),
+	.B(SPI_MISO_Bit_3_31_1_0_y5),
+	.C(Data_index_Z[2]),
+	.D(Data_index_Z[1]),
+	.A(SPI_MISO_Bit_3_31_1_0_y7),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_2)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_7.INIT=20'h0EC2C;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_6 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_2),
+	.S(SPI_MISO_Bit_3_31_1_wmux_6_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y7),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[14]),
+	.D(Data_Z[30]),
+	.A(SPI_MISO_Bit_3_31_1_y0_2),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_2)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_6.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_5 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_2),
+	.S(SPI_MISO_Bit_3_31_1_wmux_5_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_2),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[6]),
+	.D(Data_Z[22]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_1)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_5.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_4 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_1),
+	.S(SPI_MISO_Bit_3_31_1_wmux_4_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y5),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[10]),
+	.D(Data_Z[26]),
+	.A(SPI_MISO_Bit_3_31_1_y0_1),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_1)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_4.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_3 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_1),
+	.S(SPI_MISO_Bit_3_31_1_wmux_3_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_1),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[2]),
+	.D(Data_Z[18]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_co1_0)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_3.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_2 (
+	.FCO(SPI_MISO_Bit_3_31_1_co1_0),
+	.S(SPI_MISO_Bit_3_31_1_wmux_2_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y3),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[12]),
+	.D(Data_Z[28]),
+	.A(SPI_MISO_Bit_3_31_1_y0_0),
+	.FCI(SPI_MISO_Bit_3_31_1_co0_0)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_2.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_1 (
+	.FCO(SPI_MISO_Bit_3_31_1_co0_0),
+	.S(SPI_MISO_Bit_3_31_1_wmux_1_S),
+	.Y(SPI_MISO_Bit_3_31_1_y0_0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[4]),
+	.D(Data_Z[20]),
+	.A(Data_index_Z[4]),
+	.FCI(SPI_MISO_Bit_3_31_1_0_co1)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_1.INIT=20'h0FA44;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_wmux_0 (
+	.FCO(SPI_MISO_Bit_3_31_1_0_co1),
+	.S(SPI_MISO_Bit_3_31_1_wmux_0_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y1),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[8]),
+	.D(Data_Z[24]),
+	.A(SPI_MISO_Bit_3_31_1_0_y0),
+	.FCI(SPI_MISO_Bit_3_31_1_0_co0)
+);
+defparam SPI_MISO_Bit_3_31_1_wmux_0.INIT=20'h0F588;
+// @15:42
+  ARI1 SPI_MISO_Bit_3_31_1_0_wmux (
+	.FCO(SPI_MISO_Bit_3_31_1_0_co0),
+	.S(SPI_MISO_Bit_3_31_1_0_wmux_S),
+	.Y(SPI_MISO_Bit_3_31_1_0_y0),
+	.B(Data_index_Z[3]),
+	.C(Data_Z[0]),
+	.D(Data_Z[16]),
+	.A(Data_index_Z[4]),
+	.FCI(VCC)
+);
+defparam SPI_MISO_Bit_3_31_1_0_wmux.INIT=20'h0FA44;
+// @15:32
+  CFG3 \Data_index_RNO[2]  (
+	.A(Data_index_Z[1]),
+	.B(Data_index_Z[0]),
+	.C(Data_index_Z[2]),
+	.Y(N_6_i)
+);
+defparam \Data_index_RNO[2] .INIT=8'hE1;
+// @15:32
+  CFG4 \Data_index_RNO[3]  (
+	.A(Data_index_Z[0]),
+	.B(Data_index_Z[2]),
+	.C(Data_index_Z[1]),
+	.D(Data_index_Z[3]),
+	.Y(N_7_i)
+);
+defparam \Data_index_RNO[3] .INIT=16'hFE01;
+// @15:32
+  CFG2 Data_index_c1 (
+	.A(Data_index_Z[1]),
+	.B(Data_index_Z[0]),
+	.Y(Data_index_c1_Z)
+);
+defparam Data_index_c1.INIT=4'hE;
+// @15:34
+  CFG2 un1_SPI_CS_n_2 (
+	.A(Data_Z[31]),
+	.B(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.Y(un1_SPI_CS_n_2_i)
+);
+defparam un1_SPI_CS_n_2.INIT=4'hB;
+// @15:34
+  CFG2 un1_SPI_CS_n_1 (
+	.A(Data_Z[31]),
+	.B(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.Y(un1_SPI_CS_n_1_Z)
+);
+defparam un1_SPI_CS_n_1.INIT=4'h8;
+// @15:32
+  CFG2 \Data_index_RNO[1]  (
+	.A(Data_index_Z[1]),
+	.B(Data_index_Z[0]),
+	.Y(N_5_i)
+);
+defparam \Data_index_RNO[1] .INIT=4'h9;
+// @15:32
+  CFG4 \Data_index_RNO[4]  (
+	.A(Data_index_Z[4]),
+	.B(Data_index_Z[2]),
+	.C(Data_index_c1_Z),
+	.D(Data_index_Z[3]),
+	.Y(N_8_i)
+);
+defparam \Data_index_RNO[4] .INIT=16'hAAA9;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* SPI_Slave */
+
+module board_deploy_MSS (
+  FCCC_C0_0_GL0,
+  SPI_MISO_Bit,
+  SYSRESET_0_POWER_ON_RESET_N,
+  board_deploy_MSS_0_GPIO_0_M2F,
+  GPIO_3_M2F_c,
+  MMUART_1_RXD,
+  MMUART_1_TXD,
+  SPI_0_CLK,
+  SPI_0_DI,
+  SPI_0_DO,
+  SPI_0_SS0,
+  SPI_1_SS0_M2F_arst_i,
+  board_deploy_MSS_0_SPI_1_SS0_M2F_i,
+  board_deploy_MSS_0_SPI_1_SS0_M2F,
+  board_deploy_MSS_0_SPI_1_CLK_M2F
+)
+;
+input FCCC_C0_0_GL0 ;
+input SPI_MISO_Bit ;
+input SYSRESET_0_POWER_ON_RESET_N ;
+output board_deploy_MSS_0_GPIO_0_M2F ;
+output GPIO_3_M2F_c ;
+input MMUART_1_RXD ;
+output MMUART_1_TXD ;
+inout SPI_0_CLK /* synthesis syn_tristate = 1 */ ;
+input SPI_0_DI ;
+output SPI_0_DO ;
+inout SPI_0_SS0 /* synthesis syn_tristate = 1 */ ;
+output SPI_1_SS0_M2F_arst_i ;
+output board_deploy_MSS_0_SPI_1_SS0_M2F_i ;
+output board_deploy_MSS_0_SPI_1_SS0_M2F ;
+output board_deploy_MSS_0_SPI_1_CLK_M2F ;
+wire FCCC_C0_0_GL0 ;
+wire SPI_MISO_Bit ;
+wire SYSRESET_0_POWER_ON_RESET_N ;
+wire board_deploy_MSS_0_GPIO_0_M2F ;
+wire GPIO_3_M2F_c ;
+wire MMUART_1_RXD ;
+wire MMUART_1_TXD ;
+wire SPI_0_CLK ;
+wire SPI_0_DI ;
+wire SPI_0_DO ;
+wire SPI_0_SS0 ;
+wire SPI_1_SS0_M2F_arst_i ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F_i ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F ;
+wire board_deploy_MSS_0_SPI_1_CLK_M2F ;
+wire [7:0] EDAC_ERROR;
+wire [31:0] F_FM0_RDATA;
+wire [31:0] F_HM0_ADDR;
+wire [1:0] F_HM0_SIZE;
+wire [31:0] F_HM0_WDATA;
+wire [1:0] FAB_OPMODE;
+wire [3:0] FAB_VCONTROL;
+wire [1:0] FAB_XCVRSEL;
+wire [7:0] FAB_XDATAOUT;
+wire [1:0] FIC32_0_MASTER;
+wire [1:0] FIC32_1_MASTER;
+wire [15:0] H2F_INTERRUPT;
+wire [15:2] PER2_FABRIC_PADDR;
+wire [31:0] PER2_FABRIC_PWDATA;
+wire [9:0] TCGF;
+wire [3:0] TRACEDATA;
+wire [3:0] TXD_RIF;
+wire [7:0] TXDF;
+wire [3:0] F_BID;
+wire [1:0] F_BRESP_HRESP0;
+wire [63:0] F_RDATA_HRDATA01;
+wire [3:0] F_RID;
+wire [1:0] F_RRESP_HRESP1;
+wire [15:0] MDDR_FABRIC_PRDATA;
+wire [15:0] DRAM_ADDR;
+wire [2:0] DRAM_BA;
+wire [2:0] DRAM_DM_RDQS_OUT;
+wire [17:0] DRAM_DQ_OUT;
+wire [2:0] DRAM_DQS_OUT;
+wire [1:0] DRAM_FIFO_WE_OUT;
+wire [2:0] DM_OE;
+wire [17:0] DRAM_DQ_OE;
+wire [2:0] DRAM_DQS_OE;
+wire SPI_1_CLK_M2F ;
+wire SPI_1_SS0_M2F ;
+wire SPI_0_SS0_PAD_Y ;
+wire MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT ;
+wire MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE ;
+wire MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT ;
+wire MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE ;
+wire SPI_0_DI_PAD_Y ;
+wire SPI_0_CLK_PAD_Y ;
+wire MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT ;
+wire MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE ;
+wire MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OUT ;
+wire MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OE ;
+wire MMUART_1_RXD_PAD_Y ;
+wire CAN_RXBUS_MGPIO3A_H2F_A ;
+wire CAN_TX_EBL_MGPIO4A_H2F_A ;
+wire CAN_TX_EBL_MGPIO4A_H2F_B ;
+wire CAN_TXBUS_MGPIO2A_H2F_A ;
+wire CAN_TXBUS_MGPIO2A_H2F_B ;
+wire CLK_CONFIG_APB ;
+wire COMMS_INT ;
+wire CONFIG_PRESET_N ;
+wire F_FM0_READYOUT ;
+wire F_FM0_RESP ;
+wire F_HM0_ENABLE ;
+wire F_HM0_SEL ;
+wire F_HM0_TRANS1 ;
+wire F_HM0_WRITE ;
+wire FAB_CHRGVBUS ;
+wire FAB_DISCHRGVBUS ;
+wire FAB_DMPULLDOWN ;
+wire FAB_DPPULLDOWN ;
+wire FAB_DRVVBUS ;
+wire FAB_IDPULLUP ;
+wire FAB_SUSPENDM ;
+wire FAB_TERMSEL ;
+wire FAB_TXVALID ;
+wire FAB_VCONTROLLOADM ;
+wire FACC_GLMUX_SEL ;
+wire FPGA_RESET_N ;
+wire GTX_CLK ;
+wire H2F_NMI ;
+wire H2FCALIB ;
+wire I2C0_SCL_MGPIO31B_H2F_A ;
+wire I2C0_SCL_MGPIO31B_H2F_B ;
+wire I2C0_SDA_MGPIO30B_H2F_A ;
+wire I2C0_SDA_MGPIO30B_H2F_B ;
+wire I2C1_SCL_MGPIO1A_H2F_A ;
+wire I2C1_SCL_MGPIO1A_H2F_B ;
+wire I2C1_SDA_MGPIO0A_H2F_A ;
+wire MDCF ;
+wire MDOENF ;
+wire MDOF ;
+wire MMUART0_CTS_MGPIO19B_H2F_A ;
+wire MMUART0_CTS_MGPIO19B_H2F_B ;
+wire MMUART0_DCD_MGPIO22B_H2F_A ;
+wire MMUART0_DCD_MGPIO22B_H2F_B ;
+wire MMUART0_DSR_MGPIO20B_H2F_A ;
+wire MMUART0_DSR_MGPIO20B_H2F_B ;
+wire MMUART0_DTR_MGPIO18B_H2F_A ;
+wire MMUART0_DTR_MGPIO18B_H2F_B ;
+wire MMUART0_RI_MGPIO21B_H2F_A ;
+wire MMUART0_RI_MGPIO21B_H2F_B ;
+wire MMUART0_RTS_MGPIO17B_H2F_A ;
+wire MMUART0_RTS_MGPIO17B_H2F_B ;
+wire MMUART0_RXD_MGPIO28B_H2F_A ;
+wire MMUART0_RXD_MGPIO28B_H2F_B ;
+wire MMUART0_SCK_MGPIO29B_H2F_A ;
+wire MMUART0_SCK_MGPIO29B_H2F_B ;
+wire MMUART0_TXD_MGPIO27B_H2F_A ;
+wire MMUART0_TXD_MGPIO27B_H2F_B ;
+wire MMUART1_DTR_MGPIO12B_H2F_A ;
+wire MMUART1_RTS_MGPIO11B_H2F_A ;
+wire MMUART1_RTS_MGPIO11B_H2F_B ;
+wire MMUART1_RXD_MGPIO26B_H2F_A ;
+wire MMUART1_RXD_MGPIO26B_H2F_B ;
+wire MMUART1_SCK_MGPIO25B_H2F_A ;
+wire MMUART1_SCK_MGPIO25B_H2F_B ;
+wire MMUART1_TXD_MGPIO24B_H2F_A ;
+wire MMUART1_TXD_MGPIO24B_H2F_B ;
+wire MPLL_LOCK ;
+wire PER2_FABRIC_PENABLE ;
+wire PER2_FABRIC_PSEL ;
+wire PER2_FABRIC_PWRITE ;
+wire RTC_MATCH ;
+wire SLEEPDEEP ;
+wire SLEEPHOLDACK ;
+wire SLEEPING ;
+wire SMBALERT_NO0 ;
+wire SMBALERT_NO1 ;
+wire SMBSUS_NO0 ;
+wire SMBSUS_NO1 ;
+wire SPI0_CLK_OUT ;
+wire SPI0_SDI_MGPIO5A_H2F_A ;
+wire SPI0_SDI_MGPIO5A_H2F_B ;
+wire SPI0_SDO_MGPIO6A_H2F_A ;
+wire SPI0_SDO_MGPIO6A_H2F_B ;
+wire SPI0_SS0_MGPIO7A_H2F_A ;
+wire SPI0_SS0_MGPIO7A_H2F_B ;
+wire SPI0_SS1_MGPIO8A_H2F_A ;
+wire SPI0_SS1_MGPIO8A_H2F_B ;
+wire SPI0_SS2_MGPIO9A_H2F_A ;
+wire SPI0_SS2_MGPIO9A_H2F_B ;
+wire SPI0_SS3_MGPIO10A_H2F_A ;
+wire SPI0_SS3_MGPIO10A_H2F_B ;
+wire SPI0_SS4_MGPIO19A_H2F_A ;
+wire SPI0_SS5_MGPIO20A_H2F_A ;
+wire SPI0_SS6_MGPIO21A_H2F_A ;
+wire SPI0_SS7_MGPIO22A_H2F_A ;
+wire SPI1_SDI_MGPIO11A_H2F_A ;
+wire SPI1_SDI_MGPIO11A_H2F_B ;
+wire SPI_1_DO_M2F ;
+wire SPI1_SDO_MGPIO12A_H2F_B ;
+wire SPI_1_SS0_M2F_OE ;
+wire SPI1_SS1_MGPIO14A_H2F_A ;
+wire SPI1_SS1_MGPIO14A_H2F_B ;
+wire SPI1_SS2_MGPIO15A_H2F_A ;
+wire SPI1_SS2_MGPIO15A_H2F_B ;
+wire SPI1_SS3_MGPIO16A_H2F_A ;
+wire SPI1_SS3_MGPIO16A_H2F_B ;
+wire SPI1_SS4_MGPIO17A_H2F_A ;
+wire SPI1_SS5_MGPIO18A_H2F_A ;
+wire SPI1_SS6_MGPIO23A_H2F_A ;
+wire SPI1_SS7_MGPIO24A_H2F_A ;
+wire TRACECLK ;
+wire TX_CLK ;
+wire TX_ENF ;
+wire TX_ERRF ;
+wire TXCTL_EN_RIF ;
+wire TXEV ;
+wire WDOGTIMEOUT ;
+wire F_ARREADY_HREADYOUT1 ;
+wire F_AWREADY_HREADYOUT0 ;
+wire F_BVALID ;
+wire F_RLAST ;
+wire F_RVALID ;
+wire F_WREADY ;
+wire MDDR_FABRIC_PREADY ;
+wire MDDR_FABRIC_PSLVERR ;
+wire VCC ;
+wire GND ;
+wire CAN_RXBUS_USBA_DATA1_MGPIO3A_OUT ;
+wire CAN_TX_EBL_USBA_DATA2_MGPIO4A_OUT ;
+wire CAN_TXBUS_USBA_DATA0_MGPIO2A_OUT ;
+wire DRAM_CASN ;
+wire DRAM_CKE ;
+wire DRAM_CLK ;
+wire DRAM_CSN ;
+wire DRAM_ODT ;
+wire DRAM_RASN ;
+wire DRAM_RSTN ;
+wire DRAM_WEN ;
+wire I2C0_SCL_USBC_DATA1_MGPIO31B_OUT ;
+wire I2C0_SDA_USBC_DATA0_MGPIO30B_OUT ;
+wire I2C1_SCL_USBA_DATA4_MGPIO1A_OUT ;
+wire I2C1_SDA_USBA_DATA3_MGPIO0A_OUT ;
+wire MGPIO25A_OUT ;
+wire MGPIO26A_OUT ;
+wire MMUART0_CTS_USBC_DATA7_MGPIO19B_OUT ;
+wire MMUART0_DCD_MGPIO22B_OUT ;
+wire MMUART0_DSR_MGPIO20B_OUT ;
+wire MMUART0_DTR_USBC_DATA6_MGPIO18B_OUT ;
+wire MMUART0_RI_MGPIO21B_OUT ;
+wire MMUART0_RTS_USBC_DATA5_MGPIO17B_OUT ;
+wire MMUART0_RXD_USBC_STP_MGPIO28B_OUT ;
+wire MMUART0_SCK_USBC_NXT_MGPIO29B_OUT ;
+wire MMUART0_TXD_USBC_DIR_MGPIO27B_OUT ;
+wire MMUART1_CTS_MGPIO13B_OUT ;
+wire MMUART1_DCD_MGPIO16B_OUT ;
+wire MMUART1_DSR_MGPIO14B_OUT ;
+wire MMUART1_DTR_MGPIO12B_OUT ;
+wire MMUART1_RI_MGPIO15B_OUT ;
+wire MMUART1_RTS_MGPIO11B_OUT ;
+wire MMUART1_RXD_USBC_DATA3_MGPIO26B_OUT ;
+wire MMUART1_SCK_USBC_DATA4_MGPIO25B_OUT ;
+wire RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OUT ;
+wire RGMII_MDC_RMII_MDC_OUT ;
+wire RGMII_MDIO_RMII_MDIO_USBB_DATA7_OUT ;
+wire RGMII_RX_CLK_OUT ;
+wire RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OUT ;
+wire RGMII_RXD0_RMII_RXD0_USBB_DATA0_OUT ;
+wire RGMII_RXD1_RMII_RXD1_USBB_DATA1_OUT ;
+wire RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OUT ;
+wire RGMII_RXD3_USBB_DATA4_OUT ;
+wire RGMII_TX_CLK_OUT ;
+wire RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OUT ;
+wire RGMII_TXD0_RMII_TXD0_USBB_DIR_OUT ;
+wire RGMII_TXD1_RMII_TXD1_USBB_STP_OUT ;
+wire RGMII_TXD2_USBB_DATA5_OUT ;
+wire RGMII_TXD3_USBB_DATA6_OUT ;
+wire SPI0_SDI_USBA_DIR_MGPIO5A_OUT ;
+wire SPI0_SS1_USBA_DATA5_MGPIO8A_OUT ;
+wire SPI0_SS2_USBA_DATA6_MGPIO9A_OUT ;
+wire SPI0_SS3_USBA_DATA7_MGPIO10A_OUT ;
+wire SPI0_SS4_MGPIO19A_OUT ;
+wire SPI0_SS5_MGPIO20A_OUT ;
+wire SPI0_SS6_MGPIO21A_OUT ;
+wire SPI0_SS7_MGPIO22A_OUT ;
+wire SPI1_SCK_OUT ;
+wire SPI1_SDI_MGPIO11A_OUT ;
+wire SPI1_SDO_MGPIO12A_OUT ;
+wire SPI1_SS0_MGPIO13A_OUT ;
+wire SPI1_SS1_MGPIO14A_OUT ;
+wire SPI1_SS2_MGPIO15A_OUT ;
+wire SPI1_SS3_MGPIO16A_OUT ;
+wire SPI1_SS4_MGPIO17A_OUT ;
+wire SPI1_SS5_MGPIO18A_OUT ;
+wire SPI1_SS6_MGPIO23A_OUT ;
+wire SPI1_SS7_MGPIO24A_OUT ;
+wire USBC_XCLK_OUT ;
+wire CAN_RXBUS_USBA_DATA1_MGPIO3A_OE ;
+wire CAN_TX_EBL_USBA_DATA2_MGPIO4A_OE ;
+wire CAN_TXBUS_USBA_DATA0_MGPIO2A_OE ;
+wire I2C0_SCL_USBC_DATA1_MGPIO31B_OE ;
+wire I2C0_SDA_USBC_DATA0_MGPIO30B_OE ;
+wire I2C1_SCL_USBA_DATA4_MGPIO1A_OE ;
+wire I2C1_SDA_USBA_DATA3_MGPIO0A_OE ;
+wire MGPIO25A_OE ;
+wire MGPIO26A_OE ;
+wire MMUART0_CTS_USBC_DATA7_MGPIO19B_OE ;
+wire MMUART0_DCD_MGPIO22B_OE ;
+wire MMUART0_DSR_MGPIO20B_OE ;
+wire MMUART0_DTR_USBC_DATA6_MGPIO18B_OE ;
+wire MMUART0_RI_MGPIO21B_OE ;
+wire MMUART0_RTS_USBC_DATA5_MGPIO17B_OE ;
+wire MMUART0_RXD_USBC_STP_MGPIO28B_OE ;
+wire MMUART0_SCK_USBC_NXT_MGPIO29B_OE ;
+wire MMUART0_TXD_USBC_DIR_MGPIO27B_OE ;
+wire MMUART1_CTS_MGPIO13B_OE ;
+wire MMUART1_DCD_MGPIO16B_OE ;
+wire MMUART1_DSR_MGPIO14B_OE ;
+wire MMUART1_DTR_MGPIO12B_OE ;
+wire MMUART1_RI_MGPIO15B_OE ;
+wire MMUART1_RTS_MGPIO11B_OE ;
+wire MMUART1_RXD_USBC_DATA3_MGPIO26B_OE ;
+wire MMUART1_SCK_USBC_DATA4_MGPIO25B_OE ;
+wire RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OE ;
+wire RGMII_MDC_RMII_MDC_OE ;
+wire RGMII_MDIO_RMII_MDIO_USBB_DATA7_OE ;
+wire RGMII_RX_CLK_OE ;
+wire RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OE ;
+wire RGMII_RXD0_RMII_RXD0_USBB_DATA0_OE ;
+wire RGMII_RXD1_RMII_RXD1_USBB_DATA1_OE ;
+wire RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OE ;
+wire RGMII_RXD3_USBB_DATA4_OE ;
+wire RGMII_TX_CLK_OE ;
+wire RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OE ;
+wire RGMII_TXD0_RMII_TXD0_USBB_DIR_OE ;
+wire RGMII_TXD1_RMII_TXD1_USBB_STP_OE ;
+wire RGMII_TXD2_USBB_DATA5_OE ;
+wire RGMII_TXD3_USBB_DATA6_OE ;
+wire SPI0_SDI_USBA_DIR_MGPIO5A_OE ;
+wire SPI0_SS1_USBA_DATA5_MGPIO8A_OE ;
+wire SPI0_SS2_USBA_DATA6_MGPIO9A_OE ;
+wire SPI0_SS3_USBA_DATA7_MGPIO10A_OE ;
+wire SPI0_SS4_MGPIO19A_OE ;
+wire SPI0_SS5_MGPIO20A_OE ;
+wire SPI0_SS6_MGPIO21A_OE ;
+wire SPI0_SS7_MGPIO22A_OE ;
+wire SPI1_SCK_OE ;
+wire SPI1_SDI_MGPIO11A_OE ;
+wire SPI1_SDO_MGPIO12A_OE ;
+wire SPI1_SS0_MGPIO13A_OE ;
+wire SPI1_SS1_MGPIO14A_OE ;
+wire SPI1_SS2_MGPIO15A_OE ;
+wire SPI1_SS3_MGPIO16A_OE ;
+wire SPI1_SS4_MGPIO17A_OE ;
+wire SPI1_SS5_MGPIO18A_OE ;
+wire SPI1_SS6_MGPIO23A_OE ;
+wire SPI1_SS7_MGPIO24A_OE ;
+wire USBC_XCLK_OE ;
+  CLKINT SPI_1_CLK_M2F_inferred_clock_RNILB31 (
+	.Y(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.A(SPI_1_CLK_M2F)
+);
+  CLKINT SPI_1_SS0_M2F_inferred_clock_RNIH6BC (
+	.Y(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.A(SPI_1_SS0_M2F)
+);
+  CFG1 SPI_1_SS0_M2F_inferred_clock_RNIH6BC_1 (
+	.A(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.Y(board_deploy_MSS_0_SPI_1_SS0_M2F_i)
+);
+defparam SPI_1_SS0_M2F_inferred_clock_RNIH6BC_1.INIT=2'h1;
+  CFG1 SPI_1_SS0_M2F_inferred_clock_RNIH6BC_0 (
+	.A(SPI_1_SS0_M2F),
+	.Y(SPI_1_SS0_M2F_arst_i)
+);
+defparam SPI_1_SS0_M2F_inferred_clock_RNIH6BC_0.INIT=2'h1;
+// @17:785
+  BIBUF SPI_0_SS0_PAD (
+	.Y(SPI_0_SS0_PAD_Y),
+	.PAD(SPI_0_SS0),
+	.D(MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT),
+	.E(MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE)
+);
+// @17:776
+  TRIBUFF SPI_0_DO_PAD (
+	.PAD(SPI_0_DO),
+	.D(MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT),
+	.E(MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE)
+);
+// @17:768
+  INBUF SPI_0_DI_PAD (
+	.Y(SPI_0_DI_PAD_Y),
+	.PAD(SPI_0_DI)
+);
+// @17:757
+  BIBUF SPI_0_CLK_PAD (
+	.Y(SPI_0_CLK_PAD_Y),
+	.PAD(SPI_0_CLK),
+	.D(MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT),
+	.E(MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE)
+);
+// @17:210
+  TRIBUFF MMUART_1_TXD_PAD (
+	.PAD(MMUART_1_TXD),
+	.D(MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OUT),
+	.E(MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OE)
+);
+// @17:202
+  INBUF MMUART_1_RXD_PAD (
+	.Y(MMUART_1_RXD_PAD_Y),
+	.PAD(MMUART_1_RXD)
+);
+// @17:226
+  MSS_025 MSS_ADLIB_INST (
+	.CAN_RXBUS_MGPIO3A_H2F_A(CAN_RXBUS_MGPIO3A_H2F_A),
+	.CAN_RXBUS_MGPIO3A_H2F_B(GPIO_3_M2F_c),
+	.CAN_TX_EBL_MGPIO4A_H2F_A(CAN_TX_EBL_MGPIO4A_H2F_A),
+	.CAN_TX_EBL_MGPIO4A_H2F_B(CAN_TX_EBL_MGPIO4A_H2F_B),
+	.CAN_TXBUS_MGPIO2A_H2F_A(CAN_TXBUS_MGPIO2A_H2F_A),
+	.CAN_TXBUS_MGPIO2A_H2F_B(CAN_TXBUS_MGPIO2A_H2F_B),
+	.CLK_CONFIG_APB(CLK_CONFIG_APB),
+	.COMMS_INT(COMMS_INT),
+	.CONFIG_PRESET_N(CONFIG_PRESET_N),
+	.EDAC_ERROR(EDAC_ERROR[7:0]),
+	.F_FM0_RDATA(F_FM0_RDATA[31:0]),
+	.F_FM0_READYOUT(F_FM0_READYOUT),
+	.F_FM0_RESP(F_FM0_RESP),
+	.F_HM0_ADDR(F_HM0_ADDR[31:0]),
+	.F_HM0_ENABLE(F_HM0_ENABLE),
+	.F_HM0_SEL(F_HM0_SEL),
+	.F_HM0_SIZE(F_HM0_SIZE[1:0]),
+	.F_HM0_TRANS1(F_HM0_TRANS1),
+	.F_HM0_WDATA(F_HM0_WDATA[31:0]),
+	.F_HM0_WRITE(F_HM0_WRITE),
+	.FAB_CHRGVBUS(FAB_CHRGVBUS),
+	.FAB_DISCHRGVBUS(FAB_DISCHRGVBUS),
+	.FAB_DMPULLDOWN(FAB_DMPULLDOWN),
+	.FAB_DPPULLDOWN(FAB_DPPULLDOWN),
+	.FAB_DRVVBUS(FAB_DRVVBUS),
+	.FAB_IDPULLUP(FAB_IDPULLUP),
+	.FAB_OPMODE(FAB_OPMODE[1:0]),
+	.FAB_SUSPENDM(FAB_SUSPENDM),
+	.FAB_TERMSEL(FAB_TERMSEL),
+	.FAB_TXVALID(FAB_TXVALID),
+	.FAB_VCONTROL(FAB_VCONTROL[3:0]),
+	.FAB_VCONTROLLOADM(FAB_VCONTROLLOADM),
+	.FAB_XCVRSEL(FAB_XCVRSEL[1:0]),
+	.FAB_XDATAOUT(FAB_XDATAOUT[7:0]),
+	.FACC_GLMUX_SEL(FACC_GLMUX_SEL),
+	.FIC32_0_MASTER(FIC32_0_MASTER[1:0]),
+	.FIC32_1_MASTER(FIC32_1_MASTER[1:0]),
+	.FPGA_RESET_N(FPGA_RESET_N),
+	.GTX_CLK(GTX_CLK),
+	.H2F_INTERRUPT(H2F_INTERRUPT[15:0]),
+	.H2F_NMI(H2F_NMI),
+	.H2FCALIB(H2FCALIB),
+	.I2C0_SCL_MGPIO31B_H2F_A(I2C0_SCL_MGPIO31B_H2F_A),
+	.I2C0_SCL_MGPIO31B_H2F_B(I2C0_SCL_MGPIO31B_H2F_B),
+	.I2C0_SDA_MGPIO30B_H2F_A(I2C0_SDA_MGPIO30B_H2F_A),
+	.I2C0_SDA_MGPIO30B_H2F_B(I2C0_SDA_MGPIO30B_H2F_B),
+	.I2C1_SCL_MGPIO1A_H2F_A(I2C1_SCL_MGPIO1A_H2F_A),
+	.I2C1_SCL_MGPIO1A_H2F_B(I2C1_SCL_MGPIO1A_H2F_B),
+	.I2C1_SDA_MGPIO0A_H2F_A(I2C1_SDA_MGPIO0A_H2F_A),
+	.I2C1_SDA_MGPIO0A_H2F_B(board_deploy_MSS_0_GPIO_0_M2F),
+	.MDCF(MDCF),
+	.MDOENF(MDOENF),
+	.MDOF(MDOF),
+	.MMUART0_CTS_MGPIO19B_H2F_A(MMUART0_CTS_MGPIO19B_H2F_A),
+	.MMUART0_CTS_MGPIO19B_H2F_B(MMUART0_CTS_MGPIO19B_H2F_B),
+	.MMUART0_DCD_MGPIO22B_H2F_A(MMUART0_DCD_MGPIO22B_H2F_A),
+	.MMUART0_DCD_MGPIO22B_H2F_B(MMUART0_DCD_MGPIO22B_H2F_B),
+	.MMUART0_DSR_MGPIO20B_H2F_A(MMUART0_DSR_MGPIO20B_H2F_A),
+	.MMUART0_DSR_MGPIO20B_H2F_B(MMUART0_DSR_MGPIO20B_H2F_B),
+	.MMUART0_DTR_MGPIO18B_H2F_A(MMUART0_DTR_MGPIO18B_H2F_A),
+	.MMUART0_DTR_MGPIO18B_H2F_B(MMUART0_DTR_MGPIO18B_H2F_B),
+	.MMUART0_RI_MGPIO21B_H2F_A(MMUART0_RI_MGPIO21B_H2F_A),
+	.MMUART0_RI_MGPIO21B_H2F_B(MMUART0_RI_MGPIO21B_H2F_B),
+	.MMUART0_RTS_MGPIO17B_H2F_A(MMUART0_RTS_MGPIO17B_H2F_A),
+	.MMUART0_RTS_MGPIO17B_H2F_B(MMUART0_RTS_MGPIO17B_H2F_B),
+	.MMUART0_RXD_MGPIO28B_H2F_A(MMUART0_RXD_MGPIO28B_H2F_A),
+	.MMUART0_RXD_MGPIO28B_H2F_B(MMUART0_RXD_MGPIO28B_H2F_B),
+	.MMUART0_SCK_MGPIO29B_H2F_A(MMUART0_SCK_MGPIO29B_H2F_A),
+	.MMUART0_SCK_MGPIO29B_H2F_B(MMUART0_SCK_MGPIO29B_H2F_B),
+	.MMUART0_TXD_MGPIO27B_H2F_A(MMUART0_TXD_MGPIO27B_H2F_A),
+	.MMUART0_TXD_MGPIO27B_H2F_B(MMUART0_TXD_MGPIO27B_H2F_B),
+	.MMUART1_DTR_MGPIO12B_H2F_A(MMUART1_DTR_MGPIO12B_H2F_A),
+	.MMUART1_RTS_MGPIO11B_H2F_A(MMUART1_RTS_MGPIO11B_H2F_A),
+	.MMUART1_RTS_MGPIO11B_H2F_B(MMUART1_RTS_MGPIO11B_H2F_B),
+	.MMUART1_RXD_MGPIO26B_H2F_A(MMUART1_RXD_MGPIO26B_H2F_A),
+	.MMUART1_RXD_MGPIO26B_H2F_B(MMUART1_RXD_MGPIO26B_H2F_B),
+	.MMUART1_SCK_MGPIO25B_H2F_A(MMUART1_SCK_MGPIO25B_H2F_A),
+	.MMUART1_SCK_MGPIO25B_H2F_B(MMUART1_SCK_MGPIO25B_H2F_B),
+	.MMUART1_TXD_MGPIO24B_H2F_A(MMUART1_TXD_MGPIO24B_H2F_A),
+	.MMUART1_TXD_MGPIO24B_H2F_B(MMUART1_TXD_MGPIO24B_H2F_B),
+	.MPLL_LOCK(MPLL_LOCK),
+	.PER2_FABRIC_PADDR(PER2_FABRIC_PADDR[15:2]),
+	.PER2_FABRIC_PENABLE(PER2_FABRIC_PENABLE),
+	.PER2_FABRIC_PSEL(PER2_FABRIC_PSEL),
+	.PER2_FABRIC_PWDATA(PER2_FABRIC_PWDATA[31:0]),
+	.PER2_FABRIC_PWRITE(PER2_FABRIC_PWRITE),
+	.RTC_MATCH(RTC_MATCH),
+	.SLEEPDEEP(SLEEPDEEP),
+	.SLEEPHOLDACK(SLEEPHOLDACK),
+	.SLEEPING(SLEEPING),
+	.SMBALERT_NO0(SMBALERT_NO0),
+	.SMBALERT_NO1(SMBALERT_NO1),
+	.SMBSUS_NO0(SMBSUS_NO0),
+	.SMBSUS_NO1(SMBSUS_NO1),
+	.SPI0_CLK_OUT(SPI0_CLK_OUT),
+	.SPI0_SDI_MGPIO5A_H2F_A(SPI0_SDI_MGPIO5A_H2F_A),
+	.SPI0_SDI_MGPIO5A_H2F_B(SPI0_SDI_MGPIO5A_H2F_B),
+	.SPI0_SDO_MGPIO6A_H2F_A(SPI0_SDO_MGPIO6A_H2F_A),
+	.SPI0_SDO_MGPIO6A_H2F_B(SPI0_SDO_MGPIO6A_H2F_B),
+	.SPI0_SS0_MGPIO7A_H2F_A(SPI0_SS0_MGPIO7A_H2F_A),
+	.SPI0_SS0_MGPIO7A_H2F_B(SPI0_SS0_MGPIO7A_H2F_B),
+	.SPI0_SS1_MGPIO8A_H2F_A(SPI0_SS1_MGPIO8A_H2F_A),
+	.SPI0_SS1_MGPIO8A_H2F_B(SPI0_SS1_MGPIO8A_H2F_B),
+	.SPI0_SS2_MGPIO9A_H2F_A(SPI0_SS2_MGPIO9A_H2F_A),
+	.SPI0_SS2_MGPIO9A_H2F_B(SPI0_SS2_MGPIO9A_H2F_B),
+	.SPI0_SS3_MGPIO10A_H2F_A(SPI0_SS3_MGPIO10A_H2F_A),
+	.SPI0_SS3_MGPIO10A_H2F_B(SPI0_SS3_MGPIO10A_H2F_B),
+	.SPI0_SS4_MGPIO19A_H2F_A(SPI0_SS4_MGPIO19A_H2F_A),
+	.SPI0_SS5_MGPIO20A_H2F_A(SPI0_SS5_MGPIO20A_H2F_A),
+	.SPI0_SS6_MGPIO21A_H2F_A(SPI0_SS6_MGPIO21A_H2F_A),
+	.SPI0_SS7_MGPIO22A_H2F_A(SPI0_SS7_MGPIO22A_H2F_A),
+	.SPI1_CLK_OUT(SPI_1_CLK_M2F),
+	.SPI1_SDI_MGPIO11A_H2F_A(SPI1_SDI_MGPIO11A_H2F_A),
+	.SPI1_SDI_MGPIO11A_H2F_B(SPI1_SDI_MGPIO11A_H2F_B),
+	.SPI1_SDO_MGPIO12A_H2F_A(SPI_1_DO_M2F),
+	.SPI1_SDO_MGPIO12A_H2F_B(SPI1_SDO_MGPIO12A_H2F_B),
+	.SPI1_SS0_MGPIO13A_H2F_A(SPI_1_SS0_M2F),
+	.SPI1_SS0_MGPIO13A_H2F_B(SPI_1_SS0_M2F_OE),
+	.SPI1_SS1_MGPIO14A_H2F_A(SPI1_SS1_MGPIO14A_H2F_A),
+	.SPI1_SS1_MGPIO14A_H2F_B(SPI1_SS1_MGPIO14A_H2F_B),
+	.SPI1_SS2_MGPIO15A_H2F_A(SPI1_SS2_MGPIO15A_H2F_A),
+	.SPI1_SS2_MGPIO15A_H2F_B(SPI1_SS2_MGPIO15A_H2F_B),
+	.SPI1_SS3_MGPIO16A_H2F_A(SPI1_SS3_MGPIO16A_H2F_A),
+	.SPI1_SS3_MGPIO16A_H2F_B(SPI1_SS3_MGPIO16A_H2F_B),
+	.SPI1_SS4_MGPIO17A_H2F_A(SPI1_SS4_MGPIO17A_H2F_A),
+	.SPI1_SS5_MGPIO18A_H2F_A(SPI1_SS5_MGPIO18A_H2F_A),
+	.SPI1_SS6_MGPIO23A_H2F_A(SPI1_SS6_MGPIO23A_H2F_A),
+	.SPI1_SS7_MGPIO24A_H2F_A(SPI1_SS7_MGPIO24A_H2F_A),
+	.TCGF(TCGF[9:0]),
+	.TRACECLK(TRACECLK),
+	.TRACEDATA(TRACEDATA[3:0]),
+	.TX_CLK(TX_CLK),
+	.TX_ENF(TX_ENF),
+	.TX_ERRF(TX_ERRF),
+	.TXCTL_EN_RIF(TXCTL_EN_RIF),
+	.TXD_RIF(TXD_RIF[3:0]),
+	.TXDF(TXDF[7:0]),
+	.TXEV(TXEV),
+	.WDOGTIMEOUT(WDOGTIMEOUT),
+	.F_ARREADY_HREADYOUT1(F_ARREADY_HREADYOUT1),
+	.F_AWREADY_HREADYOUT0(F_AWREADY_HREADYOUT0),
+	.F_BID(F_BID[3:0]),
+	.F_BRESP_HRESP0(F_BRESP_HRESP0[1:0]),
+	.F_BVALID(F_BVALID),
+	.F_RDATA_HRDATA01(F_RDATA_HRDATA01[63:0]),
+	.F_RID(F_RID[3:0]),
+	.F_RLAST(F_RLAST),
+	.F_RRESP_HRESP1(F_RRESP_HRESP1[1:0]),
+	.F_RVALID(F_RVALID),
+	.F_WREADY(F_WREADY),
+	.MDDR_FABRIC_PRDATA(MDDR_FABRIC_PRDATA[15:0]),
+	.MDDR_FABRIC_PREADY(MDDR_FABRIC_PREADY),
+	.MDDR_FABRIC_PSLVERR(MDDR_FABRIC_PSLVERR),
+	.CAN_RXBUS_F2H_SCP(VCC),
+	.CAN_TX_EBL_F2H_SCP(VCC),
+	.CAN_TXBUS_F2H_SCP(VCC),
+	.COLF(VCC),
+	.CRSF(VCC),
+	.F2_DMAREADY({VCC, VCC}),
+	.F2H_INTERRUPT({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.F2HCALIB(VCC),
+	.F_DMAREADY({VCC, VCC}),
+	.F_FM0_ADDR({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.F_FM0_ENABLE(GND),
+	.F_FM0_MASTLOCK(GND),
+	.F_FM0_READY(VCC),
+	.F_FM0_SEL(GND),
+	.F_FM0_SIZE({GND, GND}),
+	.F_FM0_TRANS1(GND),
+	.F_FM0_WDATA({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.F_FM0_WRITE(GND),
+	.F_HM0_RDATA({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.F_HM0_READY(VCC),
+	.F_HM0_RESP(GND),
+	.FAB_AVALID(VCC),
+	.FAB_HOSTDISCON(VCC),
+	.FAB_IDDIG(VCC),
+	.FAB_LINESTATE({VCC, VCC}),
+	.FAB_M3_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.FAB_PLL_LOCK(VCC),
+	.FAB_RXACTIVE(VCC),
+	.FAB_RXERROR(VCC),
+	.FAB_RXVALID(VCC),
+	.FAB_RXVALIDH(GND),
+	.FAB_SESSEND(VCC),
+	.FAB_TXREADY(VCC),
+	.FAB_VBUSVALID(VCC),
+	.FAB_VSTATUS({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.FAB_XDATAIN({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.GTX_CLKPF(VCC),
+	.I2C0_BCLK(VCC),
+	.I2C0_SCL_F2H_SCP(VCC),
+	.I2C0_SDA_F2H_SCP(VCC),
+	.I2C1_BCLK(VCC),
+	.I2C1_SCL_F2H_SCP(VCC),
+	.I2C1_SDA_F2H_SCP(VCC),
+	.MDIF(VCC),
+	.MGPIO0A_F2H_GPIN(VCC),
+	.MGPIO10A_F2H_GPIN(VCC),
+	.MGPIO11A_F2H_GPIN(VCC),
+	.MGPIO11B_F2H_GPIN(VCC),
+	.MGPIO12A_F2H_GPIN(VCC),
+	.MGPIO13A_F2H_GPIN(VCC),
+	.MGPIO14A_F2H_GPIN(VCC),
+	.MGPIO15A_F2H_GPIN(VCC),
+	.MGPIO16A_F2H_GPIN(VCC),
+	.MGPIO17B_F2H_GPIN(VCC),
+	.MGPIO18B_F2H_GPIN(VCC),
+	.MGPIO19B_F2H_GPIN(VCC),
+	.MGPIO1A_F2H_GPIN(VCC),
+	.MGPIO20B_F2H_GPIN(VCC),
+	.MGPIO21B_F2H_GPIN(VCC),
+	.MGPIO22B_F2H_GPIN(VCC),
+	.MGPIO24B_F2H_GPIN(VCC),
+	.MGPIO25B_F2H_GPIN(VCC),
+	.MGPIO26B_F2H_GPIN(VCC),
+	.MGPIO27B_F2H_GPIN(VCC),
+	.MGPIO28B_F2H_GPIN(VCC),
+	.MGPIO29B_F2H_GPIN(VCC),
+	.MGPIO2A_F2H_GPIN(VCC),
+	.MGPIO30B_F2H_GPIN(VCC),
+	.MGPIO31B_F2H_GPIN(VCC),
+	.MGPIO3A_F2H_GPIN(VCC),
+	.MGPIO4A_F2H_GPIN(VCC),
+	.MGPIO5A_F2H_GPIN(VCC),
+	.MGPIO6A_F2H_GPIN(VCC),
+	.MGPIO7A_F2H_GPIN(VCC),
+	.MGPIO8A_F2H_GPIN(VCC),
+	.MGPIO9A_F2H_GPIN(VCC),
+	.MMUART0_CTS_F2H_SCP(VCC),
+	.MMUART0_DCD_F2H_SCP(VCC),
+	.MMUART0_DSR_F2H_SCP(VCC),
+	.MMUART0_DTR_F2H_SCP(VCC),
+	.MMUART0_RI_F2H_SCP(VCC),
+	.MMUART0_RTS_F2H_SCP(VCC),
+	.MMUART0_RXD_F2H_SCP(VCC),
+	.MMUART0_SCK_F2H_SCP(VCC),
+	.MMUART0_TXD_F2H_SCP(VCC),
+	.MMUART1_CTS_F2H_SCP(VCC),
+	.MMUART1_DCD_F2H_SCP(VCC),
+	.MMUART1_DSR_F2H_SCP(VCC),
+	.MMUART1_RI_F2H_SCP(VCC),
+	.MMUART1_RTS_F2H_SCP(VCC),
+	.MMUART1_RXD_F2H_SCP(VCC),
+	.MMUART1_SCK_F2H_SCP(VCC),
+	.MMUART1_TXD_F2H_SCP(VCC),
+	.PER2_FABRIC_PRDATA({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.PER2_FABRIC_PREADY(VCC),
+	.PER2_FABRIC_PSLVERR(VCC),
+	.RCGF({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.RX_CLKPF(VCC),
+	.RX_DVF(VCC),
+	.RX_ERRF(VCC),
+	.RX_EV(VCC),
+	.RXDF({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.SLEEPHOLDREQ(GND),
+	.SMBALERT_NI0(VCC),
+	.SMBALERT_NI1(VCC),
+	.SMBSUS_NI0(VCC),
+	.SMBSUS_NI1(VCC),
+	.SPI0_CLK_IN(VCC),
+	.SPI0_SDI_F2H_SCP(VCC),
+	.SPI0_SDO_F2H_SCP(VCC),
+	.SPI0_SS0_F2H_SCP(VCC),
+	.SPI0_SS1_F2H_SCP(VCC),
+	.SPI0_SS2_F2H_SCP(VCC),
+	.SPI0_SS3_F2H_SCP(VCC),
+	.SPI1_CLK_IN(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.SPI1_SDI_F2H_SCP(SPI_MISO_Bit),
+	.SPI1_SDO_F2H_SCP(VCC),
+	.SPI1_SS0_F2H_SCP(VCC),
+	.SPI1_SS1_F2H_SCP(VCC),
+	.SPI1_SS2_F2H_SCP(VCC),
+	.SPI1_SS3_F2H_SCP(VCC),
+	.TX_CLKPF(VCC),
+	.USER_MSS_GPIO_RESET_N(VCC),
+	.USER_MSS_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.XCLK_FAB(VCC),
+	.CLK_BASE(FCCC_C0_0_GL0),
+	.CLK_MDDR_APB(VCC),
+	.F_ARADDR_HADDR1({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.F_ARBURST_HTRANS1({GND, GND}),
+	.F_ARID_HSEL1({GND, GND, GND, GND}),
+	.F_ARLEN_HBURST1({GND, GND, GND, GND}),
+	.F_ARLOCK_HMASTLOCK1({GND, GND}),
+	.F_ARSIZE_HSIZE1({GND, GND}),
+	.F_ARVALID_HWRITE1(GND),
+	.F_AWADDR_HADDR0({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.F_AWBURST_HTRANS0({GND, GND}),
+	.F_AWID_HSEL0({GND, GND, GND, GND}),
+	.F_AWLEN_HBURST0({GND, GND, GND, GND}),
+	.F_AWLOCK_HMASTLOCK0({GND, GND}),
+	.F_AWSIZE_HSIZE0({GND, GND}),
+	.F_AWVALID_HWRITE0(GND),
+	.F_BREADY(GND),
+	.F_RMW_AXI(GND),
+	.F_RREADY(GND),
+	.F_WDATA_HWDATA01({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.F_WID_HREADY01({GND, GND, GND, GND}),
+	.F_WLAST(GND),
+	.F_WSTRB({GND, GND, GND, GND, GND, GND, GND, GND}),
+	.F_WVALID(GND),
+	.FPGA_MDDR_ARESET_N(VCC),
+	.MDDR_FABRIC_PADDR({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.MDDR_FABRIC_PENABLE(VCC),
+	.MDDR_FABRIC_PSEL(VCC),
+	.MDDR_FABRIC_PWDATA({VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC}),
+	.MDDR_FABRIC_PWRITE(VCC),
+	.PRESET_N(GND),
+	.CAN_RXBUS_USBA_DATA1_MGPIO3A_IN(GND),
+	.CAN_TX_EBL_USBA_DATA2_MGPIO4A_IN(GND),
+	.CAN_TXBUS_USBA_DATA0_MGPIO2A_IN(GND),
+	.DM_IN({GND, GND, GND}),
+	.DRAM_DQ_IN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.DRAM_DQS_IN({GND, GND, GND}),
+	.DRAM_FIFO_WE_IN({GND, GND}),
+	.I2C0_SCL_USBC_DATA1_MGPIO31B_IN(GND),
+	.I2C0_SDA_USBC_DATA0_MGPIO30B_IN(GND),
+	.I2C1_SCL_USBA_DATA4_MGPIO1A_IN(GND),
+	.I2C1_SDA_USBA_DATA3_MGPIO0A_IN(GND),
+	.MGPIO25A_IN(GND),
+	.MGPIO26A_IN(GND),
+	.MMUART0_CTS_USBC_DATA7_MGPIO19B_IN(GND),
+	.MMUART0_DCD_MGPIO22B_IN(GND),
+	.MMUART0_DSR_MGPIO20B_IN(GND),
+	.MMUART0_DTR_USBC_DATA6_MGPIO18B_IN(GND),
+	.MMUART0_RI_MGPIO21B_IN(GND),
+	.MMUART0_RTS_USBC_DATA5_MGPIO17B_IN(GND),
+	.MMUART0_RXD_USBC_STP_MGPIO28B_IN(GND),
+	.MMUART0_SCK_USBC_NXT_MGPIO29B_IN(GND),
+	.MMUART0_TXD_USBC_DIR_MGPIO27B_IN(GND),
+	.MMUART1_CTS_MGPIO13B_IN(GND),
+	.MMUART1_DCD_MGPIO16B_IN(GND),
+	.MMUART1_DSR_MGPIO14B_IN(GND),
+	.MMUART1_DTR_MGPIO12B_IN(GND),
+	.MMUART1_RI_MGPIO15B_IN(GND),
+	.MMUART1_RTS_MGPIO11B_IN(GND),
+	.MMUART1_RXD_USBC_DATA3_MGPIO26B_IN(MMUART_1_RXD_PAD_Y),
+	.MMUART1_SCK_USBC_DATA4_MGPIO25B_IN(GND),
+	.MMUART1_TXD_USBC_DATA2_MGPIO24B_IN(GND),
+	.RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_IN(GND),
+	.RGMII_MDC_RMII_MDC_IN(GND),
+	.RGMII_MDIO_RMII_MDIO_USBB_DATA7_IN(GND),
+	.RGMII_RX_CLK_IN(GND),
+	.RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_IN(GND),
+	.RGMII_RXD0_RMII_RXD0_USBB_DATA0_IN(GND),
+	.RGMII_RXD1_RMII_RXD1_USBB_DATA1_IN(GND),
+	.RGMII_RXD2_RMII_RX_ER_USBB_DATA3_IN(GND),
+	.RGMII_RXD3_USBB_DATA4_IN(GND),
+	.RGMII_TX_CLK_IN(GND),
+	.RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_IN(GND),
+	.RGMII_TXD0_RMII_TXD0_USBB_DIR_IN(GND),
+	.RGMII_TXD1_RMII_TXD1_USBB_STP_IN(GND),
+	.RGMII_TXD2_USBB_DATA5_IN(GND),
+	.RGMII_TXD3_USBB_DATA6_IN(GND),
+	.SPI0_SCK_USBA_XCLK_IN(SPI_0_CLK_PAD_Y),
+	.SPI0_SDI_USBA_DIR_MGPIO5A_IN(SPI_0_DI_PAD_Y),
+	.SPI0_SDO_USBA_STP_MGPIO6A_IN(GND),
+	.SPI0_SS0_USBA_NXT_MGPIO7A_IN(SPI_0_SS0_PAD_Y),
+	.SPI0_SS1_USBA_DATA5_MGPIO8A_IN(GND),
+	.SPI0_SS2_USBA_DATA6_MGPIO9A_IN(GND),
+	.SPI0_SS3_USBA_DATA7_MGPIO10A_IN(GND),
+	.SPI0_SS4_MGPIO19A_IN(GND),
+	.SPI0_SS5_MGPIO20A_IN(GND),
+	.SPI0_SS6_MGPIO21A_IN(GND),
+	.SPI0_SS7_MGPIO22A_IN(GND),
+	.SPI1_SCK_IN(GND),
+	.SPI1_SDI_MGPIO11A_IN(GND),
+	.SPI1_SDO_MGPIO12A_IN(GND),
+	.SPI1_SS0_MGPIO13A_IN(GND),
+	.SPI1_SS1_MGPIO14A_IN(GND),
+	.SPI1_SS2_MGPIO15A_IN(GND),
+	.SPI1_SS3_MGPIO16A_IN(GND),
+	.SPI1_SS4_MGPIO17A_IN(GND),
+	.SPI1_SS5_MGPIO18A_IN(GND),
+	.SPI1_SS6_MGPIO23A_IN(GND),
+	.SPI1_SS7_MGPIO24A_IN(GND),
+	.USBC_XCLK_IN(GND),
+	.CAN_RXBUS_USBA_DATA1_MGPIO3A_OUT(CAN_RXBUS_USBA_DATA1_MGPIO3A_OUT),
+	.CAN_TX_EBL_USBA_DATA2_MGPIO4A_OUT(CAN_TX_EBL_USBA_DATA2_MGPIO4A_OUT),
+	.CAN_TXBUS_USBA_DATA0_MGPIO2A_OUT(CAN_TXBUS_USBA_DATA0_MGPIO2A_OUT),
+	.DRAM_ADDR(DRAM_ADDR[15:0]),
+	.DRAM_BA(DRAM_BA[2:0]),
+	.DRAM_CASN(DRAM_CASN),
+	.DRAM_CKE(DRAM_CKE),
+	.DRAM_CLK(DRAM_CLK),
+	.DRAM_CSN(DRAM_CSN),
+	.DRAM_DM_RDQS_OUT(DRAM_DM_RDQS_OUT[2:0]),
+	.DRAM_DQ_OUT(DRAM_DQ_OUT[17:0]),
+	.DRAM_DQS_OUT(DRAM_DQS_OUT[2:0]),
+	.DRAM_FIFO_WE_OUT(DRAM_FIFO_WE_OUT[1:0]),
+	.DRAM_ODT(DRAM_ODT),
+	.DRAM_RASN(DRAM_RASN),
+	.DRAM_RSTN(DRAM_RSTN),
+	.DRAM_WEN(DRAM_WEN),
+	.I2C0_SCL_USBC_DATA1_MGPIO31B_OUT(I2C0_SCL_USBC_DATA1_MGPIO31B_OUT),
+	.I2C0_SDA_USBC_DATA0_MGPIO30B_OUT(I2C0_SDA_USBC_DATA0_MGPIO30B_OUT),
+	.I2C1_SCL_USBA_DATA4_MGPIO1A_OUT(I2C1_SCL_USBA_DATA4_MGPIO1A_OUT),
+	.I2C1_SDA_USBA_DATA3_MGPIO0A_OUT(I2C1_SDA_USBA_DATA3_MGPIO0A_OUT),
+	.MGPIO25A_OUT(MGPIO25A_OUT),
+	.MGPIO26A_OUT(MGPIO26A_OUT),
+	.MMUART0_CTS_USBC_DATA7_MGPIO19B_OUT(MMUART0_CTS_USBC_DATA7_MGPIO19B_OUT),
+	.MMUART0_DCD_MGPIO22B_OUT(MMUART0_DCD_MGPIO22B_OUT),
+	.MMUART0_DSR_MGPIO20B_OUT(MMUART0_DSR_MGPIO20B_OUT),
+	.MMUART0_DTR_USBC_DATA6_MGPIO18B_OUT(MMUART0_DTR_USBC_DATA6_MGPIO18B_OUT),
+	.MMUART0_RI_MGPIO21B_OUT(MMUART0_RI_MGPIO21B_OUT),
+	.MMUART0_RTS_USBC_DATA5_MGPIO17B_OUT(MMUART0_RTS_USBC_DATA5_MGPIO17B_OUT),
+	.MMUART0_RXD_USBC_STP_MGPIO28B_OUT(MMUART0_RXD_USBC_STP_MGPIO28B_OUT),
+	.MMUART0_SCK_USBC_NXT_MGPIO29B_OUT(MMUART0_SCK_USBC_NXT_MGPIO29B_OUT),
+	.MMUART0_TXD_USBC_DIR_MGPIO27B_OUT(MMUART0_TXD_USBC_DIR_MGPIO27B_OUT),
+	.MMUART1_CTS_MGPIO13B_OUT(MMUART1_CTS_MGPIO13B_OUT),
+	.MMUART1_DCD_MGPIO16B_OUT(MMUART1_DCD_MGPIO16B_OUT),
+	.MMUART1_DSR_MGPIO14B_OUT(MMUART1_DSR_MGPIO14B_OUT),
+	.MMUART1_DTR_MGPIO12B_OUT(MMUART1_DTR_MGPIO12B_OUT),
+	.MMUART1_RI_MGPIO15B_OUT(MMUART1_RI_MGPIO15B_OUT),
+	.MMUART1_RTS_MGPIO11B_OUT(MMUART1_RTS_MGPIO11B_OUT),
+	.MMUART1_RXD_USBC_DATA3_MGPIO26B_OUT(MMUART1_RXD_USBC_DATA3_MGPIO26B_OUT),
+	.MMUART1_SCK_USBC_DATA4_MGPIO25B_OUT(MMUART1_SCK_USBC_DATA4_MGPIO25B_OUT),
+	.MMUART1_TXD_USBC_DATA2_MGPIO24B_OUT(MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OUT),
+	.RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OUT(RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OUT),
+	.RGMII_MDC_RMII_MDC_OUT(RGMII_MDC_RMII_MDC_OUT),
+	.RGMII_MDIO_RMII_MDIO_USBB_DATA7_OUT(RGMII_MDIO_RMII_MDIO_USBB_DATA7_OUT),
+	.RGMII_RX_CLK_OUT(RGMII_RX_CLK_OUT),
+	.RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OUT(RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OUT),
+	.RGMII_RXD0_RMII_RXD0_USBB_DATA0_OUT(RGMII_RXD0_RMII_RXD0_USBB_DATA0_OUT),
+	.RGMII_RXD1_RMII_RXD1_USBB_DATA1_OUT(RGMII_RXD1_RMII_RXD1_USBB_DATA1_OUT),
+	.RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OUT(RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OUT),
+	.RGMII_RXD3_USBB_DATA4_OUT(RGMII_RXD3_USBB_DATA4_OUT),
+	.RGMII_TX_CLK_OUT(RGMII_TX_CLK_OUT),
+	.RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OUT(RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OUT),
+	.RGMII_TXD0_RMII_TXD0_USBB_DIR_OUT(RGMII_TXD0_RMII_TXD0_USBB_DIR_OUT),
+	.RGMII_TXD1_RMII_TXD1_USBB_STP_OUT(RGMII_TXD1_RMII_TXD1_USBB_STP_OUT),
+	.RGMII_TXD2_USBB_DATA5_OUT(RGMII_TXD2_USBB_DATA5_OUT),
+	.RGMII_TXD3_USBB_DATA6_OUT(RGMII_TXD3_USBB_DATA6_OUT),
+	.SPI0_SCK_USBA_XCLK_OUT(MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OUT),
+	.SPI0_SDI_USBA_DIR_MGPIO5A_OUT(SPI0_SDI_USBA_DIR_MGPIO5A_OUT),
+	.SPI0_SDO_USBA_STP_MGPIO6A_OUT(MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OUT),
+	.SPI0_SS0_USBA_NXT_MGPIO7A_OUT(MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OUT),
+	.SPI0_SS1_USBA_DATA5_MGPIO8A_OUT(SPI0_SS1_USBA_DATA5_MGPIO8A_OUT),
+	.SPI0_SS2_USBA_DATA6_MGPIO9A_OUT(SPI0_SS2_USBA_DATA6_MGPIO9A_OUT),
+	.SPI0_SS3_USBA_DATA7_MGPIO10A_OUT(SPI0_SS3_USBA_DATA7_MGPIO10A_OUT),
+	.SPI0_SS4_MGPIO19A_OUT(SPI0_SS4_MGPIO19A_OUT),
+	.SPI0_SS5_MGPIO20A_OUT(SPI0_SS5_MGPIO20A_OUT),
+	.SPI0_SS6_MGPIO21A_OUT(SPI0_SS6_MGPIO21A_OUT),
+	.SPI0_SS7_MGPIO22A_OUT(SPI0_SS7_MGPIO22A_OUT),
+	.SPI1_SCK_OUT(SPI1_SCK_OUT),
+	.SPI1_SDI_MGPIO11A_OUT(SPI1_SDI_MGPIO11A_OUT),
+	.SPI1_SDO_MGPIO12A_OUT(SPI1_SDO_MGPIO12A_OUT),
+	.SPI1_SS0_MGPIO13A_OUT(SPI1_SS0_MGPIO13A_OUT),
+	.SPI1_SS1_MGPIO14A_OUT(SPI1_SS1_MGPIO14A_OUT),
+	.SPI1_SS2_MGPIO15A_OUT(SPI1_SS2_MGPIO15A_OUT),
+	.SPI1_SS3_MGPIO16A_OUT(SPI1_SS3_MGPIO16A_OUT),
+	.SPI1_SS4_MGPIO17A_OUT(SPI1_SS4_MGPIO17A_OUT),
+	.SPI1_SS5_MGPIO18A_OUT(SPI1_SS5_MGPIO18A_OUT),
+	.SPI1_SS6_MGPIO23A_OUT(SPI1_SS6_MGPIO23A_OUT),
+	.SPI1_SS7_MGPIO24A_OUT(SPI1_SS7_MGPIO24A_OUT),
+	.USBC_XCLK_OUT(USBC_XCLK_OUT),
+	.CAN_RXBUS_USBA_DATA1_MGPIO3A_OE(CAN_RXBUS_USBA_DATA1_MGPIO3A_OE),
+	.CAN_TX_EBL_USBA_DATA2_MGPIO4A_OE(CAN_TX_EBL_USBA_DATA2_MGPIO4A_OE),
+	.CAN_TXBUS_USBA_DATA0_MGPIO2A_OE(CAN_TXBUS_USBA_DATA0_MGPIO2A_OE),
+	.DM_OE(DM_OE[2:0]),
+	.DRAM_DQ_OE(DRAM_DQ_OE[17:0]),
+	.DRAM_DQS_OE(DRAM_DQS_OE[2:0]),
+	.I2C0_SCL_USBC_DATA1_MGPIO31B_OE(I2C0_SCL_USBC_DATA1_MGPIO31B_OE),
+	.I2C0_SDA_USBC_DATA0_MGPIO30B_OE(I2C0_SDA_USBC_DATA0_MGPIO30B_OE),
+	.I2C1_SCL_USBA_DATA4_MGPIO1A_OE(I2C1_SCL_USBA_DATA4_MGPIO1A_OE),
+	.I2C1_SDA_USBA_DATA3_MGPIO0A_OE(I2C1_SDA_USBA_DATA3_MGPIO0A_OE),
+	.MGPIO25A_OE(MGPIO25A_OE),
+	.MGPIO26A_OE(MGPIO26A_OE),
+	.MMUART0_CTS_USBC_DATA7_MGPIO19B_OE(MMUART0_CTS_USBC_DATA7_MGPIO19B_OE),
+	.MMUART0_DCD_MGPIO22B_OE(MMUART0_DCD_MGPIO22B_OE),
+	.MMUART0_DSR_MGPIO20B_OE(MMUART0_DSR_MGPIO20B_OE),
+	.MMUART0_DTR_USBC_DATA6_MGPIO18B_OE(MMUART0_DTR_USBC_DATA6_MGPIO18B_OE),
+	.MMUART0_RI_MGPIO21B_OE(MMUART0_RI_MGPIO21B_OE),
+	.MMUART0_RTS_USBC_DATA5_MGPIO17B_OE(MMUART0_RTS_USBC_DATA5_MGPIO17B_OE),
+	.MMUART0_RXD_USBC_STP_MGPIO28B_OE(MMUART0_RXD_USBC_STP_MGPIO28B_OE),
+	.MMUART0_SCK_USBC_NXT_MGPIO29B_OE(MMUART0_SCK_USBC_NXT_MGPIO29B_OE),
+	.MMUART0_TXD_USBC_DIR_MGPIO27B_OE(MMUART0_TXD_USBC_DIR_MGPIO27B_OE),
+	.MMUART1_CTS_MGPIO13B_OE(MMUART1_CTS_MGPIO13B_OE),
+	.MMUART1_DCD_MGPIO16B_OE(MMUART1_DCD_MGPIO16B_OE),
+	.MMUART1_DSR_MGPIO14B_OE(MMUART1_DSR_MGPIO14B_OE),
+	.MMUART1_DTR_MGPIO12B_OE(MMUART1_DTR_MGPIO12B_OE),
+	.MMUART1_RI_MGPIO15B_OE(MMUART1_RI_MGPIO15B_OE),
+	.MMUART1_RTS_MGPIO11B_OE(MMUART1_RTS_MGPIO11B_OE),
+	.MMUART1_RXD_USBC_DATA3_MGPIO26B_OE(MMUART1_RXD_USBC_DATA3_MGPIO26B_OE),
+	.MMUART1_SCK_USBC_DATA4_MGPIO25B_OE(MMUART1_SCK_USBC_DATA4_MGPIO25B_OE),
+	.MMUART1_TXD_USBC_DATA2_MGPIO24B_OE(MSS_ADLIB_INST_MMUART1_TXD_USBC_DATA2_MGPIO24B_OE),
+	.RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OE(RGMII_GTX_CLK_RMII_CLK_USBB_XCLK_OE),
+	.RGMII_MDC_RMII_MDC_OE(RGMII_MDC_RMII_MDC_OE),
+	.RGMII_MDIO_RMII_MDIO_USBB_DATA7_OE(RGMII_MDIO_RMII_MDIO_USBB_DATA7_OE),
+	.RGMII_RX_CLK_OE(RGMII_RX_CLK_OE),
+	.RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OE(RGMII_RX_CTL_RMII_CRS_DV_USBB_DATA2_OE),
+	.RGMII_RXD0_RMII_RXD0_USBB_DATA0_OE(RGMII_RXD0_RMII_RXD0_USBB_DATA0_OE),
+	.RGMII_RXD1_RMII_RXD1_USBB_DATA1_OE(RGMII_RXD1_RMII_RXD1_USBB_DATA1_OE),
+	.RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OE(RGMII_RXD2_RMII_RX_ER_USBB_DATA3_OE),
+	.RGMII_RXD3_USBB_DATA4_OE(RGMII_RXD3_USBB_DATA4_OE),
+	.RGMII_TX_CLK_OE(RGMII_TX_CLK_OE),
+	.RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OE(RGMII_TX_CTL_RMII_TX_EN_USBB_NXT_OE),
+	.RGMII_TXD0_RMII_TXD0_USBB_DIR_OE(RGMII_TXD0_RMII_TXD0_USBB_DIR_OE),
+	.RGMII_TXD1_RMII_TXD1_USBB_STP_OE(RGMII_TXD1_RMII_TXD1_USBB_STP_OE),
+	.RGMII_TXD2_USBB_DATA5_OE(RGMII_TXD2_USBB_DATA5_OE),
+	.RGMII_TXD3_USBB_DATA6_OE(RGMII_TXD3_USBB_DATA6_OE),
+	.SPI0_SCK_USBA_XCLK_OE(MSS_ADLIB_INST_SPI0_SCK_USBA_XCLK_OE),
+	.SPI0_SDI_USBA_DIR_MGPIO5A_OE(SPI0_SDI_USBA_DIR_MGPIO5A_OE),
+	.SPI0_SDO_USBA_STP_MGPIO6A_OE(MSS_ADLIB_INST_SPI0_SDO_USBA_STP_MGPIO6A_OE),
+	.SPI0_SS0_USBA_NXT_MGPIO7A_OE(MSS_ADLIB_INST_SPI0_SS0_USBA_NXT_MGPIO7A_OE),
+	.SPI0_SS1_USBA_DATA5_MGPIO8A_OE(SPI0_SS1_USBA_DATA5_MGPIO8A_OE),
+	.SPI0_SS2_USBA_DATA6_MGPIO9A_OE(SPI0_SS2_USBA_DATA6_MGPIO9A_OE),
+	.SPI0_SS3_USBA_DATA7_MGPIO10A_OE(SPI0_SS3_USBA_DATA7_MGPIO10A_OE),
+	.SPI0_SS4_MGPIO19A_OE(SPI0_SS4_MGPIO19A_OE),
+	.SPI0_SS5_MGPIO20A_OE(SPI0_SS5_MGPIO20A_OE),
+	.SPI0_SS6_MGPIO21A_OE(SPI0_SS6_MGPIO21A_OE),
+	.SPI0_SS7_MGPIO22A_OE(SPI0_SS7_MGPIO22A_OE),
+	.SPI1_SCK_OE(SPI1_SCK_OE),
+	.SPI1_SDI_MGPIO11A_OE(SPI1_SDI_MGPIO11A_OE),
+	.SPI1_SDO_MGPIO12A_OE(SPI1_SDO_MGPIO12A_OE),
+	.SPI1_SS0_MGPIO13A_OE(SPI1_SS0_MGPIO13A_OE),
+	.SPI1_SS1_MGPIO14A_OE(SPI1_SS1_MGPIO14A_OE),
+	.SPI1_SS2_MGPIO15A_OE(SPI1_SS2_MGPIO15A_OE),
+	.SPI1_SS3_MGPIO16A_OE(SPI1_SS3_MGPIO16A_OE),
+	.SPI1_SS4_MGPIO17A_OE(SPI1_SS4_MGPIO17A_OE),
+	.SPI1_SS5_MGPIO18A_OE(SPI1_SS5_MGPIO18A_OE),
+	.SPI1_SS6_MGPIO23A_OE(SPI1_SS6_MGPIO23A_OE),
+	.SPI1_SS7_MGPIO24A_OE(SPI1_SS7_MGPIO24A_OE),
+	.USBC_XCLK_OE(USBC_XCLK_OE)
+);
+defparam MSS_ADLIB_INST.INIT=1438'h000000000000000000000000000000361000800000000000000000000000000000000000C0300000000000000000000001203610000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFB000001007C33F00000000E08947F00003FFFFE4000000000008100000000F0E01C000001835E24010842108421000001FE34001FF8000000400000000020031007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+defparam MSS_ADLIB_INST.ACT_UBITS=56'hFFFFFFFFFFFFFF;
+defparam MSS_ADLIB_INST.MEMORYFILE="ENVM_init.mem";
+defparam MSS_ADLIB_INST.RTC_MAIN_XTL_FREQ=0.0;
+defparam MSS_ADLIB_INST.RTC_MAIN_XTL_MODE="";
+defparam MSS_ADLIB_INST.DDR_CLK_FREQ=20.0;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* board_deploy_MSS */
+
+module board_deploy (
+  DEVRST_N,
+  MMUART_1_RXD,
+  SPI_0_DI,
+  XTL,
+  sampled_signal,
+  GPIO_3_M2F,
+  MMUART_1_TXD,
+  SPI_0_DO,
+  SPI_0_CLK,
+  SPI_0_SS0
+)
+;
+input DEVRST_N ;
+input MMUART_1_RXD ;
+input SPI_0_DI ;
+input XTL ;
+input sampled_signal ;
+output GPIO_3_M2F ;
+output MMUART_1_TXD /* synthesis syn_tristate = 1 */ ;
+output SPI_0_DO /* synthesis syn_tristate = 1 */ ;
+inout SPI_0_CLK /* synthesis syn_tristate = 1 */ ;
+inout SPI_0_SS0 /* synthesis syn_tristate = 1 */ ;
+wire DEVRST_N ;
+wire MMUART_1_RXD ;
+wire SPI_0_DI ;
+wire XTL ;
+wire sampled_signal ;
+wire GPIO_3_M2F ;
+wire MMUART_1_TXD ;
+wire SPI_0_DO ;
+wire SPI_0_CLK ;
+wire SPI_0_SS0 ;
+wire [28:0] Recip_Freq_Count_0_recip_counter;
+wire [3:0] fine_counter_0_fine_count;
+wire [31:4] Add_Counters_0_final_count;
+wire FCCC_C0_0_GL0 ;
+wire board_deploy_MSS_0_SPI_1_CLK_M2F ;
+wire board_deploy_MSS_0_GPIO_0_M2F ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F ;
+wire OSC_C0_0_XTLOSC_O2F ;
+wire FCCC_C1_0_GL0 ;
+wire FCCC_C1_0_GL1 ;
+wire FCCC_C1_0_GL2 ;
+wire FCCC_C1_0_GL3 ;
+wire Gate_Set_0_sample_gate ;
+wire VCC ;
+wire GND ;
+wire SYSRESET_0_POWER_ON_RESET_N_arst ;
+wire SYSRESET_0_POWER_ON_RESET_N ;
+wire \SPI_Slave_0.SPI_MISO_Bit  ;
+wire sampled_signal_c ;
+wire GPIO_3_M2F_c ;
+wire Gate_Set_0_sample_gate_i ;
+wire board_deploy_MSS_0_SPI_1_SS0_M2F_i ;
+wire final_count_cry_0_Y ;
+wire SPI_1_SS0_M2F_arst_i ;
+  CLKINT SYSRESET_0_RNIHNV1 (
+	.Y(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.A(SYSRESET_0_POWER_ON_RESET_N)
+);
+// @19:32
+  INBUF sampled_signal_ibuf (
+	.Y(sampled_signal_c),
+	.PAD(sampled_signal)
+);
+// @19:36
+  OUTBUF GPIO_3_M2F_obuf (
+	.PAD(GPIO_3_M2F),
+	.D(GPIO_3_M2F_c)
+);
+// @19:207
+  SYSRESET SYSRESET_0 (
+	.POWER_ON_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.DEVRST_N(DEVRST_N)
+);
+// @19:97
+  Add_Counters Add_Counters_0 (
+	.Recip_Freq_Count_0_recip_counter(Recip_Freq_Count_0_recip_counter[28:0]),
+	.Add_Counters_0_final_count(Add_Counters_0_final_count[31:4]),
+	.fine_counter_0_fine_count_0(fine_counter_0_fine_count[3]),
+	.final_count_cry_0_Y(final_count_cry_0_Y)
+);
+// @19:131
+  FCCC_C0 FCCC_C0_0 (
+	.FCCC_C0_0_GL0(FCCC_C0_0_GL0),
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F)
+);
+// @19:140
+  FCCC_C1 FCCC_C1_0 (
+	.FCCC_C1_0_GL0(FCCC_C1_0_GL0),
+	.FCCC_C1_0_GL2(FCCC_C1_0_GL2),
+	.FCCC_C1_0_GL1(FCCC_C1_0_GL1),
+	.FCCC_C1_0_GL3(FCCC_C1_0_GL3),
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F)
+);
+// @19:152
+  fine_counter fine_counter_0 (
+	.fine_counter_0_fine_count(fine_counter_0_fine_count[3:0]),
+	.FCCC_C1_0_GL1(FCCC_C1_0_GL1),
+	.FCCC_C1_0_GL3(FCCC_C1_0_GL3),
+	.FCCC_C1_0_GL2(FCCC_C1_0_GL2),
+	.FCCC_C1_0_GL0(FCCC_C1_0_GL0),
+	.SYSRESET_0_POWER_ON_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.Gate_Set_0_sample_gate_i(Gate_Set_0_sample_gate_i),
+	.Gate_Set_0_sample_gate(Gate_Set_0_sample_gate),
+	.SYSRESET_0_POWER_ON_RESET_N_arst(SYSRESET_0_POWER_ON_RESET_N_arst)
+);
+// @19:165
+  Gate_Set Gate_Set_0 (
+	.sampled_signal_c(sampled_signal_c),
+	.board_deploy_MSS_0_GPIO_0_M2F(board_deploy_MSS_0_GPIO_0_M2F),
+	.SYSRESET_0_POWER_ON_RESET_N_arst(SYSRESET_0_POWER_ON_RESET_N_arst),
+	.Gate_Set_0_sample_gate_i(Gate_Set_0_sample_gate_i),
+	.Gate_Set_0_sample_gate(Gate_Set_0_sample_gate)
+);
+// @19:175
+  OSC_C0 OSC_C0_0 (
+	.OSC_C0_0_XTLOSC_O2F(OSC_C0_0_XTLOSC_O2F),
+	.XTL(XTL)
+);
+// @19:183
+  Recip_Freq_Count Recip_Freq_Count_0 (
+	.Recip_Freq_Count_0_recip_counter(Recip_Freq_Count_0_recip_counter[28:0]),
+	.SYSRESET_0_POWER_ON_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.Gate_Set_0_sample_gate(Gate_Set_0_sample_gate),
+	.FCCC_C1_0_GL0(FCCC_C1_0_GL0),
+	.Gate_Set_0_sample_gate_i(Gate_Set_0_sample_gate_i)
+);
+// @19:194
+  SPI_Slave SPI_Slave_0 (
+	.Add_Counters_0_final_count(Add_Counters_0_final_count[31:4]),
+	.fine_counter_0_fine_count(fine_counter_0_fine_count[2:0]),
+	.board_deploy_MSS_0_SPI_1_SS0_M2F(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.final_count_cry_0_Y(final_count_cry_0_Y),
+	.SPI_MISO_Bit_1z(\SPI_Slave_0.SPI_MISO_Bit ),
+	.board_deploy_MSS_0_SPI_1_SS0_M2F_i(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.board_deploy_MSS_0_SPI_1_CLK_M2F(board_deploy_MSS_0_SPI_1_CLK_M2F),
+	.SPI_1_SS0_M2F_arst_i(SPI_1_SS0_M2F_arst_i)
+);
+  board_deploy_MSS board_deploy_MSS_0 (
+	.FCCC_C0_0_GL0(FCCC_C0_0_GL0),
+	.SPI_MISO_Bit(\SPI_Slave_0.SPI_MISO_Bit ),
+	.SYSRESET_0_POWER_ON_RESET_N(SYSRESET_0_POWER_ON_RESET_N),
+	.board_deploy_MSS_0_GPIO_0_M2F(board_deploy_MSS_0_GPIO_0_M2F),
+	.GPIO_3_M2F_c(GPIO_3_M2F_c),
+	.MMUART_1_RXD(MMUART_1_RXD),
+	.MMUART_1_TXD(MMUART_1_TXD),
+	.SPI_0_CLK(SPI_0_CLK),
+	.SPI_0_DI(SPI_0_DI),
+	.SPI_0_DO(SPI_0_DO),
+	.SPI_0_SS0(SPI_0_SS0),
+	.SPI_1_SS0_M2F_arst_i(SPI_1_SS0_M2F_arst_i),
+	.board_deploy_MSS_0_SPI_1_SS0_M2F_i(board_deploy_MSS_0_SPI_1_SS0_M2F_i),
+	.board_deploy_MSS_0_SPI_1_SS0_M2F(board_deploy_MSS_0_SPI_1_SS0_M2F),
+	.board_deploy_MSS_0_SPI_1_CLK_M2F(board_deploy_MSS_0_SPI_1_CLK_M2F)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* board_deploy */
+

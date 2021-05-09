@@ -1,0 +1,32 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.5 (Version 12.900.10.16)
+
+Date      :  Sat May  8 23:19:01 2021
+Project   :  C:\Libero\Projects\board_deploy\board_deploy
+Component :  board_deploy_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/board_deploy_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/board_deploy_MSS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/board_deploy_MSS_pre.v
+
+Stimulus files for all Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/CM3_compile_bfm.tcl
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/test.bfm
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/sys_config_mss_clocks.h
+
+Configuration files to be used for Programming:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/ENVM.cfg
+
+Configuration files to be used for all Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy_MSS/ENVM.cfg
+

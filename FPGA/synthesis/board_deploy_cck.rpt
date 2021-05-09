@@ -1,0 +1,94 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+
+# Written on Sat May  8 23:19:11 2021
+
+##### DESIGN INFO #######################################################
+
+Top View:                "board_deploy"
+Constraint File(s):      "C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                          Ending                                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            System                                            |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                            Gate_Set|sample_gate_inferred_clock               |     10.000           |     No paths         |     10.000           |     No paths                         
+board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     |     No paths         |     No paths         |     No paths         |     Diff grp                         
+board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+Gate_Set|sample_gate_inferred_clock               board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     |     No paths         |     Diff grp         |     No paths         |     No paths                         
+Gate_Set|sample_gate_inferred_clock               Gate_Set|sample_gate_inferred_clock               |     No paths         |     No paths         |     5.000            |     No paths                         
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     Gate_Set|sample_gate_inferred_clock               |     No paths         |     No paths         |     Diff grp         |     No paths                         
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+Gate_Set|signal_inferred_clock                    FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+Gate_Set|signal_inferred_clock                    Gate_Set|signal_inferred_clock                    |     10.000           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:DEVRST_N
+p:GPIO_3_M2F
+p:MMUART_1_RXD
+p:MMUART_1_TXD
+p:SPI_0_CLK (bidir end point)
+p:SPI_0_CLK (bidir start point)
+p:SPI_0_DI
+p:SPI_0_DO
+p:SPI_0_SS0 (bidir end point)
+p:SPI_0_SS0 (bidir start point)
+p:XTL
+p:sampled_signal
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

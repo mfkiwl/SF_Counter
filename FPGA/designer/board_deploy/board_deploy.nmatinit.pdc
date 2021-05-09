@@ -1,0 +1,280 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.5 12.900.10.16
+
+# Design Name: board_deploy 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Sat May  8 23:19:30 2021 
+
+
+#
+# I/O constraints
+#
+
+set_io GPIO_3_M2F -DIRECTION OUTPUT -pinname G16 -fixed no
+set_io MMUART_1_RXD -DIRECTION INPUT -pinname H13 -fixed no
+set_io MMUART_1_TXD -DIRECTION OUTPUT -pinname H12 -fixed no
+set_io SPI_0_CLK -DIRECTION INOUT -pinname J14 -fixed no
+set_io SPI_0_DI -DIRECTION INPUT -pinname J13 -fixed no
+set_io SPI_0_DO -DIRECTION OUTPUT -pinname K12 -fixed no
+set_io SPI_0_SS0 -DIRECTION INOUT -pinname J12 -fixed no
+set_io sampled_signal -DIRECTION INPUT -pinname K16 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location Gate_Set_0/counter\[29\] -fixed no 485 88
+set_location SPI_Slave_0/Data\[7\] -fixed no 499 91
+set_location Gate_Set_0/counter\[31\] -fixed no 487 88
+set_location Recip_Freq_Count_0/recip_counter\[28\] -fixed no 522 88
+set_location fine_counter_0/un1_rising_error41_set -fixed no 472 91
+set_location Recip_Freq_Count_0/counter_local\[20\] -fixed no 512 88
+set_location SPI_Slave_0/Data\[13\] -fixed no 505 91
+set_location Recip_Freq_Count_0/counter_local7 -fixed no 477 90
+set_location Recip_Freq_Count_0/counter_local\[28\] -fixed no 520 88
+set_location fine_counter_0/N_6_i -fixed no 485 84
+set_location Recip_Freq_Count_0/recip_counter\[24\] -fixed no 521 88
+set_location SYSRESET_0_RNIHNV1/U0_RGB1 -fixed no 446 90
+set_location Recip_Freq_Count_0/counter_local\[5\] -fixed no 497 88
+set_location Recip_Freq_Count_0/recip_counter\[11\] -fixed no 515 85
+set_location Recip_Freq_Count_0/counter_local\[1\] -fixed no 493 88
+set_location Gate_Set_0/signal -fixed no 627 69
+set_location fine_counter_0/un1_rising_error41_2_set -fixed no 490 91
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 446 144
+set_location Recip_Freq_Count_0/counter_local\[2\] -fixed no 494 88
+set_location SPI_Slave_0/Data\[14\] -fixed no 506 91
+set_location fine_counter_0/rising_error\[0\] -fixed no 473 91
+set_location SPI_Slave_0/un1_SPI_CS_n_1 -fixed no 513 96
+set_location Gate_Set_0/sample_gate5_22 -fixed no 488 87
+set_location Gate_Set_0/sample_gate5_23 -fixed no 489 87
+set_location SPI_Slave_0/Data\[12\] -fixed no 504 91
+set_location SPI_Slave_0/un1_SPI_CS_n_2_rs -fixed no 515 97
+set_location Recip_Freq_Count_0/counter_local\[23\] -fixed no 515 88
+set_location Recip_Freq_Count_0/counter_local\[19\] -fixed no 511 88
+set_location Recip_Freq_Count_0/recip_counter\[12\] -fixed no 514 85
+set_location SPI_Slave_0/Data\[4\] -fixed no 496 91
+set_location Gate_Set_0/counter\[3\] -fixed no 459 88
+set_location Recip_Freq_Count_0/counter_local\[9\] -fixed no 501 88
+set_location SPI_Slave_0/un1_SPI_CS_n_1_set -fixed no 514 94
+set_location fine_counter_0/un1_rising_error36_1 -fixed no 492 90
+set_location Gate_Set_0/sample_gate5_16 -fixed no 462 84
+set_location Recip_Freq_Count_0/counter_local\[27\] -fixed no 519 88
+set_location Gate_Set_0/counter\[8\] -fixed no 464 88
+set_location SPI_Slave_0/Data_index\[3\] -fixed no 493 97
+set_location fine_counter_0/rising_error\[2\] -fixed no 480 85
+set_location SPI_Slave_0/un1_SPI_CS_n_2 -fixed no 515 96
+set_location Gate_Set_0/counter_3\[10\] -fixed no 460 90
+set_location fine_counter_0/un1_rising_error41_3_rs -fixed no 488 91
+set_location SPI_Slave_0/Data\[23\] -fixed no 515 91
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 294 72
+set_location Recip_Freq_Count_0/counter_local\[0\] -fixed no 524 88
+set_location FCCC_C1_0/FCCC_C1_0/GL2_INST -fixed no 293 72
+set_location Recip_Freq_Count_0/counter_local\[26\] -fixed no 518 88
+set_location SPI_Slave_0/Data\[3\] -fixed no 525 91
+set_location Recip_Freq_Count_0/counter_local\[10\] -fixed no 502 88
+set_location SPI_Slave_0/Data\[30\] -fixed no 522 91
+set_location Recip_Freq_Count_0/recip_counter\[13\] -fixed no 513 85
+set_location SPI_Slave_0/Data\[15\] -fixed no 507 91
+set_location Recip_Freq_Count_0/counter_local\[18\] -fixed no 510 88
+set_location Gate_Set_0/counter\[13\] -fixed no 469 88
+set_location Gate_Set_0/counter\[23\] -fixed no 479 88
+set_location Recip_Freq_Count_0/recip_counter\[10\] -fixed no 512 85
+set_location Gate_Set_0/counter_3\[16\] -fixed no 469 84
+set_location SPI_Slave_0/Data\[24\] -fixed no 516 91
+set_location SPI_Slave_0/Data_index_RNO\[0\] -fixed no 496 96
+set_location Gate_Set_0/counter\[7\] -fixed no 457 91
+set_location CFG0_GND_INST -fixed no 472 90
+set_location Recip_Freq_Count_0/counter_local\[7\] -fixed no 499 88
+set_location SPI_Slave_0/Data\[8\] -fixed no 500 91
+set_location SPI_Slave_0/Data\[22\] -fixed no 514 91
+set_location fine_counter_0/rising_error_1\[0\] -fixed no 471 88
+set_location Recip_Freq_Count_0/recip_counter\[17\] -fixed no 511 85
+set_location Recip_Freq_Count_0/recip_counter\[15\] -fixed no 510 85
+set_location Recip_Freq_Count_0/counter_local\[25\] -fixed no 517 88
+set_location Recip_Freq_Count_0/counter_local\[8\] -fixed no 500 88
+set_location fine_counter_0/un1_rising_error33_1 -fixed no 490 87
+set_location SPI_Slave_0/Data\[11\] -fixed no 503 91
+set_location Recip_Freq_Count_0/recip_counter\[21\] -fixed no 524 91
+set_location FCCC_C1_0/FCCC_C1_0/GL1_INST -fixed no 290 72
+set_location SPI_Slave_0/Data\[5\] -fixed no 497 91
+set_location Recip_Freq_Count_0/recip_counter\[7\] -fixed no 486 85
+set_location SPI_Slave_0/Data\[9\] -fixed no 501 91
+set_location Gate_Set_0/counter\[2\] -fixed no 458 88
+set_location fine_counter_0/un1_rising_error41_3 -fixed no 470 90
+set_location Recip_Freq_Count_0/counter_local\[13\] -fixed no 505 88
+set_location Recip_Freq_Count_0/counter_local\[22\] -fixed no 514 88
+set_location Gate_Set_0/counter\[14\] -fixed no 470 88
+set_location Gate_Set_0/counter\[24\] -fixed no 480 88
+set_location Gate_Set_0/sample_gate5_20 -fixed no 471 84
+set_location Recip_Freq_Count_0/recip_counter\[8\] -fixed no 493 91
+set_location SPI_Slave_0/Data_index_RNO\[1\] -fixed no 495 96
+set_location Recip_Freq_Count_0/recip_counter\[19\] -fixed no 509 85
+set_location Gate_Set_0/counter_3\[7\] -fixed no 457 90
+set_location OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB_CLKINT -fixed no 305 72
+set_location Gate_Set_0/sample_gate_inferred_clock_RNI47AD -fixed no 309 72
+set_location SPI_Slave_0/Data_index\[2\] -fixed no 492 97
+set_location fine_counter_0/rising_error\[1\] -fixed no 489 85
+set_location Recip_Freq_Count_0/recip_counter\[22\] -fixed no 526 91
+set_location Gate_Set_0/counter\[10\] -fixed no 460 91
+set_location Gate_Set_0/counter\[20\] -fixed no 476 88
+set_location Recip_Freq_Count_0/counter_local\[17\] -fixed no 509 88
+set_location fine_counter_0/un1_rising_error41_4_rs -fixed no 503 85
+set_location fine_counter_0/rising_error_RNIISPH\[0\] -fixed no 469 90
+set_location Recip_Freq_Count_0/counter_local_RNO\[0\] -fixed no 524 87
+set_location SPI_Slave_0/Data\[18\] -fixed no 510 91
+set_location fine_counter_0/rising_error_RNI72RG\[2\] -fixed no 490 90
+set_location fine_counter_0/un1_rising_error41_4 -fixed no 481 84
+set_location fine_counter_0/un1_rising_error41_1 -fixed no 487 84
+set_location Gate_Set_0/counter\[1\] -fixed no 457 88
+set_location Recip_Freq_Count_0/counter_local\[24\] -fixed no 516 88
+set_location ip_interface_inst -fixed no 203 0
+set_location Gate_Set_0/sample_gate_inferred_clock_RNI47AD/U0_RGB1 -fixed no 447 90
+set_location fine_counter_0/un1_rising_error41_1_set -fixed no 505 85
+set_location Gate_Set_0/sample_gate5_29 -fixed no 470 84
+set_location SPI_Slave_0/Data\[25\] -fixed no 517 91
+set_location Gate_Set_0/sample_gate5_17 -fixed no 458 84
+set_location Gate_Set_0/counter\[18\] -fixed no 474 88
+set_location SPI_Slave_0/Data_index_c1 -fixed no 504 96
+set_location Gate_Set_0/sample_gate5_19 -fixed no 463 84
+set_location Gate_Set_0/sample_gate5_21 -fixed no 479 84
+set_location Gate_Set_0/counter\[28\] -fixed no 484 88
+set_location board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31 -fixed no 292 72
+set_location Recip_Freq_Count_0/counter_local\[16\] -fixed no 508 88
+set_location Recip_Freq_Count_0/counter_local\[21\] -fixed no 513 88
+set_location FCCC_C1_0/FCCC_C1_0/GL2_INST/U0_RGB1 -fixed no 448 90
+set_location OSC_C0_0/OSC_C0_0/I_XTLOSC -fixed no 28 134
+set_location fine_counter_0/rising_error_2_0\[1\] -fixed no 491 87
+set_location FCCC_C1_0/FCCC_C1_0/GL3_INST/U0_RGB1 -fixed no 449 90
+set_location Gate_Set_0/counter_RNO\[0\] -fixed no 459 84
+set_location SPI_Slave_0/Data\[21\] -fixed no 513 91
+set_location Gate_Set_0/signal_inferred_clock_RNI0SS7/U0_RGB1 -fixed no 450 90
+set_location SPI_Slave_0/Data\[17\] -fixed no 509 91
+set_location Recip_Freq_Count_0/recip_counter\[23\] -fixed no 526 88
+set_location Gate_Set_0/sample_gate -fixed no 456 91
+set_location Recip_Freq_Count_0/recip_counter\[20\] -fixed no 508 85
+set_location Recip_Freq_Count_0/counter_local\[15\] -fixed no 507 88
+set_location OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB -fixed no 29 134
+set_location board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31/U0_RGB1 -fixed no 446 126
+set_location Gate_Set_0/counter_3\[15\] -fixed no 472 84
+set_location SPI_Slave_0/Data\[19\] -fixed no 511 91
+set_location SPI_Slave_0/Data\[16\] -fixed no 508 91
+set_location board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC -fixed no 304 72
+set_location Recip_Freq_Count_0/recip_counter\[6\] -fixed no 486 91
+set_location Gate_Set_0/counter\[9\] -fixed no 465 85
+set_location Recip_Freq_Count_0/recip_counter\[27\] -fixed no 525 88
+set_location Recip_Freq_Count_0/recip_counter\[25\] -fixed no 527 88
+set_location Recip_Freq_Count_0/counter_local\[3\] -fixed no 495 88
+set_location Gate_Set_0/counter\[16\] -fixed no 469 85
+set_location Gate_Set_0/counter\[26\] -fixed no 482 88
+set_location Recip_Freq_Count_0/counter_local\[12\] -fixed no 504 88
+set_location fine_counter_0/rising_error\[3\] -fixed no 492 91
+set_location Recip_Freq_Count_0/recip_counter\[16\] -fixed no 507 85
+set_location SPI_Slave_0/Data\[2\] -fixed no 471 91
+set_location SPI_Slave_0/Data\[28\] -fixed no 520 91
+set_location Gate_Set_0/counter\[15\] -fixed no 472 85
+set_location Gate_Set_0/counter\[25\] -fixed no 481 88
+set_location Gate_Set_0/counter\[5\] -fixed no 461 85
+set_location SPI_Slave_0/Data\[6\] -fixed no 498 91
+set_location SPI_Slave_0/Data_index_RNO\[4\] -fixed no 494 96
+set_location Recip_Freq_Count_0/recip_counter\[4\] -fixed no 492 88
+set_location fine_counter_0/un1_rising_error41_5_rs -fixed no 484 85
+set_location Gate_Set_0/sample_gate5_28 -fixed no 456 84
+set_location Gate_Set_0/counter\[30\] -fixed no 486 88
+set_location Gate_Set_0/sample_gate5_18 -fixed no 460 84
+set_location Gate_Set_0/counter\[17\] -fixed no 473 88
+set_location Gate_Set_0/counter\[27\] -fixed no 483 88
+set_location Recip_Freq_Count_0/counter_local\[14\] -fixed no 506 88
+set_location Recip_Freq_Count_0/recip_counter\[3\] -fixed no 494 91
+set_location Recip_Freq_Count_0/recip_counter\[18\] -fixed no 506 85
+set_location SPI_Slave_0/Data_index\[4\] -fixed no 494 97
+set_location SYSRESET_0_RNIHNV1 -fixed no 297 72
+set_location Gate_Set_0/counter_3\[9\] -fixed no 465 84
+set_location SPI_Slave_0/Data_index_RNO\[3\] -fixed no 493 96
+set_location Gate_Set_0/counter\[11\] -fixed no 467 88
+set_location Gate_Set_0/counter\[21\] -fixed no 477 88
+set_location Recip_Freq_Count_0/counter_local\[11\] -fixed no 503 88
+set_location Recip_Freq_Count_0/recip_counter\[9\] -fixed no 485 91
+set_location SPI_Slave_0/Data\[10\] -fixed no 502 91
+set_location SPI_Slave_0/Data\[27\] -fixed no 519 91
+set_location Recip_Freq_Count_0/counter_local\[6\] -fixed no 498 88
+set_location Recip_Freq_Count_0/counter_local\[4\] -fixed no 496 88
+set_location Recip_Freq_Count_0/recip_counter\[14\] -fixed no 504 85
+set_location fine_counter_0/rising_error_RNI4QHB\[1\] -fixed no 503 84
+set_location SPI_Slave_0/Data_index\[1\] -fixed no 495 97
+set_location FCCC_C1_0/FCCC_C1_0/GL0_INST -fixed no 291 72
+set_location SPI_Slave_0/Data\[29\] -fixed no 521 91
+set_location SPI_Slave_0/Data\[26\] -fixed no 518 91
+set_location Recip_Freq_Count_0/recip_counter\[2\] -fixed no 482 91
+set_location Gate_Set_0/counter\[6\] -fixed no 462 88
+set_location fine_counter_0/rising_error_1\[2\] -fixed no 490 88
+set_location SPI_Slave_0/un1_SPI_CS_n_1_set_RNISMV21 -fixed no 528 93
+set_location Gate_Set_0/counter_3\[5\] -fixed no 461 84
+set_location Gate_Set_0/counter\[4\] -fixed no 460 88
+set_location fine_counter_0/rising_error_4_2_1_.N_6_i -fixed no 480 84
+set_location SPI_Slave_0/SPI_MISO_Bit -fixed no 515 94
+set_location OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB_CLKINT/U0_RGB1 -fixed no 146 132
+set_location SPI_Slave_0/Data\[31\] -fixed no 523 91
+set_location FCCC_C1_0/FCCC_C1_0/GL0_INST/U0_RGB1 -fixed no 451 90
+set_location Gate_Set_0/counter\[0\] -fixed no 459 85
+set_location SPI_Slave_0/Data_index\[0\] -fixed no 496 97
+set_location fine_counter_0/un1_rising_error41 -fixed no 468 90
+set_location SPI_Slave_0/Data\[1\] -fixed no 527 91
+set_location Recip_Freq_Count_0/recip_counter\[0\] -fixed no 495 91
+set_location Gate_Set_0/counter\[12\] -fixed no 468 88
+set_location Gate_Set_0/counter\[22\] -fixed no 478 88
+set_location SPI_Slave_0/Data_index_RNO\[2\] -fixed no 492 96
+set_location fine_counter_0/un1_rising_error41_2 -fixed no 484 84
+set_location Recip_Freq_Count_0/recip_counter\[5\] -fixed no 484 91
+set_location Recip_Freq_Count_0/recip_counter\[26\] -fixed no 523 88
+set_location fine_counter_0/un1_rising_error41_5 -fixed no 490 84
+set_location SPI_Slave_0/Data\[0\] -fixed no 469 91
+set_location fine_counter_0/rising_error_4_2_1_.m3 -fixed no 489 84
+set_location board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC/U0_RGB1 -fixed no 452 90
+set_location FCCC_C1_0/FCCC_C1_0/GL3_INST -fixed no 296 72
+set_location Gate_Set_0/sample_gate_1 -fixed no 456 90
+set_location Gate_Set_0/signal_inferred_clock_RNI0SS7 -fixed no 295 72
+set_location SPI_Slave_0/Data\[20\] -fixed no 512 91
+set_location Recip_Freq_Count_0/recip_counter\[1\] -fixed no 487 91
+set_location fine_counter_0/rising_error_1\[1\] -fixed no 491 88
+set_location FCCC_C1_0/FCCC_C1_0/GL1_INST/U0_RGB1 -fixed no 453 90
+set_location Gate_Set_0/counter\[19\] -fixed no 475 88
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 18 134
+set_location SYSRESET_0 -fixed no 624 8
+set_location board_deploy_MSS_0/MSS_ADLIB_INST -fixed no 528 146
+set_location FCCC_C1_0/FCCC_C1_0/CCC_INST -fixed no 0 134
+set_location Gate_Set_0/un5_counter_s_1_92 -fixed no 456 87
+set_location Add_Counters_0/final_count_cry_0 -fixed no 495 90
+set_location SPI_Slave_0/SPI_MISO_Bit_3_31_1_0_wmux -fixed no 492 93
+set_location Recip_Freq_Count_0/counter_local_s_91 -fixed no 492 87
+set_location board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31/U0_RGB1_RGB0 -fixed no 446 96
+set_location board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31/U0_RGB1_RGB1 -fixed no 446 93
+set_location FCCC_C1_0/FCCC_C1_0/GL0_INST/U0_RGB1_RGB0 -fixed no 451 87
+set_location FCCC_C1_0/FCCC_C1_0/GL0_INST/U0_RGB1_RGB1 -fixed no 451 84
+set_location FCCC_C1_0/FCCC_C1_0/GL1_INST/U0_RGB1_RGB0 -fixed no 452 87
+set_location FCCC_C1_0/FCCC_C1_0/GL1_INST/U0_RGB1_RGB1 -fixed no 452 84
+set_location FCCC_C1_0/FCCC_C1_0/GL2_INST/U0_RGB1_RGB0 -fixed no 448 87
+set_location FCCC_C1_0/FCCC_C1_0/GL2_INST/U0_RGB1_RGB1 -fixed no 448 84
+set_location FCCC_C1_0/FCCC_C1_0/GL3_INST/U0_RGB1_RGB0 -fixed no 449 87
+set_location FCCC_C1_0/FCCC_C1_0/GL3_INST/U0_RGB1_RGB1 -fixed no 449 84
+set_location Gate_Set_0/sample_gate_inferred_clock_RNI47AD/U0_RGB1_RGB0 -fixed no 447 87
+set_location Gate_Set_0/sample_gate_inferred_clock_RNI47AD/U0_RGB1_RGB1 -fixed no 447 84
+set_location Gate_Set_0/signal_inferred_clock_RNI0SS7/U0_RGB1_RGB0 -fixed no 450 87
+set_location Gate_Set_0/signal_inferred_clock_RNI0SS7/U0_RGB1_RGB1 -fixed no 450 84
+set_location SYSRESET_0_RNIHNV1/U0_RGB1_RGB0 -fixed no 446 87
+set_location SYSRESET_0_RNIHNV1/U0_RGB1_RGB1 -fixed no 446 84
+set_location Add_Counters_0/final_count_cry_0_CC_0 -fixed no 495 92
+set_location Add_Counters_0/final_count_cry_0_CC_1 -fixed no 504 92
+set_location Add_Counters_0/final_count_cry_0_CC_2 -fixed no 516 92
+set_location Gate_Set_0/un5_counter_s_1_92_CC_0 -fixed no 456 89
+set_location Gate_Set_0/un5_counter_s_1_92_CC_1 -fixed no 468 89
+set_location Gate_Set_0/un5_counter_s_1_92_CC_2 -fixed no 480 89
+set_location Recip_Freq_Count_0/counter_local_s_91_CC_0 -fixed no 492 89
+set_location Recip_Freq_Count_0/counter_local_s_91_CC_1 -fixed no 504 89
+set_location Recip_Freq_Count_0/counter_local_s_91_CC_2 -fixed no 516 89
+set_location SPI_Slave_0/SPI_MISO_Bit_3_31_1_0_wmux_CC_0 -fixed no 492 95
+set_location SPI_Slave_0/SPI_MISO_Bit_3_31_1_0_wmux_CC_1 -fixed no 504 95

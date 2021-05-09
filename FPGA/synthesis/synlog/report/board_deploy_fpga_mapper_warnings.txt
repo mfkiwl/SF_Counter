@@ -1,0 +1,8 @@
+@W: MT246 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":26:47:26:54|Blackbox XTLOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\libero\projects\board_deploy\board_deploy\component\work\fccc_c1\fccc_c1_0\fccc_c1_fccc_c1_0_fccc.v":29:36:29:43|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock with period 10.00ns. Please declare a user-defined clock on net board_deploy_MSS_0.SPI_1_SS0_M2F.
+@W: MT420 |Found inferred clock board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock with period 10.00ns. Please declare a user-defined clock on net board_deploy_MSS_0.SPI_1_CLK_M2F.
+@W: MT420 |Found inferred clock Gate_Set|sample_gate_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Gate_Set_0.sample_gate.
+@W: MT420 |Found inferred clock FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C1_0.FCCC_C1_0.GL0_net.
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
+@W: MT420 |Found inferred clock Gate_Set|signal_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Gate_Set_0.signal_0.

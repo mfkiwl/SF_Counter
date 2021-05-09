@@ -1,0 +1,14 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.5 (Version 12.900.10.16)
+
+Date      :  Sat May  8 22:40:41 2021
+Project   :  C:\Libero\Projects\board_deploy\board_deploy
+Component :  board_deploy
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy/board_deploy.v
+
+Stimulus files for all Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/board_deploy/subsystem.bfm
+

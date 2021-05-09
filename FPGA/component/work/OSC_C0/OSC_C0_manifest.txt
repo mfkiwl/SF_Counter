@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.5 (Version 12.900.10.16)
+
+Date      :  Sun Apr 25 13:44:05 2021
+Project   :  C:\Libero\Projects\board_deploy\board_deploy
+Component :  OSC_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/OSC_C0/OSC_C0.v
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Libero/Projects/board_deploy/board_deploy/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Libero/Projects/board_deploy/board_deploy/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+

@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.5 (Version 12.900.10.16)
+
+Date      :  Sat May  8 22:19:43 2021
+Project   :  C:\Libero\Projects\board_deploy\board_deploy
+Component :  FCCC_C1
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/FCCC_C1/FCCC_C1.v
+    C:/Libero/Projects/board_deploy/board_deploy/component/work/FCCC_C1/FCCC_C1_0/FCCC_C1_FCCC_C1_0_FCCC.v
+

@@ -1,0 +1,30 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+10 gated/generated clock tree(s) driving 146 clock pin(s) of sequential element(s)
+0 instances converted, 146 sequential instances remain driven by gated/generated clocks
+
+===================================================================================== Gated/Generated Clocks =====================================================================================
+Clock Tree ID     Driving Element                         Drive Element Type     Fanout     Sample Instance                            Explanation                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       SPI_Slave_0.un1_SPI_CS_n_1              CFG2                   1          SPI_Slave_0.un1_SPI_CS_n_2_rs              No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0002       Gate_Set_0.sample_gate                  SLE                    39         fine_counter_0.rising_error_1[2]           No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0003       board_deploy_MSS_0.MSS_ADLIB_INST       MSS_025                32         SPI_Slave_0.Data[4]                        No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0004       FCCC_C1_0.FCCC_C1_0.CCC_INST            CCC                    29         Recip_Freq_Count_0.counter_local[28]       No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0005       board_deploy_MSS_0.MSS_ADLIB_INST       MSS_025                8          board_deploy_MSS_0.MSS_ADLIB_INST          No gated clock conversion method for cell cell:work.MSS_025
+@K:CKID0006       FCCC_C0_0.FCCC_C0_0.CCC_INST            CCC                    1          board_deploy_MSS_0.MSS_ADLIB_INST          No gated clock conversion method for cell cell:work.MSS_025
+@K:CKID0007       Gate_Set_0.signal                       CFG2                   33         Gate_Set_0.counter[0]                      No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0008       fine_counter_0.un1_rising_error41       CFG2                   1          fine_counter_0.un1_rising_error41_3_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0009       fine_counter_0.un1_rising_error41_1     CFG2                   1          fine_counter_0.un1_rising_error41_4_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0010       fine_counter_0.un1_rising_error41_2     CFG2                   1          fine_counter_0.un1_rising_error41_5_rs     No gated clock conversion method for cell cell:ACG4.SLE    
+==================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

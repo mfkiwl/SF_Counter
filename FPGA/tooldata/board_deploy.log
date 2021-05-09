@@ -1,0 +1,16 @@
+Project Name: board_deploy
+Location: C:\Libero\Projects\board_deploy\board_deploy
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S025-VF256I
+Family         : SmartFusion2
+Die            : M2S025
+Package        : 256 VF
+Speed          : STD
+Core Voltage   : 1.2
+Range          : IND

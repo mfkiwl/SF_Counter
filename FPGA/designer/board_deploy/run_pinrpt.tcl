@@ -1,0 +1,10 @@
+DESIGN=board_deploy
+DESDIR=C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy
+TARGET_DIR=C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy
+FAM=SmartFusion2
+DIE=PA4M2500_N
+PACKAGE=vf256
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+BANK_REPORT=1
+IOREG_REPORT=1

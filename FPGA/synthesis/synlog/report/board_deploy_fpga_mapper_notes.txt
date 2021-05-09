@@ -1,0 +1,25 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO231 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Found counter in view:work.board_deploy(verilog) instance Recip_Freq_Count_0.counter_local[31:0] 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[29] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[30] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":27:4:27:9|Removing sequential instance Recip_Freq_Count_0.recip_counter[31] (in view: work.board_deploy(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MO231 :"c:\libero\projects\board_deploy\board_deploy\hdl\spi_slave.v":32:2:32:7|Found counter in view:work.SPI_Slave(verilog) instance Data_index[4:0] 
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[31] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[30] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance Recip_Freq_Count_0.counter_local[29] (in view: work.board_deploy(verilog)) because it does not drive other instances.
+@N: FP130 |Promoting Net Gate_Set_0_sample_gate on CLKINT  I_93 
+@N: FP130 |Promoting Net SYSRESET_0_POWER_ON_RESET_N_arst on CLKINT  I_94 
+@N: FP130 |Promoting Net Gate_Set_0.signal on CLKINT  I_95 
+@N: FP130 |Promoting Net board_deploy_MSS_0_SPI_1_SS0_M2F on CLKINT  I_96 
+@N: FP130 |Promoting Net board_deploy_MSS_0_SPI_1_CLK_M2F on CLKINT  I_97 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

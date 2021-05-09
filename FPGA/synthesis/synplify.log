@@ -1,0 +1,79 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+Hostname:    DESKTOP-Q941M45
+Date:        Sat May  8 23:19:08 2021
+Version:     Q-2020.03M
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log board_deploy_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+auto_infer_blackbox is not supported in current product.
+log file: "C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.srr"
+Running: synthesis in foreground
+
+Running board_deploy_syn|synthesis
+
+Running Flow: compile (Compile) on board_deploy_syn|synthesis
+# Sat May  8 23:19:08 2021
+
+Running Flow: compile_flow (Compile Process) on board_deploy_syn|synthesis
+# Sat May  8 23:19:08 2021
+
+Running: compiler (Compile Input) on board_deploy_syn|synthesis
+# Sat May  8 23:19:08 2021
+Copied C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_comp.srs to C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.srs
+
+compiler completed
+# Sat May  8 23:19:11 2021
+
+Return Code: 0
+Run Time:00h:00m:03s
+
+Running: multi_srs_gen (Multi-srs Generator) on board_deploy_syn|synthesis
+# Sat May  8 23:19:11 2021
+
+multi_srs_gen completed
+# Sat May  8 23:19:11 2021
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_mult.srs to C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.srs
+Complete: Compile Process on board_deploy_syn|synthesis
+
+Running: premap (Premap) on board_deploy_syn|synthesis
+# Sat May  8 23:19:11 2021
+
+premap completed with warnings
+# Sat May  8 23:19:11 2021
+
+Return Code: 1
+Run Time:00h:00m:00s
+Complete: Compile on board_deploy_syn|synthesis
+
+Running Flow: map (Map) on board_deploy_syn|synthesis
+# Sat May  8 23:19:11 2021
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on board_deploy_syn|synthesis
+# Sat May  8 23:19:11 2021
+Copied C:\Libero\Projects\board_deploy\board_deploy\synthesis\synwork\board_deploy_m.srm to C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.srm
+
+fpga_mapper completed with warnings
+# Sat May  8 23:19:13 2021
+
+Return Code: 1
+Run Time:00h:00m:02s
+Complete: Map on board_deploy_syn|synthesis
+Complete: Logic Synthesis on board_deploy_syn|synthesis
+TCL script complete: "board_deploy_syn.tcl"
+exit status=0
+exit status=0
+License checkin: synplifypro_actel

@@ -1,0 +1,2 @@
+@E: CG906 :"C:\Libero\Projects\board_deploy\board_deploy\hdl\fine_counter.v":36:37:36:49|Reference to unknown variable reset.
+

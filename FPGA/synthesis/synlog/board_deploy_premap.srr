@@ -1,0 +1,122 @@
+# Sat May  8 23:19:11 2021
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03M
+Install: C:\Microsemi\Libero_SoC_v12.5\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-Q941M45
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version map202003act, Build 065R, Built Jun 11 2020 10:26:41, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+Reading constraint file: C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\synthesis.fdc
+@L: C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy_scck.rpt 
+See clock summary report "C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 129MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 131MB)
+
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\libero\projects\board_deploy\board_deploy\component\work\osc_c0\osc_c0_0\osc_c0_osc_c0_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.OSC_C0_OSC_C0_0_OSC(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\libero\projects\board_deploy\board_deploy\hdl\recip_freq_counter.v":16:4:16:9|Removing sequential instance recip_valid (in view: work.Recip_Freq_Count(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=31 on top level netlist board_deploy 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 164MB peak: 164MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       Gate_Set|sample_gate_inferred_clock               100.0 MHz     10.000        inferred     Inferred_clkgroup_2     71   
+                                                                                                                                  
+0 -       FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_3     36   
+                                                                                                                                  
+0 -       Gate_Set|signal_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_5     33   
+                                                                                                                                  
+0 -       board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     32   
+                                                                                                                                  
+0 -       board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     7    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                                                 Clock Pin                                      Non-clock Pin                                Non-clock Pin                               
+Clock                                             Load      Pin                                                                    Seq Example                                    Seq Example                                  Comb Example                                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                                                      -                                              -                                            -                                           
+                                                                                                                                                                                                                                                                           
+Gate_Set|sample_gate_inferred_clock               71        Gate_Set_0.sample_gate.Q[0](dffre)                                     Recip_Freq_Count_0.recip_counter[31:0].C       Recip_Freq_Count_0.counter_local[31:0].R     Recip_Freq_Count_0.un1_sample_gate.I[0](inv)
+                                                                                                                                                                                                                                                                           
+FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock     36        FCCC_C1_0.FCCC_C1_0.CCC_INST.GL0(CCC)                                  Recip_Freq_Count_0.counter_local[31:0].C       fine_counter_0.rising_error[3].D[0]          fine_counter_0.un1_rising_error33.I[0](inv) 
+                                                                                                                                                                                                                                                                           
+Gate_Set|signal_inferred_clock                    33        Gate_Set_0.signal.OUT(and)                                             Gate_Set_0.sample_gate.C                       -                                            -                                           
+                                                                                                                                                                                                                                                                           
+board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock     32        board_deploy_MSS_0.MSS_ADLIB_INST.SPI1_SS0_MGPIO13A_H2F_A(MSS_025)     SPI_Slave_0.Data[31:0].C                       -                                            SPI_Slave_0.Data_index11.I[0](inv)          
+                                                                                                                                                                                                                                                                           
+board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock     7         board_deploy_MSS_0.MSS_ADLIB_INST.SPI1_CLK_OUT(MSS_025)                SPI_Slave_0.Data_index[4:0].C                  -                                            -                                           
+                                                                                                                                                                                                                                                                           
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     1         FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                                  board_deploy_MSS_0.MSS_ADLIB_INST.CLK_BASE     -                                            FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
+===========================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\spi_slave.v":25:2:25:7|Found inferred clock board_deploy_MSS|SPI_1_SS0_M2F_inferred_clock which controls 32 sequential elements including SPI_Slave_0.Data[31:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss.v":226:0:226:13|Found inferred clock board_deploy_MSS|SPI_1_CLK_M2F_inferred_clock which controls 7 sequential elements including board_deploy_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Found inferred clock Gate_Set|sample_gate_inferred_clock which controls 71 sequential elements including fine_counter_0.rising_error_1[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\fine_counter.v":36:4:36:9|Found inferred clock FCCC_C1_FCCC_C1_0_FCCC|GL0_net_inferred_clock which controls 36 sequential elements including fine_counter_0.rising_error_1[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\component\work\board_deploy_mss\board_deploy_mss.v":226:0:226:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 1 sequential elements including board_deploy_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\libero\projects\board_deploy\board_deploy\hdl\gate_set.v":15:4:15:9|Found inferred clock Gate_Set|signal_inferred_clock which controls 33 sequential elements including Gate_Set_0.counter[31:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Libero\Projects\board_deploy\board_deploy\synthesis\board_deploy.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 81MB peak: 167MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat May  8 23:19:11 2021
+
+###########################################################]

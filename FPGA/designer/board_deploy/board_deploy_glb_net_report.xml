@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Global Net Report</title>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.5 (Version 12.900.10.16)</text>
+<text>Date: Sat May  8 23:19:22 2021
+</text>
+<section>
+<name>Global Nets Information</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> GB Location </cell>
+ <cell> Net Name </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>GB[15] </cell>
+ <cell>(309, 72)</cell>
+ <cell>Gate_Set_0/sample_gate_inferred_clock_RNI47AD/U0_YWn_GEast</cell>
+ <cell>39</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[7] </cell>
+ <cell>(297, 72)</cell>
+ <cell>SYSRESET_0_RNIHNV1/U0_YWn_GEast</cell>
+ <cell>37</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>GB[1] </cell>
+ <cell>(291, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell>35</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>GB[5] </cell>
+ <cell>(295, 72)</cell>
+ <cell>Gate_Set_0/signal_inferred_clock_RNI0SS7/U0_YWn_GEast</cell>
+ <cell>33</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>GB[10] </cell>
+ <cell>(304, 72)</cell>
+ <cell>board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC/U0_YWn_GEast</cell>
+ <cell>32</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>GB[2] </cell>
+ <cell>(292, 72)</cell>
+ <cell>board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31/U0_YWn_GEast</cell>
+ <cell>8</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>GB[6] </cell>
+ <cell>(296, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL3_INST/U0_YWn_GEast</cell>
+ <cell>6</cell>
+</row>
+<row>
+ <cell>8</cell>
+ <cell>GB[0] </cell>
+ <cell>(290, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL1_INST/U0_YWn_GEast</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell>9</cell>
+ <cell>GB[3] </cell>
+ <cell>(293, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL2_INST/U0_YWn_GEast</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>GB[11] </cell>
+ <cell>(305, 72)</cell>
+ <cell>OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB_CLKINT/U0_YWn</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell>11</cell>
+ <cell>GB[4] </cell>
+ <cell>(294, 72)</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>I/O to GB Connections</name>
+<text>(none)</text>
+</section>
+<section>
+<name>Fabric to GB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> To </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>Gate_Set_0/sample_gate:Q</cell>
+ <cell>(456, 91)</cell>
+ <cell>GB[15] </cell>
+ <cell>Gate_Set_0/sample_gate_Z</cell>
+ <cell>ROUTED</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>SYSRESET_0/INST_SYSRESET_FF_IP:POWER_ON_RESET_N</cell>
+ <cell>(624, 8)</cell>
+ <cell>GB[7] </cell>
+ <cell>SYSRESET_0_POWER_ON_RESET_N</cell>
+ <cell>ROUTED</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>Gate_Set_0/signal:Y</cell>
+ <cell>(627, 69)</cell>
+ <cell>GB[5] </cell>
+ <cell>Gate_Set_0/signal_0</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>board_deploy_MSS_0/MSS_ADLIB_INST/INST_MSS_025_IP:SPI1_SS0_MGPIO13A_H2F_A</cell>
+ <cell>(528, 146)</cell>
+ <cell>GB[10] </cell>
+ <cell>board_deploy_MSS_0/SPI_1_SS0_M2F</cell>
+ <cell>ROUTED</cell>
+ <cell>8</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>board_deploy_MSS_0/MSS_ADLIB_INST/INST_MSS_025_IP:SPI1_CLK_OUT</cell>
+ <cell>(528, 146)</cell>
+ <cell>GB[2] </cell>
+ <cell>board_deploy_MSS_0/SPI_1_CLK_M2F</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB:CLKOUT</cell>
+ <cell>(29, 134)</cell>
+ <cell>GB[11] </cell>
+ <cell>OSC_C0_0/OSC_C0_0/N_XTLOSC_CLKINT</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>CCC to GB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell>Pin Swapped for Back Annotation Only</cell>
+ <cell> To </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>CCC-NW0 (0, 134)</cell>
+ <cell>GL0 =&gt; GL1</cell>
+ <cell>GB[1] </cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL0_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/CCC_INST/INST_CCC_IP:GL3</cell>
+ <cell>CCC-NW0 (0, 134)</cell>
+ <cell>GL3 =&gt; GL2</cell>
+ <cell>GB[6] </cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL3_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/CCC_INST/INST_CCC_IP:GL1</cell>
+ <cell>CCC-NW0 (0, 134)</cell>
+ <cell>GL1 =&gt; GL0</cell>
+ <cell>GB[0] </cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL1_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/CCC_INST/INST_CCC_IP:GL2</cell>
+ <cell>CCC-NW0 (0, 134)</cell>
+ <cell>GL2 =&gt; GL3</cell>
+ <cell>GB[3] </cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL2_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>CCC-NW1 (18, 134)</cell>
+ <cell>None</cell>
+ <cell>GB[4] </cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/GL0_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>CCC Input Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> To (Pin Swapped for Back Annotation Only) </cell>
+ <cell> CCC Location </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB:CLKOUT</cell>
+ <cell>(29, 134)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/CCC_INST/INST_CCC_IP:CLK0</cell>
+ <cell>CCC-NW0 (0, 134)</cell>
+ <cell>OSC_C0_0/OSC_C0_0/N_XTLOSC_CLKINT</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB:CLKOUT</cell>
+ <cell>(29, 134)</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:CLK0</cell>
+ <cell>CCC-NW1 (18, 134)</cell>
+ <cell>OSC_C0_0/OSC_C0_0/N_XTLOSC_CLKINT</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>Local Nets to RGB Connections</name>
+<text>(none)</text>
+</section>
+<section>
+<name>Global Nets to RGB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> Net Name </cell>
+ <cell> Fanout </cell>
+ <cell> </cell>
+ <cell> RGB Location </cell>
+ <cell> Local Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>GB[15] </cell>
+ <cell>(309, 72)</cell>
+ <cell>Gate_Set_0/sample_gate_inferred_clock_RNI47AD/U0_YWn_GEast</cell>
+ <cell>39</cell>
+ <cell>1</cell>
+ <cell>(447, 84)</cell>
+ <cell>15</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(447, 87)</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(447, 90)</cell>
+ <cell>14</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[7] </cell>
+ <cell>(297, 72)</cell>
+ <cell>SYSRESET_0_RNIHNV1/U0_YWn_GEast</cell>
+ <cell>37</cell>
+ <cell>1</cell>
+ <cell>(446, 84)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(446, 87)</cell>
+ <cell>28</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(446, 90)</cell>
+ <cell>4</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>GB[1] </cell>
+ <cell>(291, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell>35</cell>
+ <cell>1</cell>
+ <cell>(451, 84)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(451, 87)</cell>
+ <cell>31</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(451, 90)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>GB[5] </cell>
+ <cell>(295, 72)</cell>
+ <cell>Gate_Set_0/signal_inferred_clock_RNI0SS7/U0_YWn_GEast</cell>
+ <cell>33</cell>
+ <cell>1</cell>
+ <cell>(450, 84)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(450, 87)</cell>
+ <cell>25</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(450, 90)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>GB[10] </cell>
+ <cell>(304, 72)</cell>
+ <cell>board_deploy_MSS_0/SPI_1_SS0_M2F_inferred_clock_RNIH6BC/U0_YWn_GEast</cell>
+ <cell>32</cell>
+ <cell> </cell>
+ <cell>(452, 90)</cell>
+ <cell>32</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>GB[2] </cell>
+ <cell>(292, 72)</cell>
+ <cell>board_deploy_MSS_0/SPI_1_CLK_M2F_inferred_clock_RNILB31/U0_YWn_GEast</cell>
+ <cell>8</cell>
+ <cell>1</cell>
+ <cell>(446, 93)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(446, 96)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(446, 126)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>GB[6] </cell>
+ <cell>(296, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL3_INST/U0_YWn_GEast</cell>
+ <cell>6</cell>
+ <cell>1</cell>
+ <cell>(449, 84)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(449, 87)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(449, 90)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>8</cell>
+ <cell>GB[0] </cell>
+ <cell>(290, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL1_INST/U0_YWn_GEast</cell>
+ <cell>5</cell>
+ <cell>1</cell>
+ <cell>(452, 84)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(452, 87)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(453, 90)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>9</cell>
+ <cell>GB[3] </cell>
+ <cell>(293, 72)</cell>
+ <cell>FCCC_C1_0/FCCC_C1_0/GL2_INST/U0_YWn_GEast</cell>
+ <cell>5</cell>
+ <cell>1</cell>
+ <cell>(448, 84)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(448, 87)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(448, 90)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>GB[11] </cell>
+ <cell>(305, 72)</cell>
+ <cell>OSC_C0_0/OSC_C0_0/I_XTLOSC_FAB_CLKINT/U0_YWn</cell>
+ <cell>2</cell>
+ <cell> </cell>
+ <cell>(146, 132)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell>11</cell>
+ <cell>GB[4] </cell>
+ <cell>(294, 72)</cell>
+ <cell>FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell>1</cell>
+ <cell> </cell>
+ <cell>(446, 144)</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>Warning: Local Clock Nets</name>
+<text>The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
+</text>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> Driving Net </cell>
+ <cell> To </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>fine_counter_0/un1_rising_error41:Y</cell>
+ <cell>fine_counter_0/un1_rising_error41_Z</cell>
+ <cell>fine_counter_0/un1_rising_error41_3_rs:CLK</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>fine_counter_0/un1_rising_error41_2:Y</cell>
+ <cell>fine_counter_0/un1_rising_error41_2_Z</cell>
+ <cell>fine_counter_0/un1_rising_error41_5_rs:CLK</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>fine_counter_0/un1_rising_error41_1:Y</cell>
+ <cell>fine_counter_0/un1_rising_error41_1_Z</cell>
+ <cell>fine_counter_0/un1_rising_error41_4_rs:CLK</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>SPI_Slave_0/un1_SPI_CS_n_1:Y</cell>
+ <cell>SPI_Slave_0/un1_SPI_CS_n_1_Z</cell>
+ <cell>SPI_Slave_0/un1_SPI_CS_n_2_rs:CLK</cell>
+</row>
+</table>
+</section>
+</doc>

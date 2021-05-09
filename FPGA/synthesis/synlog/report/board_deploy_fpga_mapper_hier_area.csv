@@ -1,0 +1,15 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC, RAM1K18, RAM64X18, GLOBAL, IO
+. board_deploy, 144, 52, 114, 0, 0, 0, 0, 11, 8
+.	. Add_Counters, 0, 0, 29, 0, 0, 0, 0, 0, 0
+.	. FCCC_C0, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	. FCCC_C0_FCCC_C0_0_FCCC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	. FCCC_C1, 0, 0, 0, 0, 0, 0, 0, 4, 0
+.	.	. FCCC_C1_FCCC_C1_0_FCCC, 0, 0, 0, 0, 0, 0, 0, 4, 0
+.	. Gate_Set, 33, 20, 32, 0, 0, 0, 0, 2, 0
+.	. OSC_C0, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	. OSC_C0_OSC_C0_0_OSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	. Recip_Freq_Count, 58, 2, 29, 0, 0, 0, 0, 0, 0
+.	. SPI_Slave, 40, 10, 24, 0, 0, 0, 0, 0, 0
+.	. board_deploy_MSS, 0, 2, 0, 0, 0, 0, 0, 2, 6
+.	. fine_counter, 13, 18, 0, 0, 0, 0, 0, 0, 0

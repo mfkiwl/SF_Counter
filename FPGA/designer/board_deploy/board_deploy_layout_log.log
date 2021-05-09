@@ -1,0 +1,77 @@
+Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : OFF
+Power-driven             : OFF
+I/O Register Combining   : OFF
+High-effort              : OFF
+Repair min-delay         : OFF
+Incremental              : OFF
+
+INFO: Reading User PDC file C:\Libero\Projects\board_deploy\board_deploy\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 8 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 12.900.10 
+Design: board_deploy                    Started: Sat May  8 23:19:19 2021
+
+Initializing Normal-Effort Standard Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 0 seconds
+Placement                : 0 seconds
+Improvement              : 0 seconds
+
+Placer completed successfully.
+
+Design: board_deploy                    
+Finished: Sat May  8 23:19:22 2021
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
+Total Memory Usage: 135.8 Mbytes
+                        o - o - o - o - o - o
+
+
+Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
+    Driver: fine_counter_0/un1_rising_error41:Y
+       Net: fine_counter_0/un1_rising_error41_Z
+Clock pins: 1
+    Driver: fine_counter_0/un1_rising_error41_2:Y
+       Net: fine_counter_0/un1_rising_error41_2_Z
+Clock pins: 1
+    Driver: fine_counter_0/un1_rising_error41_1:Y
+       Net: fine_counter_0/un1_rising_error41_1_Z
+Clock pins: 1
+    Driver: SPI_Slave_0/un1_SPI_CS_n_1:Y
+       Net: SPI_Slave_0/un1_SPI_CS_n_1_Z
+Clock pins: 1
+
+Router 
+Design: C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deployStarted: Sat May  8 23:19:24 2021
+
+
+Router completed successfully.
+
+Design: C:\Libero\Projects\board_deploy\board_deploy\designer\board_deploy\board_deploy
+Finished: Sat May  8 23:19:30 2021
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
+Total Memory Usage: 895.4 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 160  | 27696 | 0.58       |
+| DFF           | 144  | 27696 | 0.52       |
+| I/O Register  | 0    | 408   | 0.00       |
+| Logic Element | 193  | 27696 | 0.70       |
++---------------+------+-------+------------+
+

@@ -1,0 +1,10 @@
+CKID0001:@|S:SPI_Slave_0.un1_SPI_CS_n_1@|E:SPI_Slave_0.un1_SPI_CS_n_2_rs@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:Gate_Set_0.sample_gate@|E:fine_counter_0.rising_error_1[2]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:board_deploy_MSS_0.MSS_ADLIB_INST@|E:SPI_Slave_0.Data[4]@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
+CKID0004:@|S:FCCC_C1_0.FCCC_C1_0.CCC_INST@|E:Recip_Freq_Count_0.counter_local[28]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:board_deploy_MSS_0.MSS_ADLIB_INST@|E:board_deploy_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path2==CKID0005@|M:ClockId0005 
+CKID0006:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:board_deploy_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path3==CKID0006@|M:ClockId0006 
+CKID0007:@|S:Gate_Set_0.signal@|E:Gate_Set_0.counter[0]@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007 
+CKID0008:@|S:fine_counter_0.un1_rising_error41@|E:fine_counter_0.un1_rising_error41_3_rs@|F:@syn_sample_clock_path==CKID0008@|M:ClockId0008 
+CKID0009:@|S:fine_counter_0.un1_rising_error41_1@|E:fine_counter_0.un1_rising_error41_4_rs@|F:@syn_sample_clock_path==CKID0009@|M:ClockId0009 
+CKID0010:@|S:fine_counter_0.un1_rising_error41_2@|E:fine_counter_0.un1_rising_error41_5_rs@|F:@syn_sample_clock_path==CKID0010@|M:ClockId0010 

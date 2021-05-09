@@ -1,0 +1,684 @@
+KEY LIBERO "12.900"
+KEY CAPTURE "12.900.10.16"
+KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M2500_N"
+KEY VendorTechnology_Package "vf256"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "IND"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS15"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M2500_N"
+KEY VendorTechnology_TEMPR "IND"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "IND"
+KEY ProjectLocation "C:\Libero\Projects\board_deploy\board_deploy"
+KEY ProjectDescription ""
+KEY UseRootLocationForLinkedFiles "FALSE"
+KEY RootLocationENVForLinkedFiles ""
+KEY RootLocationForLinkedFiles ""
+KEY GlobalIncludePaths ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "board_deploy::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST GlobalIncludeFileList
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620530418"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+PARENT="<project>\component\work\FCCC_C1\FCCC_C1.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1619376244"
+SIZE="684"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+STATE="utd"
+TIME="1607650745"
+SIZE="924"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+STATE="utd"
+TIME="1607650745"
+SIZE="726"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533940"
+SIZE="526"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="253"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="252"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="253"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="254"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="256"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="255"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="258"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="253"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533938"
+SIZE="256"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\work\board_deploy\board_deploy.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533835"
+SIZE="5274"
+ENDFILE
+VALUE "<project>\component\work\board_deploy\board_deploy.v,hdl"
+STATE="utd"
+TIME="1620531640"
+SIZE="7089"
+PARENT="<project>\component\work\board_deploy\board_deploy.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620533941"
+SIZE="14303"
+ENDFILE
+VALUE "<project>\component\work\board_deploy_MSS\board_deploy_MSS.v,hdl"
+STATE="utd"
+TIME="1620533940"
+SIZE="46769"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\board_deploy_MSS\board_deploy_MSS_pre.v,hdl"
+STATE="utd"
+TIME="1620533940"
+SIZE="58015"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\board_deploy_MSS\board_deploy_MSS_syn.v,hdl"
+STATE="utd"
+TIME="1620533940"
+SIZE="50979"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1619377649"
+SIZE="2288"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620530418"
+SIZE="10043"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.v,hdl"
+STATE="utd"
+TIME="1620530418"
+SIZE="2200"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620530418"
+SIZE="706"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v,hdl"
+STATE="utd"
+TIME="1620530418"
+SIZE="1696"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C1\FCCC_C1.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620530384"
+SIZE="10495"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C1\FCCC_C1.v,hdl"
+STATE="utd"
+TIME="1620530383"
+SIZE="2665"
+PARENT="<project>\component\work\FCCC_C1\FCCC_C1.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1620530383"
+SIZE="706"
+PARENT="<project>\component\work\FCCC_C1\FCCC_C1.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v,hdl"
+STATE="utd"
+TIME="1620530383"
+SIZE="1957"
+PARENT="<project>\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1619376245"
+SIZE="2679"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.v,hdl"
+STATE="utd"
+TIME="1619376244"
+SIZE="1769"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1619376244"
+SIZE="461"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v,hdl"
+STATE="utd"
+TIME="1619376244"
+SIZE="744"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+STATE="utd"
+TIME="1620255654"
+SIZE="1111"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\hdl\Add_Counter.v,hdl"
+STATE="utd"
+TIME="1620532802"
+SIZE="820"
+ENDFILE
+VALUE "<project>\hdl\counter.v,hdl"
+STATE="utd"
+TIME="1612037236"
+SIZE="1239"
+ENDFILE
+VALUE "<project>\hdl\divider.v,hdl"
+STATE="utd"
+TIME="1617505092"
+SIZE="1238"
+ENDFILE
+VALUE "<project>\hdl\fine_counter.v,hdl"
+STATE="utd"
+TIME="1620531605"
+SIZE="2338"
+ENDFILE
+VALUE "<project>\hdl\Gate_Set.v,hdl"
+STATE="utd"
+TIME="1620255823"
+SIZE="634"
+ENDFILE
+VALUE "<project>\hdl\One_Second_Gate.v,hdl"
+STATE="utd"
+TIME="1617504952"
+SIZE="1221"
+ENDFILE
+VALUE "<project>\hdl\Recip_Freq_Counter.v,hdl"
+STATE="utd"
+TIME="1620531263"
+SIZE="689"
+ENDFILE
+VALUE "<project>\hdl\SPI_slave.v,hdl"
+STATE="utd"
+TIME="1612041888"
+SIZE="1269"
+ENDFILE
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+STATE="utd"
+TIME="1620533940"
+SIZE="504"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+STATE="utd"
+TIME="1607649810"
+SIZE="8450"
+PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1620531640"
+SIZE="602"
+PARENT="<project>\component\work\board_deploy\board_deploy.cxf"
+ENDFILE
+VALUE "<project>\simulation\test.bfm,sim"
+STATE="utd"
+TIME="1620533940"
+SIZE="734"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\user.bfm,sim"
+STATE="utd"
+TIME="1619376720"
+SIZE="555"
+PARENT="<project>\component\work\board_deploy_MSS\board_deploy_MSS.cxf"
+ENDFILE
+VALUE "<project>\synthesis\board_deploy.so,so"
+STATE="utd"
+TIME="1620256627"
+SIZE="243"
+ENDFILE
+VALUE "<project>\synthesis\board_deploy.vm,syn_vm"
+STATE="utd"
+TIME="1620256627"
+SIZE="112902"
+ENDFILE
+VALUE "<project>\synthesis\board_deploy_syn.prj,prj"
+STATE="utd"
+TIME="1620256627"
+SIZE="3243"
+ENDFILE
+VALUE "<project>\synthesis\board_deploy_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1620256627"
+SIZE="2527"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1620531492"
+SIZE="159"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "board_deploy::work"
+FILE "<project>\component\work\board_deploy\board_deploy.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST PNRConstraints
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\board_deploy.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "board_deploy_MSS::work"
+FILE "<project>\component\work\board_deploy_MSS\board_deploy_MSS.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+LIST board_deploy
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST board_deploy_MSS
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+AbortFlowOn3.3V_IO_ON=FALSE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.5\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME Pro"
+FUNCTION="Simulation"
+TOOL="ModelSim Pro Edition"
+LOCATION="C:\Microsemi\Libero_SoC_v12.5\ModelSimPro\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.5\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "board_deploy::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\board_deploy.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:board_deploy_PROGRAM.log
+HDL;hdl\Gate_Set.v;0
+Constraint Manager;Constraint Manager;0
+StartPage;StartPage;0
+SmartDesign;board_deploy;0
+HDL;hdl\Recip_Freq_Counter.v;0
+HDL;hdl\fine_counter.v;0
+HDL;hdl\Add_Counter.v;0
+SmartDesign;board_deploy_MSS;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "Add_Counters::work","hdl\Add_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "board_deploy::work","component\work\board_deploy\board_deploy.v","TRUE","FALSE"
+SUBBLOCK "Add_Counters::work","hdl\Add_Counter.v","FALSE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C1::work","component\work\FCCC_C1\FCCC_C1.v","TRUE","FALSE"
+SUBBLOCK "Gate_Set::work","hdl\Gate_Set.v","FALSE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+SUBBLOCK "Recip_Freq_Count::work","hdl\Recip_Freq_Counter.v","FALSE","FALSE"
+SUBBLOCK "SPI_Slave::work","hdl\SPI_slave.v","FALSE","FALSE"
+SUBBLOCK "board_deploy_MSS::work","component\work\board_deploy_MSS\board_deploy_MSS.v","TRUE","FALSE"
+SUBBLOCK "fine_counter::work","hdl\fine_counter.v","FALSE","FALSE"
+ENDLIST
+LIST "board_deploy_MSS::work","component\work\board_deploy_MSS\board_deploy_MSS.v","TRUE","FALSE"
+SUBBLOCK "MSS_025::work","component\work\board_deploy_MSS\board_deploy_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "counter::work","hdl\counter.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "divider::work","hdl\divider.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_025::work","component\work\board_deploy_MSS\board_deploy_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C1::work","component\work\FCCC_C1\FCCC_C1.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C1_FCCC_C1_0_FCCC::work","component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C1_FCCC_C1_0_FCCC::work","component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "fine_counter::work","hdl\fine_counter.v","FALSE","FALSE"
+ENDLIST
+LIST "Gate_Set::work","hdl\Gate_Set.v","FALSE","FALSE"
+ENDLIST
+LIST "one_second_gate::work","hdl\One_Second_Gate.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+SUBBLOCK "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "Recip_Freq_Count::work","hdl\Recip_Freq_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SPI_Slave::work","hdl\SPI_slave.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\user.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

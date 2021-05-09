@@ -1,0 +1,23 @@
+----------------------------------------------------------------
+-Pin Report - Date: Sat May  8 23:19:31 2021 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v12.5
+-Version: 12.900.10.16
+-Design Name: board_deploy
+-Family: SmartFusion2
+-Die: M2S025
+-Package: 256 VF
+-----------------------------------------------------------------
+
+Port           |Pin |Fixed |Function                         |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+---------------|----|------|---------------------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+DEVRST_N        M11  Fixed  DEVRST_N                          ---       
+GPIO_3_M2F      G16  Yes    MSIO14NB2/SPI_0_SS5/GPIO_20_A     Bank2     LVCMOS15   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+MMUART_1_RXD    H13  Yes    MSIO28NB1/MMUART_1_RXD/GPIO_26_B  Bank1     LVCMOS15   Input                           TRISTATE                        None                                No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
+MMUART_1_TXD    H12  Yes    MSI27NB1/MMUART_1_TXD/GPIO_24_B   Bank1     LVCMOS15   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+sampled_signal  K16  Yes    MSIO4PB2/USB_DATA2_B              Bank2     LVCMOS15   Input                           TRISTATE                        None                                No                                  On               Off            50              Off             Off          ---           ---                ---                ---               
+SPI_0_CLK       J14  Yes    MSIO12PB2/SPI_0_CLK               Bank2     LVCMOS15   Inout                           TRISTATE                        None                                No                                  Off              Off            50              Off             Off          SLOW          ---                4                  5                 
+SPI_0_DI        J13  Yes    MSIO12NB2/SPI_0_SDI/GPIO_5_A      Bank2     LVCMOS15   Input                           TRISTATE                        None                                No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
+SPI_0_DO        K12  Yes    MSIO13PB2/SPI_0_SDO/GPIO_6_A      Bank2     LVCMOS15   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+SPI_0_SS0       J12  Yes    MSIO13NB2/SPI_0_SS0/GPIO_7_A      Bank2     LVCMOS15   Inout                           TRISTATE                        None                                No                                  Off              Off            50              Off             Off          SLOW          ---                4                  5                 
+XTL             R16  Fixed  XTLOSC_MAIN_XTAL                  ---       
