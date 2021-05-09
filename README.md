@@ -1,4 +1,4 @@
-# This is the deployment project of a reciprocal counter implemented on SmartFusion2 FPGA
+# SmartFusion2 FPGA
 
 <!-- TABLE OF CONTENTS -->
 <!-- ## Table of Contents
